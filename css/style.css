@@ -1,15 +1,4 @@
-/* reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0;border: 0; font-size: 100%; vertical-align: top; box-sizing: border-box;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height: 1;}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
-table {border-collapse: collapse; border-spacing: 0;}
-a, a:link {color: black; text-decoration: none;}
-.clear {display: block; clear: both;}
-dl, dt, dd {padding: 0; margin: 0;}
-em {font-style: normal;}
+@charset"utf-8";
 
 /* font */
 @font-face {
@@ -36,131 +25,103 @@ em {font-style: normal;}
 
 
 /* common */
-* {padding: 0; margin: 0; box-sizing: border-box;}
-html {font-size: calc(100vw * 10 / 1920); overflow-x: hidden; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
-.wrap {max-width: 192rem; width: 100%; margin: 0 auto;}
-.full {margin: 0 !important;}
-section {margin: 0 32rem; padding: 16rem 0 0;}
-section:first-child {padding: 12rem 0 0;}
-section:last-child {padding: 23.2rem 0 32.1rem;}
+html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
+.cnt_inn {max-width: 1920px; margin: 0 auto; padding: 160px 0;}
 
-/* color */
-.blue {color: #3b7cf3;}
+
+/* *********************************** main *********************************** */
 
 /* section1 */
-.section1 {background-color: #2871fa;}
-.section1 .visual_wrap {margin: 0 32rem; padding-bottom: 8.4rem;}
-.section1 .main_visual .main_tit_wrap {margin-bottom: 2.7rem; text-align: left;}
-.section1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 2rem; font-size: 1.8rem; line-height: 2.1rem; font-weight: 400; color: #fff;}
-.section1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding: 0 2.9rem 3.2rem 0; font-size: 4.6rem; line-height: 6rem; color: #fff;}
-.section1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: .1rem solid #fff;}
-.section1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 11.7rem; padding-right: 2.2rem; font-size: 1.6rem; line-height: 3rem; font-weight: 700; color: #fff;}
-.section1 .main_visual .main_txt_wrap dd {font-size: 1.8rem; line-height: 3rem; color: #fff; font-weight: 400;}
-.section1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
-.section1 .main_visual .btn {display: inline-block; padding: 2.15rem 11.1rem; margin-top: 6rem; font-size: 1.8rem; line-height: 2.1rem; font-weight: 700; background-color: #fff; border-radius: 1rem; cursor: pointer;}
-.section1 .main_visual .btn a {color: #2871fa;}
-.section1 .main_visual .txt_btn {position: relative; display: block; margin-top: 1.6rem; padding-left: 2.6rem !important; font-size: 1.6rem; line-height: 2.4rem; font-weight: 700; color: #fff; text-decoration: underline; text-underline-offset: .5rem; background: none; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer;}
-.section1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 2.5rem; height: 2.5rem; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;}
+.main_sec1 {position: relative; background-color: #2871fa;}
+.main_sec1 .cnt_inn {padding-bottom: 0;}
+.main_sec1 .logo_area img {max-width: 100%;}
+.main_sec1 .visual_wrap {margin: 0 auto; padding-bottom: 140px;}
+.main_sec1 .main_visual {display: flex; justify-content: space-evenly;}
+.main_sec1 .main_visual .main_tit_wrap .logo_area {margin-bottom: 60px;}
+.main_sec1 .main_visual .main_tit_wrap {text-align: left;}
+.main_sec1 .main_visual .main_tit_wrap p {margin-top: 24px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
+.main_sec1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 20px; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff;}
+.main_sec1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding-bottom: 32px; font-size: 52px; line-height: 64px; color: #fff;}
+.main_sec1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: 1px solid #fff; opacity: .25;}
+.main_sec1 .main_visual .main_txt_wrap {margin-top: 24px;}
+.main_sec1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 139px; padding-right: 22px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff;}
+.main_sec1 .main_visual .main_txt_wrap dd {font-size: 18px; line-height: 30px; color: #fff; font-weight: 400;}
+.main_sec1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
+.main_sec1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
+.main_sec1 .main_visual .btn {position: relative; margin-top: 48px;}
+.main_sec1 .main_visual .btn:before {content: ""; display: block; position: absolute; bottom: -40px; right: -191px; width: 213px; height: 71px; background: url(../img/img_arrow.png) no-repeat center / auto auto;}
+.main_sec1 .main_visual .btn a {display: inline-block; padding: 21.5px 111px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #fff; border-radius: 10px; color: #2871fa;}
+.main_sec1 .main_visual .main_img img {max-width: 100%;}
+.main_sec1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;}
+.main_sec1 .fb_btn {position: absolute; bottom: 40px; right: 40px;}
+.main_sec1 .fb_btn a {display: inline-block; padding: 16px 32px; background-color: #fff; border-radius: 20px;}
+.main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; color: #585858;}
 
 /* section2 */
-.section2 .sec02_tit {margin-bottom: 7.3rem;}
-.section2 .sec02_tit strong {position: relative; display: block; font-size: 4rem; line-height: 5.6rem; font-weight: 700; text-align: center;}
-.section2 .sec02_tit strong:after {content: ""; display: block; position: absolute; top: 2.3rem; left: 26rem; width: 4.9rem; height: 4.8rem; background: url(../img/ico_tit_01.png) no-repeat center center / 100% 100%;}
-.section2 .box_txt ul {display: flex; justify-content: space-between;}
-.section2 .box_txt ul li {position: relative; padding: 5.4rem 0 12.2rem 3.2rem; width: 30.5rem; border-radius: 2rem; box-shadow: .5rem .5rem 4rem 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
-.section2 .box_txt ul li span {display: block; margin-bottom: 2.1rem; font-size: 2.4rem; line-height: 3.6rem; font-weight: 700; color: #2871fa;}
-.section2 .box_txt ul li p {min-height: 12rem; font-size: 1.6rem; line-height: 2.4rem; font-weight: 500; color: #666;}
-.section2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -3.5rem; right: 2.3rem; margin-bottom: 0; font-size: 13rem; line-height: 15.5rem; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
+.main_sec2 .sec02_tit {margin-bottom: 73px;}
+.main_sec2 .sec02_tit strong {position: relative; display: block; margin-bottom: 20px; font-size: 40px; line-height: 56px; font-weight: 700; text-align: center;}
+.main_sec2 .sec02_tit p {font-size: 18px; line-height: 28px; color: #999; text-align: center;}
+.main_sec2 .box_txt ul {display: flex; justify-content: center;}
+.main_sec2 .box_txt ul li {position: relative; margin-right: 18px; padding: 54px 0 122px 32px; width: 305px; border-radius: 20px; box-shadow: 5px 5px 40px 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
+.main_sec2 .box_txt ul li:last-child {margin-right: 0;}
+.main_sec2 .box_txt ul li span {display: block; margin-bottom: 24px; font-size: 24px; line-height: 40px; font-weight: 700; color: #2871fa;}
+.main_sec2 .box_txt ul li p {min-height: 121px; font-size: 16px; line-height: 28px; font-weight: 500; color: #666;}
+.main_sec2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -35px; right: 23px; margin-bottom: 0; font-size: 130px; line-height: 155px; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
 
 /* section3 */
-.section3 .sec03_tit strong {display: block; font-size: 4rem; line-height: 5.6rem; text-align: center;}
+.main_sec3 {background-color: #fafafa;}
+.main_sec3 .sec03_tit strong {display: block; margin-bottom: 60px; font-size: 46px; line-height: 60px; text-align: center;}
+.main_sec3 .ct_wrap {margin: 0 auto; width: 1280px;}
+.main_sec3 .ct_wrap .ct_box {position: relative; margin: 0 0 40px; padding: 54px 0 54px 60px; max-width: 860px; width: 100%; background-color: #fff; border-radius: 60px 60px 60px 0; box-shadow: 7px 7px 40px 0 rgba(0, 0, 0, 0.07); text-align: left;}
+.main_sec3 .ct_wrap .ct_box.emo01:after {content: ""; display: block; position: absolute; bottom: 0; left: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_01.png) no-repeat center center / auto auto;}
+.main_sec3 .ct_wrap .ct_box.emo02:after {content: ""; display: block; position: absolute; top: 0; right: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_02.png) no-repeat center center / auto auto;}
+.main_sec3 .ct_wrap .ct_box.emo03:after {content: ""; display: block; position: absolute; bottom: 0; left: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_03.png) no-repeat center center / auto auto;}
+.main_sec3 .ct_wrap .ct_box.emo04:after {content: ""; display: block; position: absolute; top: 0; right: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_04.png) no-repeat center center / auto auto;}
+.main_sec3 .ct_wrap .ct_box.right {border-radius: 60px 0 60px 60px;}
+.main_sec3 .ct_wrap .ct_box strong {display: block; margin-bottom: 12px; font-size: 24px; line-height: 36px; color: #666;}
+.main_sec3 .ct_wrap .ct_box p {font-size: 18px; line-height: 28px; color: #999;}
+.main_sec3 .ct_wrap .ct_box p strong {display: inline-block; font-size: 18px; line-height: 28px; color: #999;}
+.main_sec3 .ct_wrap .ct_box em {position: relative; display: inline-block; font-size: 18px; line-height: 28px; color: #2871fa; font-weight: 700; z-index: 10;}
+.main_sec3 .ct_wrap .ct_box em:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 14px; background: #5ff0bc; opacity: 0.25; z-index: -10;}
+.main_sec3 .ct_wrap .ct_box .btn {margin-top: 24px;}
+.main_sec3 .ct_wrap .ct_box .btn a {padding: 16px 32px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff; background-color: #2871fa; border-radius: 10px;}
+    
 
 /* section4 */
+.main_sec4 .sec04_tit strong {display: block; margin-bottom: 60px; font-size: 46px; line-height: 60px; text-align: center;}
+.main_sec4 .acc_wrap {max-width: 1280px; margin: 0 auto;}
+.main_sec4 .acc_wrap .acc_tit {position: relative; display: block; padding: 41.5px 0 41.5px 20px; font-size: 18px; font-weight: 700; color: #000; cursor: pointer;}
+.main_sec4 .acc_wrap .acc_tit:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-top: 1px solid #dedede;}
+.main_sec4 .acc_wrap .acc_tit:hover,
+.main_sec4 .acc_wrap .acc_tit:active {color: #2871fa;}
+.main_sec4 .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #000; border-right: 3px solid #000; transform: rotate(135deg);}
+.main_sec4 .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #2871fa; border-right: 3px solid #2871fa; transform: rotate(315deg);}
+.main_sec4 .acc_wrap .acc_cont {padding: 40px 0 40px 48px; background-color: #fafafa;}
+
+  
+
+@media screen and (max-width: 1460px) {
+    /* section1 */
+    .main_sec1 .main_visual .main_img img {display: none;}
+
+    /* section2 */
+    .main_sec2 .box_txt ul {flex-wrap: wrap;}
+    .main_sec2 .box_txt ul li {width: 35%; margin: 0 0 20px 10px;}
+    .main_sec2 .box_txt ul li:nth-child(2n) {margin-right: 0;}
+}
+
+@media screen and (max-width: 767px) {
+    /* section1 */
+    .main_sec1 .main_visual .btn:before {top: 0; right: 0;}
+
+    /* section2 */
+    .main_sec2 .box_txt ul {padding: 0 20px;}
+    .main_sec2 .box_txt ul li {width: 100%; margin: 0 0 20px;}
+}
 
 
 
-
-
-
-
-        /* reset */
-        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0;border: 0; font-size: 100%; vertical-align: top; box-sizing: border-box;}
-        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-        body {line-height: 1;}
-        ol, ul {list-style: none;}
-        blockquote, q {quotes: none;}
-        blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
-        table {border-collapse: collapse; border-spacing: 0;}
-        a, a:link {color: black; text-decoration: none;}
-        .clear {display: block; clear: both;}
-        dl, dt, dd {padding: 0; margin: 0;}
-        em {font-style: normal;}
-
-        /* font */
-        @font-face {
-            font-family: "Pretendard-Regular";
-            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-                format("woff");
-            font-weight: 400;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: "Pretendard-Bold";
-            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
-                format("woff");
-            font-weight: 700;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: "Pretendard-ExtraBold";
-            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
-                format("woff");
-            font-weight: 900;
-            font-style: normal;
-        }
-
-
-        /* common */
-        * {padding: 0; margin: 0; box-sizing: border-box;}
-        html {overflow-x: hidden; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
-        .wrap {width: 100%; margin: 0 auto;}
-        .full {margin: 0 !important;}
-        section {margin: 0 320px; padding: 160px 0 0;}
-        section:first-child {padding: 120px 0 0;}
-        section:last-child {padding: 232px 0 321px;}
-
-        /* color */
-        .blue {color: #3b7cf3;}
-
-        /* section1 */
-        .section1 {background-color: #2871fa;}
-        .section1 .visual_wrap {margin: 0 320px; padding-bottom: 84px;}
-        .section1 .main_visual .main_tit_wrap {margin-bottom: 27px; text-align: left;}
-        .section1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 20px; font-size: 18px; line-height: 21px; font-weight: 400; color: #fff;}
-        .section1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding: 0 29px 32px 0; font-size: 46px; line-height: 60px; color: #fff;}
-        .section1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: .1px solid #fff;}
-        .section1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 117px; padding-right: 22px; font-size: 16px; line-height: 30px; font-weight: 700; color: #fff;}
-        .section1 .main_visual .main_txt_wrap dd {font-size: 18px; line-height: 30px; color: #fff; font-weight: 400;}
-        .section1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
-        .section1 .main_visual .btn {display: inline-block; padding: 21.5px 111px; margin-top: 60px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #fff; border-radius: 1px; cursor: pointer;}
-        .section1 .main_visual .btn a {color: #2871fa;}
-        .section1 .main_visual .txt_btn {position: relative; display: block; margin-top: 16px; padding-left: 26px !important; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff; text-decoration: underline; text-underline-offset: 5px; background: none; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer;}
-        .section1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;}
-        
-        /* section2 */
-        .section2 .sec02_tit {margin-bottom: 73px;}
-        .section2 .sec02_tit strong {position: relative; display: block; font-size: 40px; line-height: 56px; font-weight: 700; text-align: center;}
-        .section2 .sec02_tit strong:after {content: ""; display: block; position: absolute; top: 23px; left: 260px; width: 49px; height: 48px; background: url(../img/ico_tit_01.png) no-repeat center center / 100% 100%;}
-        .section2 .box_txt ul {display: flex; justify-content: space-between;}
-        .section2 .box_txt ul li {position: relative; padding: 54px 0 122px 32px; width: 305px; border-radius: 2px; box-shadow: 5px 5px 40px 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
-        .section2 .box_txt ul li span {display: block; margin-bottom: 2.1px; font-size: 2.4px; line-height: 3.6px; font-weight: 700; color: #2871fa;}
-        .section2 .box_txt ul li p {min-height: 120px; font-size: 16px; line-height: 24px; font-weight: 500; color: #666;}
-        .section2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -35px; right: 23px; margin-bottom: 0; font-size: 130px; line-height: 155px; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
-
-        /* section3 */
-        .section3 .sec03_tit strong {display: block; font-size: 40px; line-height: 56px; text-align: center;}
-
-        /* section4 */
+/* *********************************** application *********************************** */
 
 
 
@@ -174,107 +135,22 @@ section:last-child {padding: 23.2rem 0 32.1rem;}
 
 
 
+/* *********************************** complete1 *********************************** */
+.comp_sec {max-width: 1920px; margin: 0 auto; text-align: center;}
+.comp_sec .comp_wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.comp_sec .img_area {margin-bottom: 20px;}
+.comp_sec .txt_area {margin-bottom: 60px;}
+.comp_sec .txt_area strong {display: block; margin-bottom: 12px; font-size: 36px; line-height: 48px;}
+.comp_sec .txt_area p {font-size: 18px; line-height: 28px; color: #666;}
+.comp_sec .txt_area p em {position: relative; display: inline-block; font-size: 18px; line-height: 28px; color: #2871fa; font-weight: 700; z-index: 10;}
+.comp_sec .txt_area p em:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 14px; background: #5ff0bc; opacity: 0.25; z-index: -10;}
+.comp_sec .btn a {display: inline-block; padding: 21.5px 80px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #2871fa; border-radius: 10px; color: #fff;}
+
+@media screen and (max-width: 767px) {
+/* complete1 */
+
+}
 
 
 
-
-                /* reset */
-                html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0;border: 0; font-size: 100%; vertical-align: top; box-sizing: border-box;}
-                article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-                body {line-height: 1;}
-                ol, ul {list-style: none;}
-                blockquote, q {quotes: none;}
-                blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
-                table {border-collapse: collapse; border-spacing: 0;}
-                a, a:link {color: black; text-decoration: none;}
-                .clear {display: block; clear: both;}
-                dl, dt, dd {padding: 0; margin: 0;}
-                em {font-style: normal;}
-        
-                /* font */
-                @font-face {
-                    font-family: "Pretendard-Regular";
-                    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-                        format("woff");
-                    font-weight: 400;
-                    font-style: normal;
-                }
-                @font-face {
-                    font-family: "Pretendard-Bold";
-                    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
-                        format("woff");
-                    font-weight: 700;
-                    font-style: normal;
-                }
-                @font-face {
-                    font-family: "Pretendard-ExtraBold";
-                    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
-                        format("woff");
-                    font-weight: 900;
-                    font-style: normal;
-                }
-        
-        
-                /* common */
-                * {padding: 0; margin: 0; box-sizing: border-box;}
-                html {font-size: 10px; overflow-x: hidden; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
-                .wrap {max-width: 192rem; width: 100%; margin: 0 auto;}
-                .full {margin: 0 !important;}
-                section {margin: 0 32rem; padding: 16rem 0 0;}
-                section:first-child {padding: 10rem 0 0;}
-                section:last-child {padding: 23.2rem 0 32.1rem;}
-        
-                /* color */
-                .blue {color: #3b7cf3;}
-        
-                /* section1 */
-                .section1 {position: relative; background-color: #2871fa;}
-                .section1 .logo_area img {max-width: 100%;}
-                .section1 .visual_wrap {margin: 0 32rem; padding-bottom: 14rem;}
-                .section1 .main_visual {display: flex; justify-content: space-between;}
-                .section1 .main_visual .main_tit_wrap {margin-top: 6rem; text-align: left;}
-                .section1 .main_visual .main_tit_wrap p {margin-top: 2.4rem; font-size: 1.6rem; line-height: 2.4rem; color: #fff; font-weight: 400; opacity: .8;}
-                .section1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 2rem; font-size: 1.8rem; line-height: 3rem; font-weight: 400; color: #fff;}
-                .section1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding-bottom: 3.2rem; font-size: 5.2rem; line-height: 6.4rem; color: #fff;}
-                .section1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: .1rem solid #fff; opacity: .25;}
-                .section1 .main_visual .main_txt_wrap {margin-top: 2.4rem;}
-                .section1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 13.9rem; padding-right: 2.2rem; font-size: 1.6rem; line-height: 2.4rem; font-weight: 700; color: #fff;}
-                .section1 .main_visual .main_txt_wrap dd {font-size: 1.8rem; line-height: 3rem; color: #fff; font-weight: 400;}
-                .section1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
-                .section1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; font-size: 1.6rem; line-height: 2.4rem; color: #fff; font-weight: 400; opacity: .8;}
-                .section1 .main_visual .btn {position: relative; margin-top: 6rem;}
-                .section1 .main_visual .btn:before {content: ""; display: block; position: absolute; bottom: -4rem; right: -20.5rem; width: 21.3rem; height: 7.1rem; background: url(../img/img_arrow.png) no-repeat center / auto auto;}
-                .section1 .main_visual .btn a {display: inline-block; padding: 2.15rem 11.1rem; font-size: 1.8rem; line-height: 2.1rem; font-weight: 700; background-color: #fff; border-radius: 1rem; color: #2871fa;}
-                .section1 .main_visual .main_img img {max-width: 100%;}
-                /* .section1 .main_visual .txt_btn {position: relative; display: block; margin-top: 1.6rem; padding-left: 2.6rem !important; font-size: 1.6rem; line-height: 2.4rem; font-weight: 700; color: #fff; text-decoration: underline; text-underline-offset: .5rem; background: none; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer;} */
-                .section1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 2.5rem; height: 2.5rem; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;}
-                .section1 .fb_btn {position: absolute; bottom: 4rem; right: 4rem;}
-                .section1 .fb_btn a {display: inline-block; padding: 1.6rem 3.2rem; background-color: #fff; border-radius: 2rem;}
-                .section1 .fb_btn span {display: block; margin-top: .6rem; font-size: 1.4rem; line-height: 1.8rem; font-weight: 700; color: #585858;}
-        
-                /* section2 */
-                .section2 .sec02_tit {margin-bottom: 7.3rem;}
-                .section2 .sec02_tit strong {position: relative; display: block; font-size: 4rem; line-height: 5.6rem; font-weight: 700; text-align: center;}
-                .section2 .sec02_tit strong:after {content: ""; display: block; position: absolute; top: 2.3rem; left: 26rem; width: 4.9rem; height: 4.8rem; background: url(../img/ico_tit_01.png) no-repeat center center / 100% 100%;}
-                .section2 .box_txt ul {display: flex; justify-content: space-between;}
-                .section2 .box_txt ul li {position: relative; padding: 5.4rem 0 12.2rem 3.2rem; width: 30.5rem; border-radius: 2rem; box-shadow: .5rem .5rem 4rem 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
-                .section2 .box_txt ul li span {display: block; margin-bottom: 2.1rem; font-size: 2.4rem; line-height: 3.6rem; font-weight: 700; color: #2871fa;}
-                .section2 .box_txt ul li p {min-height: 12rem; font-size: 1.6rem; line-height: 2.4rem; font-weight: 500; color: #666;}
-                .section2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -3.5rem; right: 2.3rem; margin-bottom: 0; font-size: 13rem; line-height: 15.5rem; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
-        
-                /* section3 */
-                .section3 .sec03_tit strong {display: block; font-size: 4rem; line-height: 5.6rem; text-align: center;}
-        
-                /* section4 */
-        
-                @media screen and (max-width: 1698px) {
-        
-                }
-        
-                @media screen and (max-width: 1460px) {
-        
-                }
-        
-                @media screen and (max-width: 767px) {
-                    
-                }
+/* *********************************** complete2 *********************************** */

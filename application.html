@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>application</title>
+    <style>
+        .app_wrap {max-width: 640px; margin: 0 auto;}
+
+        /* radio */
+        .radio_st {position: relative; display: inline-block;}
+        .radio_st input {position: absolute; left: 0; width: 20px; height: 20px; opacity: 0; cursor: pointer;}
+        .radio_st label {display: block;}
+        .radio_st label::before {content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 4px; border: 1px solid #ccc; border-radius: 50%; vertical-align: middle;}
+        .radio_st label:empty::before {margin-right: 0;}
+        .radio_st input:checked + label::before {background-color: #ccc; border-color: #999;}
+        .radio_st input:focus-visible + label::before {outline: auto;}
+        .radio_st input:disabled + label::before {opacity: .5;}
+    </style>
+</head> 
+<body>
+    <div class="wrap">
+        <!-- container -->
+        <div id="container">
+            <div class="app_wrap">
+                <section class="app_sec1">
+                    <div class="tit_area">
+                        <img src="" alt="">
+                        <strong>PC버전 베타 테스트 신청</strong>
+                    </div>
+                    <div class="info_box">
+                        <dl>
+                            <dt>사전 신청</dt>
+                            <dd>2023.08.02 ~ 2023.08.09</dd>
+                            <dt>서비스 이용 기간</dt>
+                            <dd>2023.08.10 ~ 2023.09월 말 예정</dd>
+                            <dt>참여 조건</dt>
+                            <dd>
+                                <ul>
+                                    <li>01. 갤럭시 S23 시리즈 보유자</li>
+                                    <li>02. SK텔레콤 무선회선 보유</li>
+                                    <li>03. UOS 베타 서비스 참여자</li>
+                                    <li>
+                                        04. Windows 10, 12 설치 되어 있는 컴퓨터 보유<br>
+                                        (Windows 10 22H2 이상 권장)
+                                    </li>
+                                </ul>
+                            </dd> 
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="app_sec2">
+                    <strong>모든 참여 조건을 만족하시나요?</strong>
+                    <p>* 위 조건을 모두 만족해야 베타 테스트 참여가 가능합니다.</p>
+
+                    <div class="radio_wrap">
+                        <span class="radio_st">
+                            <input type="radio" id="radio01" name="radioType1">
+                            <label for="radio01">네</label>
+                        </span>
+                        <span class="radio_st">
+                            <input type="radio" id="radio02" name="radioType1" checked>
+                            <label for="radio02">아니오</label>
+                        </span>
+                    </div>
+                </section>
+
+                <section class="app_sec3">
+
+                </section>
+
+                <section class="app_sec4">
+
+                </section>
+            </div>
+        </div>
+        <!-- container -->
+    </div>    
+</body>
+</html>

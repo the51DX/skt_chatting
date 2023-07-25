@@ -4,136 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>skt_chatting</title>
-    <style>
-        /* reset */
-        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: top; box-sizing: border-box;}
-        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-        body {line-height: 1;}
-        ol, ul {list-style: none;}
-        blockquote, q {quotes: none;}
-        blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
-        table {border-collapse: collapse; border-spacing: 0;}
-        a, a:link {color: black; text-decoration: none;}
-        .clear {display: block; clear: both;}
-        dl, dt, dd {padding: 0; margin: 0;}
-        em {font-style: normal;}
-
-        /* font */
-        @font-face {
-            font-family: "Pretendard-Regular";
-            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-                format("woff");
-            font-weight: 400;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: "Pretendard-Bold";
-            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
-                format("woff");
-            font-weight: 700;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: "Pretendard-ExtraBold";
-            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
-                format("woff");
-            font-weight: 900;
-            font-style: normal;
-        }
-
-
-        /* common */
-        html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
-        .cnt_inn {max-width: 1920px; margin: 0 auto; padding: 160px 0;}
-
-
-        /* section1 */
-        .section1 {position: relative; background-color: #2871fa;}
-        .section1 .cnt_inn {padding-bottom: 0;}
-        .section1 .logo_area img {max-width: 100%;}
-        .section1 .visual_wrap {margin: 0 auto; padding-bottom: 140px;}
-        .section1 .main_visual {display: flex; justify-content: space-evenly;}
-        .section1 .main_visual .main_tit_wrap .logo_area {margin-bottom: 60px;}
-        .section1 .main_visual .main_tit_wrap {text-align: left;}
-        .section1 .main_visual .main_tit_wrap p {margin-top: 24px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
-        .section1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 20px; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff;}
-        .section1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding-bottom: 32px; font-size: 52px; line-height: 64px; color: #fff;}
-        .section1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: 1px solid #fff; opacity: .25;}
-        .section1 .main_visual .main_txt_wrap {margin-top: 24px;}
-        .section1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 139px; padding-right: 22px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff;}
-        .section1 .main_visual .main_txt_wrap dd {font-size: 18px; line-height: 30px; color: #fff; font-weight: 400;}
-        .section1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
-        .section1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
-        .section1 .main_visual .btn {position: relative; margin-top: 48px;}
-        .section1 .main_visual .btn:before {content: ""; display: block; position: absolute; bottom: -40px; right: -191px; width: 213px; height: 71px; background: url(../img/img_arrow.png) no-repeat center / auto auto;}
-        .section1 .main_visual .btn a {display: inline-block; padding: 21.5px 111px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #fff; border-radius: 10px; color: #2871fa;}
-        .section1 .main_visual .main_img img {max-width: 100%;}
-        .section1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;}
-        .section1 .fb_btn {position: absolute; bottom: 40px; right: 40px;}
-        .section1 .fb_btn a {display: inline-block; padding: 16px 32px; background-color: #fff; border-radius: 20px;}
-        .section1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; color: #585858;}
-
-        /* section2 */
-        .section2 .sec02_tit {margin-bottom: 73px;}
-        .section2 .sec02_tit strong {position: relative; display: block; margin-bottom: 20px; font-size: 40px; line-height: 56px; font-weight: 700; text-align: center;}
-        .section2 .sec02_tit p {font-size: 18px; line-height: 28px; color: #999; text-align: center;}
-        .section2 .box_txt ul {display: flex; justify-content: center;}
-        .section2 .box_txt ul li {position: relative; margin-right: 18px; padding: 54px 0 122px 32px; width: 305px; border-radius: 20px; box-shadow: 5px 5px 40px 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
-        .section2 .box_txt ul li:last-child {margin-right: 0;}
-        .section2 .box_txt ul li span {display: block; margin-bottom: 24px; font-size: 24px; line-height: 40px; font-weight: 700; color: #2871fa;}
-        .section2 .box_txt ul li p {min-height: 121px; font-size: 16px; line-height: 28px; font-weight: 500; color: #666;}
-        .section2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -35px; right: 23px; margin-bottom: 0; font-size: 130px; line-height: 155px; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
-
-        /* section3 */
-        .section3 {background-color: #fafafa;}
-        .section3 .sec03_tit strong {display: block; margin-bottom: 60px; font-size: 46px; line-height: 60px; text-align: center;}
-        .section3 .ct_wrap {margin: 0 auto; width: 1280px;}
-        .section3 .ct_wrap .ct_box {position: relative; margin: 0 0 40px; padding: 54px 0 54px 60px; max-width: 860px; width: 100%; background-color: #fff; border-radius: 60px 60px 60px 0; box-shadow: 7px 7px 40px 0 rgba(0, 0, 0, 0.07); text-align: left;}
-        .section3 .ct_wrap .ct_box.emo01:after {content: ""; display: block; position: absolute; bottom: 0; left: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_01.png) no-repeat center center / auto auto;}
-        .section3 .ct_wrap .ct_box.emo02:after {content: ""; display: block; position: absolute; top: 0; right: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_02.png) no-repeat center center / auto auto;}
-        .section3 .ct_wrap .ct_box.emo03:after {content: ""; display: block; position: absolute; bottom: 0; left: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_03.png) no-repeat center center / auto auto;}
-        .section3 .ct_wrap .ct_box.emo04:after {content: ""; display: block; position: absolute; top: 0; right: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_04.png) no-repeat center center / auto auto;}
-        .section3 .ct_wrap .ct_box.right {border-radius: 60px 0 60px 60px;}
-        .section3 .ct_wrap .ct_box strong {display: block; margin-bottom: 12px; font-size: 24px; line-height: 36px; color: #666;}
-        .section3 .ct_wrap .ct_box p {font-size: 18px; line-height: 28px; color: #999;}
-        .section3 .ct_wrap .ct_box p strong {display: inline-block; font-size: 18px; line-height: 28px; color: #999;}
-        .section3 .ct_wrap .ct_box em {position: relative; display: inline-block; font-size: 18px; line-height: 28px; color: #2871fa; font-weight: 700; z-index: 10;}
-        .section3 .ct_wrap .ct_box em:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 14px; background: #5ff0bc; opacity: 0.25; z-index: -10;}
-        .section3 .ct_wrap .ct_box .btn {margin-top: 24px;}
-        .section3 .ct_wrap .ct_box .btn a {padding: 16px 32px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff; background-color: #2871fa; border-radius: 10px;}
-         
-
-        /* section4 */
-
-
-        @media screen and (max-width: 1460px) {
-            /* section1 */
-            .section1 .main_visual .main_img img {display: none;}
-
-            /* section2 */
-            .section2 .box_txt ul {flex-wrap: wrap;}
-            .section2 .box_txt ul li {width: 35%; margin: 0 0 20px 10px;}
-            .section2 .box_txt ul li:nth-child(2n) {margin-right: 0;}
-        }
-
-        @media screen and (max-width: 767px) {
-            /* section1 */
-            .section1 .main_visual .btn:before {top: 0; right: 0;}
-
-            /* section2 */
-            .section2 .box_txt ul {padding: 0 20px;}
-            .section2 .box_txt ul li {width: 100%; margin: 0 0 20px;}
-        }
-
-    </style>
 </head> 
 <body>
     <div class="wrap">
         <!-- container -->
         <div id="container">
             <main id="main" class="content"> 
-                <section class="section section1">
+                <section class="main_sec1">
                     <div class="cnt_inn">
                         <div class="visual_wrap">
                             <div class="main_visual">
@@ -180,7 +60,7 @@
                     </div>
                 </section>
 
-                <section class="section section2">
+                <section class="main_sec2">
                     <div class="cnt_inn">
                         <div class="sec02_tit">
                             <strong>지금 바로 채팅+의<br> PC 버전을 체험해보세요! </strong> 
@@ -229,7 +109,7 @@
                     </div>
                 </section>
 
-                <section class="section section3">
+                <section class="main_sec3">
                     <div class="cnt_inn">
                         <div class="sec03_tit">
                             <strong>채팅+ PC 베타 버전<br> 이용 전에 확인하세요!</strong>    
@@ -276,17 +156,39 @@
                     </div>
                 </section>
 
-                <section class="section section4">
+                <section class="main_sec4">
                     <div class="cnt_inn">
-                        <div class="accordion_wrap">
-                            <div class="sec04_tit"> 
-                                <span>무엇을 도와드릴까요?</span>    
+                        <div class="sec04_tit"> 
+                            <strong>무엇을 도와드릴까요?</strong>    
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
+                            <div class="acc_cont">
+                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
                             </div>
-                            <div class="acc_inn">
-                                <span>
-                                    <a href="#"></a>
-                                    <p></p>
-                                </span>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
+                            <div class="acc_cont">
+                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
+                            <div class="acc_cont">
+                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
+                            <div class="acc_cont">
+                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
+                            <div class="acc_cont">
+                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
                             </div>
                         </div>
                     </div>
@@ -306,9 +208,46 @@
         </div>
         <!-- container -->
     </div>
-</body>
-<script src=""></script>
-<script>
 
+    <div id="accordion" class="accordion-container">
+        <h4 class="accordion-title js-accordion-title">Accordion Title1</h4>
+        <div class="accordion-content">
+          <p>Accordion Content1</p>
+        </div>
+        <h4 class="accordion-title js-accordion-title">Accordion Title2</h4>
+        <div class="accordion-content">
+          <p>Accordion Content2</p>
+        </div>
+        <h4 class="accordion-title js-accordion-title">Accordion Title3</h4>
+        <div class="accordion-content">
+          <p>Accordion Content3</p>
+        </div>
+    </div>
+
+</body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // accdion
+    $(function () {
+        $(".acc_cont:not(:first-of-type)").css("display", "none");
+        $(".js_acc_tit:first-of-type").addClass("open");
+        $(".js_acc_tit").click(function () {
+            $(".open").not(this).removeClass("open").next().slideUp(300);
+            $(this).toggleClass("open").next().slideToggle(300);
+        });
+    });
+
+    $(function () {
+  // 最初のコンテンツ以外は非表示
+  $(".accordion-content:not(:first-of-type)").css("display", "none");
+  // 矢印の向きを変えておく
+  $(".js-accordion-title:first-of-type").addClass("open");
+ 
+  $(".js-accordion-title").click(function () {
+    $(".open").not(this).removeClass("open").next().slideUp(300);
+    $(this).toggleClass("open").next().slideToggle(300);
+  });
+});
 </script>
 </html>

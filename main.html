@@ -38,10 +38,8 @@
                                     <div class="btn">
                                         <a href="#none" target="_blank">베타 서비스 신청하기</a>
                                     </div>
-                                    <p>
-                                        * 불가피한 상황 등으로 인해 일정이 조정될 수 있습니다.<br>
-                                          변경이 있을 경우 별도로 안내드리겠습니다.
-                                    </p>
+                                    <p>* 불가피한 상황 등으로 인해 일정이 조정될 수 있습니다.</p>
+                                    <p class="in">변경이 있을 경우 별도로 안내드리겠습니다.</p> 
                                 </div>
                                 
                                 <div class="main_img">
@@ -170,13 +168,22 @@
                         <div class="acc_wrap">
                             <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
                             <div class="acc_cont">
-                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
+                              <p>A. UOS 베타 서비스에 참여 중이시라면 해당 링크 (나중에 추가)를 통해 재설치 하실 수 있습니다.</p>
                             </div>
                         </div>
                         <div class="acc_wrap">
                             <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
                             <div class="acc_cont">
-                              <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해주시면 됩니다.</p>
+                              <p>
+                                01. 스마트 폰에서 채팅+ 앱을 켭니다<br>
+                                02. 채팅 + 앱 우측 상단에 있는 "더보기 (점 3개) 버튼"을 클릭합니다.<br>
+                                03. "채팅+ PC 버전" 메뉴를 클릭합니다.<br>
+                                04. "Terms and Conditions"를 클릭합니다.<br>
+                                05. 이용 약관 리스트 중 "필수 약관" 중 한 개를 클릭합니다.<br>
+                                06. 탈퇴하기 버튼을 클릭합니다.<br>
+                                 (참고: 해당 방법은 UOS 베타 서비스를 탈퇴 방법이 아닙니다. UOS 탈퇴를 원하신다면 아래 방법을 참고하세요)</li>
+                                </ul>
+                              </p>
                             </div>
                         </div>
                         <div class="acc_wrap">
@@ -193,35 +200,26 @@
                         </div>
                     </div>
                 </section>
-            </main>
+            </main> 
 
             <footer id="footer">
                 <div class="cnt_inn">
-                    <div class="ft_wrap">
-                        <div class="ft_logo">
-                            <img src="../img/footer_logo.png" alt="">
-                        </div>
-    
+                    <div class="ft_logo">
+                        <img src="../img/footer_logo.svg" alt="">
+                    </div>
+                    <div class="ft_txt">
+                        <ul>
+                            <li>에스케이텔레콤㈜</li>
+                            <li>대표이사/사장 : 유영상</li>
+                            <li>사업자등록번호 : 104-81-37225</li>
+                            <li>서울특별시 중구 을지로 65</li>
+                        </ul>
+                        <p>COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
                     </div>
                 </div>
             </footer>
         </div>
         <!-- container -->
-    </div>
-
-    <div id="accordion" class="accordion-container">
-        <h4 class="accordion-title js-accordion-title">Accordion Title1</h4>
-        <div class="accordion-content">
-          <p>Accordion Content1</p>
-        </div>
-        <h4 class="accordion-title js-accordion-title">Accordion Title2</h4>
-        <div class="accordion-content">
-          <p>Accordion Content2</p>
-        </div>
-        <h4 class="accordion-title js-accordion-title">Accordion Title3</h4>
-        <div class="accordion-content">
-          <p>Accordion Content3</p>
-        </div>
     </div>
 
 </body>
@@ -237,17 +235,5 @@
             $(this).toggleClass("open").next().slideToggle(300);
         });
     });
-
-    $(function () {
-  // 最初のコンテンツ以外は非表示
-  $(".accordion-content:not(:first-of-type)").css("display", "none");
-  // 矢印の向きを変えておく
-  $(".js-accordion-title:first-of-type").addClass("open");
- 
-  $(".js-accordion-title").click(function () {
-    $(".open").not(this).removeClass("open").next().slideUp(300);
-    $(this).toggleClass("open").next().slideToggle(300);
-  });
-});
 </script>
 </html>

@@ -27,6 +27,7 @@
 /* common */
 html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
 .cnt_inn {max-width: 1920px; margin: 0 auto; padding: 160px 0;}
+.clearfix::after{content: ""; display: block; clear: both;}
 
 
 /* *********************************** main *********************************** */
@@ -40,6 +41,7 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 .main_sec1 .main_visual .main_tit_wrap .logo_area {margin-bottom: 60px;}
 .main_sec1 .main_visual .main_tit_wrap {text-align: left;}
 .main_sec1 .main_visual .main_tit_wrap p {margin-top: 24px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
+.main_sec1 .main_visual .main_tit_wrap .in {margin-top: 0; padding-left: 12px;}
 .main_sec1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 20px; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff;}
 .main_sec1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding-bottom: 32px; font-size: 52px; line-height: 64px; color: #fff;}
 .main_sec1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: 1px solid #fff; opacity: .25;}
@@ -94,10 +96,21 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 .main_sec4 .acc_wrap .acc_tit:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-top: 1px solid #dedede;}
 .main_sec4 .acc_wrap .acc_tit:hover,
 .main_sec4 .acc_wrap .acc_tit:active {color: #2871fa;}
-.main_sec4 .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #000; border-right: 3px solid #000; transform: rotate(135deg);}
+.main_sec4 .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 44%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #000; border-right: 3px solid #000; transform: rotate(135deg);}
 .main_sec4 .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #2871fa; border-right: 3px solid #2871fa; transform: rotate(315deg);}
 .main_sec4 .acc_wrap .acc_cont {padding: 40px 0 40px 48px; background-color: #fafafa;}
+.main_sec4 .acc_wrap .acc_cont:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-bottom: 1px solid #dedede;}
 
+
+/* footer */
+#footer {background-color: #fafafa;}
+#footer .ft_logo {padding-right: 51px;}
+#footer .cnt_inn {padding: 60px 0; max-width: 1280px; display: flex; align-items: center;}
+#footer .ft_txt ul {display: flex; margin-bottom: 8px;}
+#footer .ft_txt ul li {position: relative; padding: 0 12px; font-size: 16px; line-height: 24px;}
+#footer .ft_txt ul li:after {content: ""; display: block; position: absolute; top: 4px; left: 0; width: 1px; height: 14px; background-color: #000; opacity: .3;}
+#footer .ft_txt ul li:first-child:after {width: 0;}
+#footer .ft_txt p {padding-left: 12px; font-size: 16px; line-height: 24px;}
   
 
 @media screen and (max-width: 1460px) {
@@ -108,11 +121,14 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
     .main_sec2 .box_txt ul {flex-wrap: wrap;}
     .main_sec2 .box_txt ul li {width: 35%; margin: 0 0 20px 10px;}
     .main_sec2 .box_txt ul li:nth-child(2n) {margin-right: 0;}
+
+    /* section4 */
+    .main_sec4 .acc_wrap {padding: 0 20px;}
 }
 
 @media screen and (max-width: 767px) {
     /* section1 */
-    .main_sec1 .main_visual .btn:before {top: 0; right: 0;}
+    .main_sec1 .main_visual .btn:before {display: none;}
 
     /* section2 */
     .main_sec2 .box_txt ul {padding: 0 20px;}
@@ -135,7 +151,7 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 
 
 
-/* *********************************** complete1 *********************************** */
+/* *********************************** complete *********************************** */
 .comp_sec {max-width: 1920px; margin: 0 auto; text-align: center;}
 .comp_sec .comp_wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .comp_sec .img_area {margin-bottom: 20px;}
@@ -150,7 +166,3 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 /* complete1 */
 
 }
-
-
-
-/* *********************************** complete2 *********************************** */

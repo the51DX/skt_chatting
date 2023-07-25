@@ -1,11 +1,267 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>skt_chatting</title>
+    <style>
+        /* reset */
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: top; box-sizing: border-box;}
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+        body {line-height: 1;}
+        ol, ul {list-style: none;}
+        blockquote, q {quotes: none;}
+        blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+        table {border-collapse: collapse; border-spacing: 0;}
+        a, a:link {color: black; text-decoration: none;}
+        .clear {display: block; clear: both;}
+        dl, dt, dd {padding: 0; margin: 0;}
+        em {font-style: normal;}
+
+        /* font */
+        @font-face {
+            font-family: "Pretendard-Regular";
+            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+                format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Pretendard-Bold";
+            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+                format("woff");
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Pretendard-ExtraBold";
+            src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
+                format("woff");
+            font-weight: 900;
+            font-style: normal;
+        }
+
+
+        /* common */
+        html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
+        .cnt_inn {max-width: 1920px; margin: 0 auto; padding: 160px 0 0;}
+
+
+        /* section1 */
+        .section1 {position: relative; background-color: #2871fa;}
+        .section1 .logo_area img {max-width: 100%;}
+        .section1 .visual_wrap {margin: 0 auto; padding-bottom: 140px;}
+        .section1 .main_visual {display: flex; justify-content: space-evenly;}
+        .section1 .main_visual .main_tit_wrap .logo_area {margin-bottom: 60px;}
+        .section1 .main_visual .main_tit_wrap {text-align: left;}
+        .section1 .main_visual .main_tit_wrap p {margin-top: 24px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
+        .section1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 20px; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff;}
+        .section1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding-bottom: 32px; font-size: 52px; line-height: 64px; color: #fff;}
+        .section1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: 1px solid #fff; opacity: .25;}
+        .section1 .main_visual .main_txt_wrap {margin-top: 24px;}
+        .section1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 139px; padding-right: 22px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff;}
+        .section1 .main_visual .main_txt_wrap dd {font-size: 18px; line-height: 30px; color: #fff; font-weight: 400;}
+        .section1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
+        .section1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
+        .section1 .main_visual .btn {position: relative; margin-top: 48px;}
+        .section1 .main_visual .btn:before {content: ""; display: block; position: absolute; bottom: -40px; right: -205px; width: 213px; height: 71px; background: url(../img/img_arrow.png) no-repeat center / auto auto;}
+        .section1 .main_visual .btn a {display: inline-block; padding: 21.5px 111px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #fff; border-radius: 10px; color: #2871fa;}
+        .section1 .main_visual .main_img img {max-width: 100%;}
+        /* .section1 .main_visual .txt_btn {position: relative; display: block; margin-top: 1.6px; padding-left: 2.6px !important; font-size: 1.6px; line-height: 2.4px; font-weight: 700; color: #fff; text-decoration: underline; text-underline-offset: .5px; background: none; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer;} */
+        .section1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;}
+        .section1 .fb_btn {position: absolute; bottom: 40px; right: 40px;}
+        .section1 .fb_btn a {display: inline-block; padding: 16px 32px; background-color: #fff; border-radius: 20px;}
+        .section1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; color: #585858;}
+
+        /* section2 */
+        .section2 .sec02_tit {margin-bottom: 73px;}
+        .section2 .sec02_tit strong {position: relative; display: block; font-size: 40px; line-height: 56px; font-weight: 700; text-align: center;}
+        .section2 .sec02_tit strong:after {content: ""; display: block; position: absolute; top: 23px; left: 260px; width: 49px; height: 48px; background: url(../img/ico_tit_01.png) no-repeat center center / 100% 100%;}
+        .section2 .box_txt ul {display: flex; justify-content: space-between;}
+        .section2 .box_txt ul li {position: relative; padding: 54px 0 122px 32px; width: 305px; border-radius: 20px; box-shadow: 5px 5px 40px 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
+        .section2 .box_txt ul li span {display: block; margin-bottom: 21px; font-size: 24px; line-height: 36px; font-weight: 700; color: #2871fa;}
+        .section2 .box_txt ul li p {min-height: 120px; font-size: 16px; line-height: 24px; font-weight: 500; color: #666;}
+        .section2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -35px; right: 23px; margin-bottom: 0; font-size: 130px; line-height: 155px; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
+
+        /* section3 */
+        .section3 .sec03_tit strong {display: block; font-size: 40px; line-height: 56px; text-align: center;}
+
+        /* section4 */
+
+
+        @media screen and (max-width: 1460px) {
+            /* section1 */
+            .section1 .main_visual {justify-content: center;}
+            .section1 .main_visual .main_img img {display: none;}
+        }
+
+        @media screen and (max-width: 767px) {
+            
+        }
+
+    </style>
+</head> 
 <body>
-    
+    <div class="wrap">
+        <!-- container -->
+        <div id="container">
+            <main id="main" class="content"> 
+                <section class="section section1">
+                    <div class="cnt_inn">
+                        <div class="visual_wrap">
+                            <div class="main_visual">
+                                <div class="main_tit_wrap">
+                                    <div class="logo_area">
+                                        <h1 class="logo"><a><img src="../img/logo.svg" alt=""></a></h1>
+                                    </div>
+                                    <span>드디어 베타 출시!</span>
+                                    <h2>내 문자와 연동되는<br> PC 메신저를<br> 미리 체험해보세요!</h2>
+                                    
+                                    <div class="main_txt_wrap">
+                                        <dl>
+                                            <dt>사전 신청 기간</dt>
+                                            <dd>2023.08.02 - 2023.08.09</dd>
+                                            <dt>정식 테스트 기간</dt>
+                                            <dd>
+                                                2023.08.10 - 2023.9월 
+                                                <span>(해당 기간에도 신청 가능)</span>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="#none" target="_blank">베타 서비스 신청하기</a>
+                                    </div>
+                                    <p>
+                                        * 불가피한 상황 등으로 인해 일정이 조정될 수 있습니다.<br>
+                                          변경이 있을 경우 별도로 안내드리겠습니다.
+                                    </p>
+                                    <!-- <button type="button" class="txt_btn">채팅+ PC 버전 더 알아보기</button> -->
+                                </div>
+                                
+                                <div class="main_img">
+                                    <img src="../img/img_visual.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div> 
+     
+                        <div class="fb_btn">
+                            <a href="#none" target="_blank">
+                                <img src="../img/ico_feedback.png" alt="">
+                                <span>피드백<br> 보내기</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section2">
+                    <div class="cnt_inn">
+                        <div class="sec02_tit">
+                            <strong>지금 바로 채팅+의<br> PC 버전을 체험해보세요! </strong> 
+                            <p>테스트에 참여하기 위해 필요한 4가지 환경을 확인해보세요.</p>   
+                        </div>
+                        <div class="box_txt">
+                            <ul>
+                                <li>
+                                    <span>UOS 베타 참여자</span>
+                                    <p>
+                                        채팅 + PC 버전은 삼성<br>
+                                        UOS 기능 중 하나로, UOS<br>
+                                        베타 버전 신청이 필수입니다
+                                    </p>
+                                    <span class="num">1</span>
+                                </li>
+                                <li>
+                                    <span>SK텔레콤 무선 가입자</span>
+                                    <p>
+                                        SK텔레콤 한정 제공 서비스<br>
+                                        로, SK텔레콤 무선 가입자<br>
+                                        여야 합니다
+                                    </p>
+                                    <span class="num">2</span>
+                                </li>
+                                <li>
+                                    <span>갤럭시S23 시리즈 사용자</span>
+                                    <p>
+                                        채팅+ PC 버전 베타 프로그<br>
+                                        램은 갤럭시 S23 시리즈만<br>
+                                        지원합니다 
+                                    </p>
+                                    <span class="num">3</span>
+                                </li>
+                                <li>
+                                    <span>Windows 10, 11 PC</span>
+                                    <p>
+                                        Windows 10, 11 PC만 지<br>
+                                        원합니다. (Windows10<br>
+                                        22H2 이상 권장)
+                                    </p>
+                                    <span class="num">4</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section3">
+                    <div class="sec03_tit">
+                        <strong>채팅+ PC 베타 버전<br> 이용 전에 확인하세요!</strong>    
+                    </div>
+                    <div class="ct_wrap">
+                        <div class="ct_inn">
+                            <div class="ct_box">
+                                <strong>사전 신청자는 언제 채팅+ PC버전 다운로드 파일을 받을 수 있나요?</strong>
+                                <p>사전 기간에 신청하신 사용자에게는 8월 10일에 다운로드 파일을 전달 주신 메일로 전달할 예정입니다.</p>
+                            </div>
+                            <div class="ct_box">
+                                <strong>채팅+ PC 버전 베타 프로그램은 기밀인가요?</strong>
+                                <p>이용자는 서비스를 개인적, 비상업적 용도로 사용해야 하며, 이용 약관에 명시된 금지 사항 항목을 준수해야 합니다.</p>
+                            </div>
+                            <div class="ct_box">
+                                <strong>PC에 채팅+ PC 버전 베타 프로그램 설치 혹은 사용 중 오류가 발생했습니다.<br> 어떻게 해야하나요?</strong>
+                                <p>
+                                    베타 프로그램이더라도 재설치가 가능하기 때문에<em>설치 중인 파일을 삭제해주시고 재설치</em> 부탁 드립니다.
+                                    또한 정식 출시 버전이 아니기 때문에 예기치 못한 오류 및 정지 등의 상황이 발생할 수 있습니다.
+                                    이와 같은 문제가 지속적으로 발생할 경우 [문제 신고하기] 버튼을 통해 문제를 공유해주세요.
+                                </p>
+                                <div class="txt_btn">
+                                    <a href="#" target="_blank">피드백 보내기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section4">
+                    <div class="accordion_wrap">
+                        <div class="sec04_tit"> 
+                            <span>무엇을 도와드릴까요?</span>    
+                        </div>
+                        <div class="acc_inn">
+                            <span>
+                                <a href="#"></a>
+                                <p></p>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer">
+                <div class="ft_wrap">
+                    <div class="ft_logo">
+                        <img src="../img/footer_logo.png" alt="">
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+        <!-- container -->
+    </div>
 </body>
+<script src=""></script>
+<script>
+
+</script>
 </html>

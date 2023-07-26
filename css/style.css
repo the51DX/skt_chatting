@@ -250,8 +250,9 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
         margin: 40px auto 0;
     }
     .wrap_complete .comp_sec .txt_box {
-        margin-top: 80px;
+        flex-direction: column;
         gap: 20px;
+        margin-top: 80px;
     }
     
 }

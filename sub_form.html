@@ -58,11 +58,11 @@
                         <form class="form_condition">
                             <fieldset>
                                 <div>
-                                    <input type="radio" id="yes" name="condition" checked>
+                                    <input type="radio" id="yes" class="j-valuedation j-radio" name="condition">
                                     <label for="yes">네</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="no" name="condition">
+                                    <input type="radio" id="no" class="j-valuedation j-radio" name="condition">
                                     <label for="no">아니오</label>
                                 </div>
                             </fieldset>
@@ -78,15 +78,15 @@
                             <fieldset>
                                 <div>
                                     <label for="name">이름</label>
-                                    <input type="text" id="name" placeholder="이름을 입력해 주세요">
+                                    <input type="text" id="name" class="j-valuedation j-text" placeholder="이름을 입력해 주세요">
                                 </div>
                                 <div>
                                     <label  for="tel">휴대폰 번호</label>
-                                    <input type="tel" id="tel" placeholder="- 없이 숫자만 입력해 주세요">
+                                    <input type="tel" id="tel" class="j-valuedation j-text" placeholder="- 없이 숫자만 입력해 주세요">
                                 </div>
                                 <div>
                                     <label for="email">이메일</label>
-                                    <input type="email" id="email" placeholder="이메일을 입력해 주세요">
+                                    <input type="email" id="email" class="j-valuedation j-text" placeholder="이메일을 입력해 주세요">
                                 </div>
                             </fieldset>
                         </form>
@@ -98,7 +98,7 @@
                     <div class="form_cont">
                         <form class="form_terms">
                             <div>
-                                <input type="checkbox" id="privacy" class="terms_btn">
+                                <input type="checkbox" id="privacy" class="terms_btn j-valuedation">
                                 <label for="privacy"><span>(필수)</span> 개인정보 수집 및 이용에 대한 동의</label>
                             </div>
                             <div class="scrolled">
@@ -118,7 +118,7 @@
                                 - 채팅+ PC 버전은 SK텔레콤 사용자에게만 제공하는 UOS 신규 업데이트 기능 중 하나입니다. 삼성전자 UOS Beta 참여 주의 사항 및 관련 약관 등은 채팅+ PC 버전에도 동일하게 적용되오니, 확인해 주시기 바랍니다. 이를 확인하지 않은 사용자의 모든 실책에 대해서는 SK텔레콤에서 책임지지 않습니다.
                             </div>
                             <div>
-                                <input type="checkbox" id="secret" class="terms_btn">
+                                <input type="checkbox" id="secret" class="terms_btn j-valuedation">
                                 <label for="secret"><span>(필수)</span> 비밀 보호 서약서</label>
                             </div>
                             <div class="scrolled">
@@ -137,7 +137,7 @@
                                 이상과 같이 서약하며 그 증거로서 본 서약서를 작성하여 서명하고 제출합니다.
                             </div>
                             <div>
-                                <input type="checkbox" id="age" class="terms_btn">
+                                <input type="checkbox" id="age" class="terms_btn j-valuedation">
                                 <label for="age"><span>(필수)</span> 만 14세 이상입니다.</label>
                             </div>
                             <div class="scrolled">
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="form_btn_wrap">
-                    <button class="form_btn">신청하기</button>
+                    <button class="form_btn" disabled="true">신청하기</button>
                 </div>
             </div>
         </div>
@@ -162,18 +162,57 @@
     $(document).ready(function(){
         let btn_checkboxs = document.querySelectorAll('.terms_btn');
         let form_btn = document.querySelector('.form_btn');
+        let valuedation = document.querySelectorAll('.j-valuedation');
+        let myRadio = document.querySelectorAll('.j-radio');
+        let textBox = document.querySelectorAll('.j-text');
         let Check = 0;
+        let fnCheckValue = function(){
+            console.log(Check)
+            if(valuedation.length - 1 === Check){
+                form_btn.classList.add('active')
+                $(form_btn).removeAttr('disabled')
+            }
+            else{
+                form_btn.classList.remove('active')
+                $(form_btn).attr('disabled', true)
+            }
+        }
+        let fnPuls = function(){
+            Check++;
+        }
+        let fnMinus = function(){
+            Check--;
+        }
         btn_checkboxs.forEach (el => {
             el.addEventListener('change', () => {
                 el.checked ? Check++ : Check--;
-                if(btn_checkboxs.length === Check){
-                    form_btn.classList.add('active')
-                }
-                else{
-                    form_btn.classList.remove('active')
-                }
+                fnCheckValue()
             })
         })  
+        myRadio.forEach (el => {
+            el.addEventListener('change', () => {
+                if(el.id === "yes"){
+                    Check++;
+                }
+                else if(el.id === "no"){
+                    Check--;
+                }
+                fnCheckValue()
+            })
+        })  
+        textBox.forEach (el => {
+            el.addEventListener('input', () => {
+                if(el.value.length > 0 && !el.classList.contains('on')){
+                    el.classList.add('on')
+                    fnPuls();
+                }
+                else if(el.value.length <= 0){
+                    el.classList.remove('on')
+                    fnMinus();
+                }
+                fnCheckValue()
+            })
+        })
     });
 </script>
 </html>

@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>application</title>
     <style>
-        .app_wrap {max-width: 640px; margin: 0 auto;}
+        .app_wrap {max-width: 640px; margin: 200px auto;}
+        .app_wrap .app_sec1 .tit_area {margin-bottom: 60px; text-align: center;}
+        .app_wrap .app_sec1 strong {display: block; font-size: 36px; line-height: 48px;}
 
         .radio_st {position: relative; display: inline-block;}
         .radio_st input {position: absolute; left: 0; width: 20px; height: 20px; opacity: 0; cursor: pointer;}
@@ -19,7 +21,9 @@
         .radio_st input:focus-visible + label::before {outline: auto;}
         .radio_st input:disabled + label::before {opacity: .5;}
 
-        #joinForm {width: 460px; margin: 0 auto;}
+
+
+
         /* ul.terms_box {border: 1px solid #ddd;background-color: #fff;} */
         .checkBox,.checkBox>ul {position: relative;}
         .checkBox>ul>li {float: left;}
@@ -40,15 +44,28 @@
             <div class="app_wrap">
                 <section class="app_sec1">
                     <div class="tit_area">
-                        <img src="" alt="">
+                        <img src="./img/img_app_tit.png" alt="">
                         <strong>PC버전 베타 테스트 신청</strong>
                     </div>
+
+                    <style>
+                        .app_wrap .app_sec1 {position: relative; margin-bottom: 60px;}
+                        .app_wrap .app_sec1:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #ebebeb;}
+                        .app_wrap .app_sec1 .info_box {padding: 40px 0 40px 40px; background-color: #fafafa; border-radius: 20px;}
+                        .app_wrap .app_sec1 .info_box dt {float: left; clear: left; display: block; margin-bottom: 16px; width: 142px; padding-right: 24px; font-size: 16px; line-height: 24px; font-weight: 700; color: #000;}
+                        .app_wrap .app_sec1 .info_box dd {font-size: 18px; line-height: 30px; color: #666; font-weight: 400;}
+                        .app_wrap .app_sec1 .info_box dd:after {content: ""; display: table; clear: both;}
+                        .app_wrap .app_sec1 .info_box dd em {font-size: 14px; line-height: 30px; color: #999;}
+                        .app_wrap .app_sec1 .info_box dd ul {display: block; margin-bottom: 0; padding-left: 139px; font-size: 16px; line-height: 24px; color: #666; font-weight: 400; opacity: .8;}
+                        .app_wrap .app_sec1 .info_box dd ul li {margin-bottom: 4px; font-size: 18px; line-height: 30px; color: #666; font-weight: 400;}
+                    </style>
+
                     <div class="info_box">
                         <dl>
                             <dt>사전 신청</dt>
                             <dd>2023.08.02 ~ 2023.08.09</dd>
                             <dt>서비스 이용 기간</dt>
-                            <dd>2023.08.10 ~ 2023.09월 말 예정</dd>
+                            <dd>2023.08.10 ~ 2023.09월 말 예정 <em>(해당 일정에도 테스트 신청 가능)</em></dd>
                             <dt>참여 조건</dt>
                             <dd>
                                 <ul>
@@ -57,7 +74,7 @@
                                     <li>03. UOS 베타 서비스 참여자</li>
                                     <li>
                                         04. Windows 10, 12 설치 되어 있는 컴퓨터 보유<br>
-                                        (Windows 10 22H2 이상 권장)
+                                        <em>(Windows 10 22H2 이상 권장)</em>
                                     </li>
                                 </ul>
                             </dd> 
@@ -71,11 +88,11 @@
 
                     <div class="radio_wrap">
                         <span class="radio_st">
-                            <input type="radio" id="radio01" name="radioType1">
+                            <input type="radio" id="radio01" name="radioType1" checked>
                             <label for="radio01">네</label>
                         </span>
                         <span class="radio_st">
-                            <input type="radio" id="radio02" name="radioType1" checked>
+                            <input type="radio" id="radio02" name="radioType1">
                             <label for="radio02">아니오</label>
                         </span>
                     </div>

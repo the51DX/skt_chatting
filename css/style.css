@@ -28,6 +28,7 @@
 html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
 .cnt_inn {max-width: 1920px; margin: 0 auto; padding: 160px 0;}
 .clearfix::after{content: ""; display: block; clear: both;}
+.mb16 {margin-bottom: 16px;}
 
 
 /* *********************************** main *********************************** */
@@ -49,7 +50,7 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 .main_sec1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 139px; padding-right: 22px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff;}
 .main_sec1 .main_visual .main_txt_wrap dd {font-size: 18px; line-height: 30px; color: #fff; font-weight: 400;}
 .main_sec1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
-.main_sec1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
+.main_sec1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; padding-left: 139px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
 .main_sec1 .main_visual .btn {position: relative; margin-top: 48px;}
 .main_sec1 .main_visual .btn:before {content: ""; display: block; position: absolute; bottom: -40px; right: -191px; width: 213px; height: 71px; background: url(../img/img_arrow.png) no-repeat center / auto auto;}
 .main_sec1 .main_visual .btn a {display: inline-block; padding: 21.5px 111px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #fff; border-radius: 10px; color: #2871fa;}
@@ -79,7 +80,7 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 .main_sec3 .ct_wrap .ct_box.emo02:after {content: ""; display: block; position: absolute; top: 0; right: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_02.png) no-repeat center center / auto auto;}
 .main_sec3 .ct_wrap .ct_box.emo03:after {content: ""; display: block; position: absolute; bottom: 0; left: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_03.png) no-repeat center center / auto auto;}
 .main_sec3 .ct_wrap .ct_box.emo04:after {content: ""; display: block; position: absolute; top: 0; right: -92px; width: 70px; height: 70px; background: url(../img/img_emoticon_04.png) no-repeat center center / auto auto;}
-.main_sec3 .ct_wrap .ct_box.right {border-radius: 60px 0 60px 60px;}
+.main_sec3 .ct_wrap .ct_box.right {border-radius: 60px 0 60px 60px; margin-left: 420px;}
 .main_sec3 .ct_wrap .ct_box strong {display: block; margin-bottom: 12px; font-size: 24px; line-height: 36px; color: #666;}
 .main_sec3 .ct_wrap .ct_box p {font-size: 18px; line-height: 28px; color: #999;}
 .main_sec3 .ct_wrap .ct_box p strong {display: inline-block; font-size: 18px; line-height: 28px; color: #999;}
@@ -95,11 +96,15 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 .main_sec4 .acc_wrap .acc_tit {position: relative; display: block; padding: 41.5px 0 41.5px 20px; font-size: 18px; font-weight: 700; color: #000; cursor: pointer;}
 .main_sec4 .acc_wrap .acc_tit:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-top: 1px solid #dedede;}
 .main_sec4 .acc_wrap .acc_tit:hover,
-.main_sec4 .acc_wrap .acc_tit:active {color: #2871fa;}
+.main_sec4 .acc_wrap .acc_tit.open {color: #2871fa;}
 .main_sec4 .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 44%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #000; border-right: 3px solid #000; transform: rotate(135deg);}
 .main_sec4 .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #2871fa; border-right: 3px solid #2871fa; transform: rotate(315deg);}
-.main_sec4 .acc_wrap .acc_cont {padding: 40px 0 40px 48px; background-color: #fafafa;}
+.main_sec4 .acc_wrap .acc_cont {display: none; padding: 40px 0 40px 48px; background-color: #fafafa;}
 .main_sec4 .acc_wrap .acc_cont:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-bottom: 1px solid #dedede;}
+.main_sec4 .acc_wrap .acc_cont p {font-size: 18px; line-height: 24px;}
+.main_sec4 .acc_wrap .acc_cont .txt_btn a {position: relative; padding-right: 20px; padding-bottom: 2px; margin-top: 20px; font-size: 16px; line-height: 24px; font-weight: 700;}
+.main_sec4 .acc_wrap .acc_cont .txt_btn a:before {content: ""; display: block; position: absolute; top: 0; right: 0; width: 20px; height: 20px; background: url(../img/btn_arrow.png) no-repeat center center / auto auto;}
+.main_sec4 .acc_wrap .acc_cont .txt_btn a:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #000;}
 
 
 /* footer */
@@ -162,7 +167,12 @@ html, body {padding: 0; margin: 0; box-sizing: border-box; font-family: "Pretend
 .comp_sec .txt_area p em:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 14px; background: #5ff0bc; opacity: 0.25; z-index: -10;}
 .comp_sec .btn a {display: inline-block; padding: 21.5px 80px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #2871fa; border-radius: 10px; color: #fff;}
 
-@media screen and (max-width: 767px) {
-/* complete1 */
+.comp_wrap .btn_area {display: flex; justify-content: center; margin-bottom: 160px;}
+.comp_wrap .btn_area {display: flex; justify-content: center; margin-bottom: 160px;}
+.comp_wrap .btn_area .btn.blue_btn {margin-right: 10px; border-radius: 10px;}
+.comp_wrap .btn_area .btn.blue_btn a {padding: 21.5px 32px; font-size: 18px; line-height: 21px; color: #fff; border-radius: 10px; background-color: #2871fa;}
+.comp_wrap .btn_area .btn a {font-size: 18px; line-height: 21px; color: #2871fa; background-color: #fff; border: 1px solid #2871fa;}
 
-}
+.comp_wrap .txt_box {display: flex; justify-content: space-around; padding: 32px 40px; background-color: #fafafa; border-radius: 10px;}
+.comp_wrap .txt_box p {margin-right: 54px; font-size: 18px; line-height: 28px; text-align: left;}
+.comp_wrap .txt_box .btn a {padding: 16px 32px; font-size: 16px; line-height: 21px; color: #fff; text-align: left;}

@@ -112,7 +112,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .main_sec4 .acc_wrap .acc_tit.open {color: #2871fa;}*/
 .main_sec4 .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 44%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #000; border-right: 3px solid #000; transform: rotate(135deg);}
 .main_sec4 .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #2871fa; border-right: 3px solid #2871fa; transform: rotate(315deg);}
-.main_sec4 .acc_wrap .acc_cont {display: none; padding: 40px 0 40px 48px; background-color: #fafafa;}
+.main_sec4 .acc_wrap .acc_cont {display: none; padding: 40px 0 40px 48px; background-color: #fafafa; border-top: 1px solid #DEDEDE;}
 /* .main_sec4 .acc_wrap .acc_cont:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-bottom: 1px solid #dedede;} */
 .main_sec4 .acc_wrap .acc_cont p {font-size: 18px; line-height: 24px;}
 .main_sec4 .acc_wrap .acc_cont .txt_btn a {display: inline-block; position: relative; padding-right: 20px; padding-bottom: 2px; margin-top: 20px; font-size: 16px; line-height: 24px; font-weight: 700;}

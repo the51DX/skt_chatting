@@ -30,7 +30,7 @@
                         </li>
                         <li>
                             <ul class="desc_cont">
-                                <li class="desc_title">서비스 이용 기간</li>
+                                <li class="desc_title">정식 테스트 기간</li>
                                 <li class="desc_item">2023.08.10 ~ 2023.09월 말 예정 <span class="font_gray">(해당 일정에도 테스트 신청 가능)</span></li>
                             </ul>
                         </li>
@@ -42,7 +42,7 @@
                                         <li><span class="list_num">01.</span> 갤럭시 S23 시리즈 보유자</li>
                                         <li><span class="list_num">02.</span> SK텔레콤 무선회선 보유</li>
                                         <li><span class="list_num">03.</span> UOS 베타 서비스 참여자</li>
-                                        <li><span class="list_num">04.</span> Windows 10, 12 설치 되어 있는 컴퓨터 보유 <span class="font_gray">(Windows 10 22H2 이상 권장)</span></li>
+                                        <li><span class="list_num">04.</span> Windows 10, 11 설치 되어 있는 컴퓨터 보유 <span class="font_gray">(Windows 10 22H2 이상 권장)</span></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -53,7 +53,7 @@
             <div class="form_wrap">
                 <div class="form_item">
                     <h3>모든 참여 조건을 만족하시나요?</h3>
-                    <p class="font_red">위 조건을 모두 만족해야 베타 테스트 참여가 가능합니다.</p>
+                    <p class="font_red">위 조건을 모두 만족해야 베타 테스트 참여가 가능합니다. 자세히 확인해주세요.</p>
                     <div class="form_cont">
                         <form class="form_condition">
                             <fieldset>
@@ -124,7 +124,7 @@
                             <div class="scrolled">
                                 본인은 “에스케이텔레콤 주식회사”(이하 “SKT”라 합니다.)에서 진행하는 “채팅+ PC 버전 베타 프로그램” (이하 “베타서비스”)에 참여함에 있어 아래 사항을 충분히 숙지하고 성실히 행하겠습니다.
                                 <br><br>
-                                1. 본인은 “베타서비스” 에 대한 사실 및 관련 정보(본인이 “SKT”로부터 제공받은 E-mail, 문자메시지, 문서자료, website 및 기타 일체의 정보)를 ‘베타서비스’ 활동기간 및 활동 종료 후에도 제 3 자에게 제공·공개·누설·반출 하지 않겠습니다.
+                                1. 본인은 “베타서비스”에 대한 사실 및 관련 정보(본인이 “SKT”로부터 제공받은 E-mail, 문자메시지, 문서자료, website 및 기타 일체의 정보)를 ‘베타서비스’ 활동기간 및 활동 종료 후에도 제 3 자에게 제공·공개·누설·반출 하지 않겠습니다.
                                 <br><br>
                                 2. 본인은 “베타서비스” 활동이 종료되거나 “SKT” 요청이 있는 경우 “SKT”가 제공한 모든 관련 자료를 즉시 “SKT”에 반납 또는 폐기하고, 이에 관해 어떠한 형태의 사본도 개인적으로 보유하지 않겠습니다.
                                 <br><br>
@@ -167,7 +167,6 @@
         let textBox = document.querySelectorAll('.j-text');
         let Check = 0;
         let fnCheckValue = function(){
-            console.log(Check)
             if(valuedation.length - 1 === Check){
                 form_btn.classList.add('active')
                 $(form_btn).removeAttr('disabled')
@@ -176,12 +175,6 @@
                 form_btn.classList.remove('active')
                 $(form_btn).attr('disabled', true)
             }
-        }
-        let fnPuls = function(){
-            Check++;
-        }
-        let fnMinus = function(){
-            Check--;
         }
         btn_checkboxs.forEach (el => {
             el.addEventListener('change', () => {
@@ -204,11 +197,11 @@
             el.addEventListener('input', () => {
                 if(el.value.length > 0 && !el.classList.contains('on')){
                     el.classList.add('on')
-                    fnPuls();
+                    Check++;
                 }
                 else if(el.value.length <= 0){
                     el.classList.remove('on')
-                    fnMinus();
+                    Check--;
                 }
                 fnCheckValue()
             })

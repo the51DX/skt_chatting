@@ -50,36 +50,36 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .main_sec1 .main_visual .main_tit_wrap {text-align: left;}
 .main_sec1 .main_visual .main_tit_wrap .line {position: relative; width: 154px; margin: 0 auto; background-color: #5ff0bc; border-radius: 50px; text-align: center;}
 .main_sec1 .main_visual .main_tit_wrap .line::after {content: ""; display: block; position: absolute; top: 50%; left: calc(50% - 18px); width: 365px; transform: translate(-50%, -50%); height: 1px; background-color: #5ff0bc; opacity: .3;}
-.main_sec1 .main_visual .main_tit_wrap .line span {padding: 8px 0; font-size: 16px; line-height: 24px; color: #2871fa; font-weight: 700;}
+.main_sec1 .main_visual .main_tit_wrap .line span {padding: 8px 0; font-size: 16px; line-height: 24px; color: #2871fa; font-weight: 700;font-family: "Pretendard-Bold";}
 .main_sec1 .main_visual .main_tit_wrap p {margin-top: 24px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
 .main_sec1 .main_visual .main_tit_wrap .in {margin-top: 0; padding-left: 12px;}
 .main_sec1 .main_visual .main_tit_wrap span {display: block; margin-bottom: 20px; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff;}
 .main_sec1 .main_visual .main_tit_wrap h2 {position: relative; display: inline-block; padding-bottom: 32px; font-size: 52px; line-height: 64px; color: #fff;}
 /* .main_sec1 .main_visual .main_tit_wrap h2:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; border-bottom: 1px solid #fff; opacity: .25;} */
 .main_sec1 .main_visual .main_txt_wrap {margin-top: 24px;}
-.main_sec1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 139px; padding-right: 22px; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff;}
+.main_sec1 .main_visual .main_txt_wrap dt {float: left; clear: left; display: block; width: 139px; padding-right: 22px; font-size: 16px; line-height: 24px; font-weight: 700; font-family: "Pretendard-Bold"; color: #fff;}
 .main_sec1 .main_visual .main_txt_wrap dd {font-size: 18px; line-height: 30px; color: #fff; font-weight: 400;}
 .main_sec1 .main_visual .main_txt_wrap dd:after {content: ""; display: table; clear: both;}
 .main_sec1 .main_visual .main_txt_wrap dd span {display: block; margin-bottom: 0; padding-left: 139px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
 .main_sec1 .main_visual .btn {position: relative; margin-top: 48px;}
 /* .main_sec1 .main_visual .btn:before {content: ""; display: block; position: absolute; bottom: -40px; right: -105px; width: 213px; height: 71px; background: url(../img/img_arrow.png) no-repeat center / auto auto;} */
-.main_sec1 .main_visual .btn a {display: inline-block; padding: 21.5px 152px; font-size: 18px; line-height: 21px; font-weight: 700; color: #2871fa; background-color: #fff; border-radius: 10px; color: #2871fa;}
+.main_sec1 .main_visual .btn a {display: inline-block; padding: 21.5px 152px; font-size: 18px; line-height: 21px; font-weight: 700; font-family: "Pretendard-Bold"; color: #2871fa; background-color: #fff; border-radius: 10px; color: #2871fa;}
 .main_sec1 .main_visual .txt_btn {margin-top: 16px;}
-.main_sec1 .main_visual .txt_btn a {display: block; font-size: 16px; line-height: 24px; font-weight: 700; color: #fff; text-decoration: underline; text-underline-offset: 5px;}
+.main_sec1 .main_visual .txt_btn a {display: block; font-size: 16px; line-height: 24px; font-weight: 700; font-family: "Pretendard-Bold"; color: #fff; text-decoration: underline; text-underline-offset: 5px;}
 /* .main_sec1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;} */
 .main_sec1 .main_visual .main_img img {max-width: 100%;}
 .main_sec1 .fb_btn {position: fixed; top: 68%; right: 40px; z-index: 1;}
 .main_sec1 .fb_btn a {display: inline-block; padding: 16px 32px; background-color: #fff; border-radius: 20px; box-shadow: 7px 7px 20px 0 rgba(0, 0, 0, 0.1);}
-.main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; color: #585858;}
+.main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
 
 /* section2 */
 .main_sec2 .sec02_tit {margin-bottom: 60px;}
-.main_sec2 .sec02_tit strong {position: relative; display: block; margin-bottom: 20px; font-size: 40px; line-height: 56px; font-weight: 700; text-align: center;}
+.main_sec2 .sec02_tit strong {position: relative; display: block; margin-bottom: 20px; font-size: 40px; line-height: 56px; font-family: "Pretendard-Bold"; text-align: center;}
 .main_sec2 .sec02_tit p {font-size: 18px; line-height: 28px; color: #999; text-align: center;}
 .main_sec2 .box_txt ul {display: flex; justify-content: center;}
-.main_sec2 .box_txt ul li {position: relative; margin-right: 18px; padding: 54px 0 122px 32px; width: 305px; border-radius: 20px; box-shadow: 5px 5px 40px 0 rgba(191, 205, 232, 0.5); overflow: hidden;}
+.main_sec2 .box_txt ul li {position: relative; margin-right: 18px; padding: 54px 32px 122px 32px; width: 305px; border-radius: 20px; box-shadow: 5px 5px 40px 0 rgba(0, 0, 0, 0.16); overflow: hidden;}
 .main_sec2 .box_txt ul li:last-child {margin-right: 0;}
-.main_sec2 .box_txt ul li span {display: block; margin-bottom: 24px; font-size: 24px; line-height: 40px; font-weight: 700; color: #2871fa;}
+.main_sec2 .box_txt ul li span {display: block; margin-bottom: 24px; font-size: 24px; line-height: 40px; font-weight: 700; font-family: "Pretendard-Bold"; color: #2871fa;}
 .main_sec2 .box_txt ul li p {min-height: 121px; font-size: 18px; line-height: 28px; color: #666;}
 .main_sec2 .box_txt ul li .num {position: absolute; content: ""; display: block; bottom: -35px; right: 23px; margin-bottom: 0; font-size: 130px; line-height: 155px; font-weight: 700; color: #3b7cf3; opacity: 0.09;}
 
@@ -97,14 +97,15 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .main_sec3 .ct_wrap .ct_box strong {display: block; margin-bottom: 40px; font-size: 24px; line-height: 36px; color: #7284A4;}
 .main_sec3 .ct_wrap .ct_box p {font-size: 28px; line-height: 44px; color: #000;}
 .main_sec3 .ct_wrap .ct_box p strong {display: inline-block; font-size: 18px; line-height: 28px; color: #999;}
-.main_sec3 .ct_wrap .ct_box em {position: relative; display: inline-block; font-size: 28px; line-height: 44px; color: #000; font-weight: 700; z-index: 10; word-break: break-all;}
+
+.main_sec3 .ct_wrap .ct_box em {position: relative; display: inline-block; font-size: 28px; line-height: 44px; color: #000; font-weight: 700; font-family: "Pretendard-Bold"; z-index: 10; word-break: break-all;}
 .main_sec3 .ct_wrap .ct_box em:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 14px; background: #5ff0bc; opacity: 0.25; z-index: -10;}
 .main_sec3 .ct_wrap .ct_box .btn {margin-top: 50px;}
-.main_sec3 .ct_wrap .ct_box .btn a {display: inline-block; padding: 21px 60px; font-size: 18px; line-height: normal; font-weight: 700; color: #fff; background-color: #2871fa; border-radius: 10px;}
+.main_sec3 .ct_wrap .ct_box .btn a {display: inline-block; padding: 21px 60px; font-size: 18px; line-height: normal; font-weight: 700; font-family: "Pretendard-Bold"; color: #fff; background-color: #2871fa; border-radius: 10px;}
     
 
 /* section4 */
-.main_sec4 .sec04_tit strong {display: block; margin-bottom: 60px; font-size: 46px; line-height: 60px; text-align: center;}
+.main_sec4 .sec04_tit strong {display: block; margin-bottom: 60px; font-size: 46px; line-height: 60px; text-align: center;font-family: "Pretendard-Bold";}
 .main_sec4 .acc_wrap {max-width: 1280px; margin: 0 auto;}
 .main_sec4 .acc_wrap .acc_tit {position: relative; display: block; padding: 41.5px 0 41.5px 20px; font-size: 18px; font-family: "Pretendard-Bold"; color: #000; cursor: pointer;}
 .main_sec4 .acc_wrap .acc_tit:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-top: 1px solid #dedede;}
@@ -112,10 +113,10 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .main_sec4 .acc_wrap .acc_tit.open {color: #2871fa;}*/
 .main_sec4 .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 44%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #000; border-right: 3px solid #000; transform: rotate(135deg);}
 .main_sec4 .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 50%; right: 20px; width: 8px; height: 8px; border-top: 3px solid #2871fa; border-right: 3px solid #2871fa; transform: rotate(315deg);}
-.main_sec4 .acc_wrap .acc_cont {display: none; padding: 40px 0 40px 48px; background-color: #fafafa;}
+.main_sec4 .acc_wrap .acc_cont {display: none; padding: 40px 0 40px 48px; background-color: #fafafa;border-top: 1px solid #DEDEDE;}
 /* .main_sec4 .acc_wrap .acc_cont:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-bottom: 1px solid #dedede;} */
 .main_sec4 .acc_wrap .acc_cont p {font-size: 18px; line-height: 24px;}
-.main_sec4 .acc_wrap .acc_cont .txt_btn a {display: inline-block; position: relative; padding-right: 20px; padding-bottom: 2px; margin-top: 20px; font-size: 16px; line-height: 24px; font-weight: 700;}
+.main_sec4 .acc_wrap .acc_cont .txt_btn a {display: inline-block; position: relative; padding-right: 20px; padding-bottom: 2px; margin-top: 20px; font-size: 16px; line-height: 24px; font-weight: 700; font-family: "Pretendard-Bold";}
 .main_sec4 .acc_wrap .acc_cont .txt_btn a:before {content: ""; display: block; position: absolute; top: 0; right: 0; width: 20px; height: 20px; background: url(../img/btn_arrow.png) no-repeat center center / auto auto;}
 .main_sec4 .acc_wrap .acc_cont .txt_btn a:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #000;}
 
@@ -141,9 +142,9 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 /* .comp_sec .txt_area {margin-bottom: 60px;} */
 .comp_sec .txt_area strong {display: block; margin-bottom: 12px; font-size: 36px; line-height: 48px;}
 .comp_sec .txt_area p {font-size: 18px; line-height: 28px; color: #666;}
-.comp_sec .txt_area p em {position: relative; display: inline-block; font-size: 18px; line-height: 28px; color: #2871fa; font-weight: 700; z-index: 10;}
+.comp_sec .txt_area p em {position: relative; display: inline-block; font-size: 18px; line-height: 28px; color: #2871fa; font-weight: 700; font-family: "Pretendard-Bold"; z-index: 10;}
 .comp_sec .txt_area p em:before {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 14px; background: #5ff0bc; opacity: 0.25; z-index: -10;}
-.comp_sec .btn a {display: inline-block; padding: 20.5px 80px; font-size: 18px; line-height: 21px; font-weight: 700; background-color: #2871fa; border-radius: 10px; color: #fff;}
+.comp_sec .btn a {display: inline-block; padding: 20.5px 80px; font-size: 18px; line-height: 21px; font-weight: 700; font-family: "Pretendard-Bold"; background-color: #2871fa; border-radius: 10px; color: #fff;}
 
 .comp_wrap .btn_area {display: flex; justify-content: center; margin-bottom: 160px;}
 .comp_wrap .btn_area {display: flex; justify-content: center; margin-bottom: 160px;}
@@ -351,7 +352,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .main_sec1 .fb_btn {top: 74%; right: 20px; z-index: 1;}
     .main_sec1 .fb_btn a {padding: 16px; border-radius: 12px;}
     .main_sec1 .fb_btn img {display: none;}
-    .main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; color: #585858;}
+    .main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
 
     /* section2 */
     .main_sec2 .box_txt ul {flex-wrap: wrap;}
@@ -415,7 +416,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .main_sec1 .fb_btn {top: 54%; z-index: 1;}
     .main_sec1 .fb_btn a {padding: 16px; border-radius: 12px;}
     .main_sec1 .fb_btn img {display: none;}
-    .main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; color: #585858;}
+    .main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
 
 
 
@@ -423,7 +424,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .main_sec2 .sec02_tit {margin-bottom: 32px;}
     .main_sec2 .sec02_tit strong {margin-bottom: 12px; font-size: 24px; line-height: 34px;}
     .main_sec2 .sec02_tit p {font-size: 14px; line-height: 22px;}
-    .main_sec2 .box_txt ul li {margin-right: 0; margin-left: 0; padding: 40px 0 76px 32px; width: 100%;}
+    .main_sec2 .box_txt ul li {margin-right: 0; margin-left: 0; padding: 40px 32px 76px 32px; width: 100%;}
     .main_sec2 .box_txt ul li:last-child {margin-bottom: 0;}
     .main_sec2 .box_txt ul li span {margin-bottom: 12px; font-size: 20px; line-height: 28px;}
     .main_sec2 .box_txt ul li p {min-height: 44px; font-size: 14px; line-height: 22px;}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'> <!-- 27/07/28 추가 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sub.css">
@@ -72,7 +73,7 @@
                 </div>
                 <div class="form_item">
                     <h3>신청자 정보를 입력해주세요</h3>
-                    <p>신청자 정보를 정확히 입력해 주세요. 오입력으로 인한 채팅+ PC 버전 베타 프로그램 불참에 대해서는 SK텔레콤에서 책임지지 않습니다.</p>
+                    <p>신청자 정보를 정확히 입력해 주세요. 오입력으로 인한<br class="mo-only"> 채팅+ PC 버전 베타 프로그램 불참에 대해서는<br class="mo-only"> SK텔레콤에서 책임지지 않습니다.</p>
                     <div class="form_cont">
                         <form class="form_info">
                             <fieldset>
@@ -81,7 +82,7 @@
                                     <input type="text" id="name" class="j-valuedation j-text" placeholder="이름을 입력해 주세요">
                                 </div>
                                 <div>
-                                    <label  for="tel">휴대폰 번호</label>
+                                    <label for="tel">휴대폰 번호</label>
                                     <input type="tel" id="tel" class="j-valuedation j-text" placeholder="- 없이 숫자만 입력해 주세요">
                                 </div>
                                 <div>
@@ -104,7 +105,7 @@
                             <div class="scrolled">
                                 “채팅+ PC 버전 베타 프로그램” (이하 “베타서비스” 또는 “서비스”)과 관련하여, 본인은 동의 내용을 숙지하였으며, 이에 따라 본인의 개인정보를 귀사 (SK텔레콤 주식회사)가 수집 및 이용하는 것에 대해 동의합니다. 다만, SK텔레콤 주식회사는 만 14세 미만자에 대해서는 ‘베타서비스'에 대한 설문 참여나 그 이용을 제한하며, 개인정보를 수집 및 이용하지 않습니다.
                                 <span>1. 개인정보의 수집 이용 목적</span>
-                                베타서비스 운영에 필요한 프로그램 파일 및 사용자 조사 (인터뷰) 참여 신청서 링크 전달, 긴급 상황 대응 시 베타서비스 참여자의 연락처로 별도 공지, 베타서비스에 대한 의견 혹은 피드백 수집 시 실제 신청 여부 판단을 위한 개인정보 확인 시 이용 
+                                베타서비스 운영에 필요한 프로그램 파일 및 사용자 조사 (인터뷰) 참여 신청서 링크 전달, 긴급 상황 대응 시 베타서비스 참여자의 연락처로 별도 공지, 수 발신 기록 포함한 로그 등 베타 서비스 이용 확인 및 이슈 등 파악, 베타서비스에 대한 의견 혹은 피드백 수집 시 실제 신청 여부 판단을 위한 개인정보 확인 등
                                 <span>2. 수집하는 개인정보의 항목</span>
                                 성명, 휴대폰 번호, 이메일 주소, 조사 조건 만족을 위한 특정 단말 및 PC 사용 여부 등
                                 <span>3. 개인정보의 보유 및 이용 기간</span>
@@ -205,7 +206,26 @@
                 }
                 fnCheckValue()
             })
-        })
+        });
+
+        $(function () {
+            $('#tel').keydown(function (event) {
+                var key = event.charCode || event.keyCode || 0;
+                $text = $(this); 
+                if (key !== 8 && key !== 9) {
+                    if ($text.val().length === 3) {
+                        $text.val($text.val() + '-');
+                    }
+                    if ($text.val().length === 8) {
+                        $text.val($text.val() + '-');
+                    }
+                }
+
+                return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));
+                // Key 8번 백스페이스, Key 9번 탭, Key 46번 Delete 부터 0 ~ 9까지, Key 96 ~ 105까지 넘버패트
+                // 한마디로 JQuery 0 ~~~ 9 숫자 백스페이스, 탭, Delete 키 넘버패드외에는 입력못함
+            })
+        });
     });
 </script>
 </html>

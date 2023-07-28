@@ -3,29 +3,26 @@
 /* font */
 @font-face {
     font-family: "Pretendard-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-        format("woff");
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "Pretendard-Bold";
-    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
-        format("woff");
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: "Pretendard-ExtraBold";
-    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
-        format("woff");
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff") format("woff");
     font-weight: 900;
     font-style: normal;
 }
 
 
 /* common */
-html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold";}
+html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold", sans-serif;}
 .mo-only {display: none;}
 .pc-only {display: block;}
 .cnt_inn {max-width: 1280px; margin: 0 auto; padding: 160px 0;}
@@ -39,6 +36,10 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .star_list li::after {content: "*"; position: absolute; display: block; top: 0; left: 0;}
 
 /* *********************************** main *********************************** */
+#main {position: relative;}
+#main .fb_btn {position: fixed; bottom: 40px; right: 40px; z-index: 1000;}
+#main .fb_btn a {display: inline-block; padding: 16px 32px; background-color: #fff; border-radius: 20px; box-shadow: 7px 7px 20px 0 rgba(0, 0, 0, 0.1);}
+#main .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
 
 /* section1 */
 .main_sec1 {position: relative; background-color: #2871fa;}
@@ -68,9 +69,6 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .main_sec1 .main_visual .txt_btn a {display: block; font-size: 16px; line-height: 24px; font-weight: 700; font-family: "Pretendard-Bold"; color: #fff; text-decoration: underline; text-underline-offset: 5px;}
 /* .main_sec1 .main_visual .txt_btn:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: url(../img/ico_pdf.png) no-repeat center center / auto auto;} */
 .main_sec1 .main_visual .main_img img {max-width: 100%;}
-.main_sec1 .fb_btn {position: fixed; top: 68%; right: 40px; z-index: 1;}
-.main_sec1 .fb_btn a {display: inline-block; padding: 16px 32px; background-color: #fff; border-radius: 20px; box-shadow: 7px 7px 20px 0 rgba(0, 0, 0, 0.1);}
-.main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
 
 /* section2 */
 .main_sec2 .sec02_tit {margin-bottom: 60px;}
@@ -351,7 +349,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .main_sec1 .main_visual .btn:before {display: none;}
     .main_sec1 .main_visual .btn a {width: 100%; padding: 15.5px 40px; font-size: 14px; line-height: 17px; text-align: center;}
     .main_sec1 .main_visual .main_img img {max-width: 100%;}
-    .main_sec1 .fb_btn {top: 74%; right: 20px; z-index: 1;}
+    .main_sec1 .fb_btn {top: 74%; right: 20px;}
     .main_sec1 .fb_btn a {padding: 16px; border-radius: 12px;}
     .main_sec1 .fb_btn img {display: none;}
     .main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
@@ -398,6 +396,12 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .pc-only {display: none;}
     .cnt_inn {max-width: 100%; padding: 80px 20px;}
 
+    #main {position: relative;}
+    #main .fb_btn {position: fixed; bottom: 20px; right: 20px; z-index: 1000;}
+    #main .fb_btn a {display: inline-block; padding: 16px; border-radius: 12px;}
+    #main .fb_btn img {display: none;}
+    #main .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
+
     /* section1 */
     .main_sec1 .cnt_inn {padding-top: 75px;}
     .main_sec1 .visual_wrap {margin: 0 auto; padding-bottom: 0; text-align: center;}
@@ -416,10 +420,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .main_sec1 .main_visual .btn a {width: 100%; padding: 15.5px 40px; font-size: 14px; line-height: 17px; text-align: center;}
     .main_sec1 .main_visual .main_img img {max-width: 100%;}
     .main_sec1 .main_visual .txt_btn a {font-size: 14px; line-height: 22px;}
-    .main_sec1 .fb_btn {top: 54%; z-index: 1;}
-    .main_sec1 .fb_btn a {padding: 16px; border-radius: 12px;}
-    .main_sec1 .fb_btn img {display: none;}
-    .main_sec1 .fb_btn span {display: block; margin-top: 6px; font-size: 14px; line-height: 18px; font-weight: 700; font-family: "Pretendard-Bold"; color: #585858;}
+
 
 
 
@@ -438,16 +439,15 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
     .main_sec3 .sec03_tit strong {margin-bottom: 32px; font-size: 24px; line-height: 34px;}
     .main_sec3 .ct_wrap {width: 100%;}
     .main_sec3 .ct_wrap .ct_box {margin: 0 0 16px; padding: 40px 32px 40px; max-width: 100%; background-color: #fff; border-radius: 40px 40px 40px 0;}
-    .main_sec3 .ct_wrap .ct_box.emo01:after {display: none;}
-    .main_sec3 .ct_wrap .ct_box.emo02:after {display: none;}
-    .main_sec3 .ct_wrap .ct_box.emo03:after {display: none;}
+    .main_sec3 .ct_wrap .ct_box.emo01:after,
+    .main_sec3 .ct_wrap .ct_box.emo02:after,
+    .main_sec3 .ct_wrap .ct_box.emo03:after,
     .main_sec3 .ct_wrap .ct_box.emo04:after {display: none;}
     .main_sec3 .ct_wrap .ct_box.right {border-radius: 40px 0 40px 40px; margin-left: 0; margin-bottom: 16px;}
     .main_sec3 .ct_wrap .ct_box strong {margin-bottom: 20px; font-size: 18px; line-height: 24px;}
     .main_sec3 .ct_wrap .ct_box p {font-size: 20px; line-height: 32px;}
     .main_sec3 .ct_wrap .ct_box p strong {margin-bottom: 0; font-size: 20px; line-height: 32px; font-weight: 400;}
     .main_sec3 .ct_wrap .ct_box em {display: inline; font-size: 20px; line-height: 32px;}
-    .main_sec3 .ct_wrap .ct_box em:before {display: none; height: 14px;}
     .main_sec3 .ct_wrap .ct_box.emo02 p {padding-left: 18px; text-indent: -18px;}
     .main_sec3 .ct_wrap .ct_box .btn {margin-top: 20px;}
     .main_sec3 .ct_wrap .ct_box .btn a {padding: 15px 40px; font-size: 14px; line-height: 22px;}

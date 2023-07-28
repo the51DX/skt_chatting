@@ -165,6 +165,7 @@
         let form_btn = document.querySelector('.form_btn');
         let valuedation = document.querySelectorAll('.j-valuedation');
         let myRadio = document.querySelectorAll('.j-radio');
+        let yesRadio = document.querySelector('#yes');
         let textBox = document.querySelectorAll('.j-text');
         let Check = 0;
         let fnCheckValue = function(){
@@ -182,16 +183,16 @@
                 el.checked ? Check++ : Check--;
                 fnCheckValue()
             })
-        })  
+        })
         myRadio.forEach (el => {
             el.addEventListener('change', () => {
-                if(el.id === "yes"){
+                let isSelect = el.closest('.form_condition').classList.contains('j-selected');
+                if(!isSelect){
+                    el.closest('.form_condition').classList.add('j-selected')
                     Check++;
                 }
-                else if(el.id === "no"){
-                    Check--;
-                }
                 fnCheckValue()
+                console.log(Check)
             })
         })  
         textBox.forEach (el => {

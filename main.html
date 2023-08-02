@@ -1,484 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-        />
-        <!-- 27/07/28 추가 -->
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <title>skt_chatting</title>
-        <!-- [S] Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-PPGGXPKRPS"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "G-PPGGXPKRPS");
-        </script>
-        <!-- [E] Google tag -->
-    </head>
-    <body>
-        <div class="wrap">
-            <!-- container -->
-            <div id="container">
-                <main id="main" class="content">
-                    <section class="main_sec1">
-                        <div class="cnt_inn">
-                            <div class="visual_wrap">
-                                <div class="main_visual">
-                                    <div class="main_tit_wrap">
-                                        <div class="logo_area">
-                                            <h1 class="logo">
-                                                <a
-                                                    ><img
-                                                        src="./img/logo.svg"
-                                                        alt="sk telecom x samsung"
-                                                /></a>
-                                            </h1>
-                                        </div>
-                                        <span>드디어 베타 출시!</span>
-                                        <h2>
-                                            내 문자와 연동되는<br />
-                                            PC 메신저를<br />
-                                            미리 체험해보세요!
-                                        </h2>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'> <!-- 27/07/28 추가 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>skt_chatting</title>
+    <!-- [S] Google tag (gtag.js) -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-PPGGXPKRPS"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-PPGGXPKRPS");
+    </script>
+    <!-- [E] Google tag -->
+</head>
+<body>
+    <div class="wrap">
+        <!-- container -->
+        <div id="container">
+            <main id="main" class="content"> 
+                <section class="main_sec1">
+                    <div class="cnt_inn">
+                        <div class="visual_wrap">
+                            <div class="main_visual">
+                                <div class="main_tit_wrap">
+                                    <div class="logo_area">
+                                        <h1 class="logo"><a><img src="./img/logo.svg" alt="sk telecom x samsung"></a></h1>
+                                    </div>
+                                    <span>드디어 베타 출시!</span>
+                                    <h2>내 문자와 연동되는<br> PC 메신저를<br> 미리 체험해보세요!</h2>
+                                    
+                                    <!-- 23/07/27 추가 -->
+                                    <div class="line">
+                                        <span>Beta 참여자 모집!</span>
+                                    </div>
+                                    <!-- // 23/07/27 추가 -->
 
-                                        <!-- 23/07/27 추가 -->
-                                        <div class="line">
-                                            <span>Beta 참여자 모집!</span>
-                                        </div>
-                                        <!-- // 23/07/27 추가 -->
+                                    <div class="main_txt_wrap">
+                                        <dl>
+                                            <dt>사전 신청 기간</dt>
+                                            <dd>2023.08.02 - 2023.08.09</dd>
+                                            <dt>정식 테스트 기간</dt>
+                                            <dd>
+                                                2023.08.10 - 2023.9월 말 예정
+                                                <span>(해당 기간에도 신청 가능)</span>
+                                            </dd>
+                                        </dl>
 
-                                        <div class="main_txt_wrap">
-                                            <dl>
-                                                <dt>사전 신청 기간</dt>
-                                                <dd>2023.08.02 - 2023.08.09</dd>
-                                                <dt>정식 테스트 기간</dt>
-                                                <dd>
-                                                    2023.08.10 - 2023.9월 말
-                                                    예정
-                                                    <span
-                                                        >(해당 기간에도 신청
-                                                        가능)</span
-                                                    >
-                                                </dd>
-                                            </dl>
+                                        <!-- 23/07/27 위치 이동 및 마크업 수정 -->
+                                        <ul class="star_list">
+                                            <li>
+                                                불가피한 상황 등으로 인해 일정이 조정될 수 있습니다.<br>
+                                                변경이 있을 경우 별도로 안내드리겠습니다.
+                                            </li>
+                                        </ul>
+                                        <!-- // 23/07/27 위치 이동 -->
 
-                                            <!-- 23/07/27 위치 이동 및 마크업 수정 -->
-                                            <ul class="star_list">
-                                                <li>
-                                                    불가피한 상황 등으로 인해
-                                                    일정이 조정될 수
-                                                    있습니다.<br />
-                                                    변경이 있을 경우 별도로
-                                                    안내드리겠습니다.
-                                                </li>
-                                            </ul>
-                                            <!-- // 23/07/27 위치 이동 -->
-                                        </div>
-                                        <div class="btn">
-                                            <a href="#none">신청하기</a>
-                                            <!-- 23/07/28  target="_blank" 제거 -->
-                                        </div>
-
-                                        <!-- 23/07/27 추가 -->
-                                        <div class="txt_btn">
-                                            <a href="#"
-                                                >채팅+ PC 버전 더 알아보기</a
-                                            >
-                                        </div>
-                                        <!-- // 23/07/27 추가 -->
+                                    </div>
+                                    <div class="btn">
+                                        <a href="#none">신청하기</a> <!-- 23/07/28  target="_blank" 제거 -->
                                     </div>
 
-                                    <div class="main_img pc-only">
-                                        <img
-                                            src="./img/pc_img_visual.png"
-                                            alt=""
-                                        />
+                                    <!-- 23/07/27 추가 -->
+                                    <div class="txt_btn">
+                                        <a href="#">채팅+ PC 버전 더 알아보기</a>
                                     </div>
+                                    <!-- // 23/07/27 추가 -->
 
-                                    <div class="main_img mo-only">
-                                        <img
-                                            src="./img/mo_img_visual.png"
-                                            alt=""
-                                        />
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
+                                
+                                <div class="main_img pc-only">
+                                    <img src="./img/pc_img_visual.png" alt="">
+                                </div>
 
-                    <section class="main_sec2">
-                        <div class="cnt_inn">
-                            <div class="sec02_tit">
-                                <strong
-                                    >지금 바로 채팅+의<br />
-                                    PC 버전을 체험해보세요!
-                                </strong>
+                                <div class="main_img mo-only">
+                                    <img src="./img/mo_img_visual.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div> 
+     
+                    </div>
+                </section>
+
+                <section class="main_sec2">
+                    <div class="cnt_inn">
+                        <div class="sec02_tit">
+                            <strong>지금 바로 채팅+의<br> PC 버전을 체험해보세요! </strong> 
+                            <p>테스트에 참여하기 위해 필요한<br class="mo-only"> 4가지 환경을 확인해보세요.</p>   
+                        </div>
+                        <div class="box_txt">
+                            <ul>
+                                <li>
+                                    <span>UOS 베타<br class="pc-only"> 참여자</span>
+                                    <p>
+                                        채팅 + PC 버전은 삼성
+                                        UOS<br class="pc-only"> 기능 중 하나로,<br class="mo-only"> UOS
+                                        베타 버전<br class="pc-only"> 신청이 필수입니다.
+                                    </p>
+                                    <span class="num">1</span>
+                                </li>
+                                <li>
+                                    <span>SK텔레콤<br> 무선 가입자</span>
+                                    <p>
+                                        SK텔레콤 한정 제공 서비스로,<br class="pc-only"> SK텔레콤 무선<br class="mo-only"> 가입자여야<br class="pc-only"> 합니다.
+                                    </p>
+                                    <span class="num">2</span>
+                                </li>
+                                <li>
+                                    <span>갤럭시S23 시리즈<br class="pc-only"> 사용자</span>
+                                    <p>
+                                        채팅+ PC 버전 베타 프로그램은<br class="pc-only">
+                                         갤럭시 S23<br class="mo-only"> 시리즈만
+                                        지원합니다.
+                                    </p>
+                                    <span class="num">3</span>
+                                </li>
+                                <li>
+                                    <span>Windows 10, 11<br class="pc-only"> PC</span>
+                                    <p>
+                                        Windows 10, 11이 설치되어 있는<br class="pc-only">
+                                        PC에서<br class="mo-only"> 지원합니다.<br class="pc-only">
+                                        (Windows10 22H2 이상 권장)
+                                    </p>                                    
+                                    <span class="num">4</span> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main_sec3">
+                    <div class="cnt_inn">
+                        <div class="sec03_tit">
+                            <strong>채팅+ PC 베타 버전<br> 이용 전에 확인하세요!</strong>    
+                        </div>
+                        <div class="ct_wrap">
+                            <div class="ct_box emo01">
+                                <strong>사전 신청자는 언제 채팅+ PC버전 다운로드 파일을 받을 수 있나요?</strong>
                                 <p>
-                                    테스트에 참여하기 위해 필요한<br
-                                        class="mo-only"
-                                    />
-                                    4가지 환경을 확인해보세요.
+                                    8월 10일을 기준으로 사전 신청하신 <em>메일 주소로 다운로드 파일을</em><em> 보내드릴 예정입니다.</em>
+                                    (단, 일정 변경이 있을 경우 별도로 공지 예정)
                                 </p>
                             </div>
-                            <div class="box_txt">
-                                <ul>
-                                    <li>
-                                        <span
-                                            >UOS 베타<br class="pc-only" />
-                                            참여자</span
-                                        >
-                                        <p>
-                                            채팅 + PC 버전은 삼성 UOS<br
-                                                class="pc-only"
-                                            />
-                                            기능 중 하나로,<br
-                                                class="mo-only"
-                                            />
-                                            UOS 베타 버전<br class="pc-only" />
-                                            신청이 필수입니다.
-                                        </p>
-                                        <span class="num">1</span>
-                                    </li>
-                                    <li>
-                                        <span
-                                            >SK텔레콤<br />
-                                            무선 가입자</span
-                                        >
-                                        <p>
-                                            SK텔레콤 한정 제공 서비스로,<br
-                                                class="pc-only"
-                                            />
-                                            SK텔레콤 무선<br class="mo-only" />
-                                            가입자여야<br class="pc-only" />
-                                            합니다.
-                                        </p>
-                                        <span class="num">2</span>
-                                    </li>
-                                    <li>
-                                        <span
-                                            >갤럭시S23 시리즈<br
-                                                class="pc-only"
-                                            />
-                                            사용자</span
-                                        >
-                                        <p>
-                                            채팅+ PC 버전 베타 프로그램은<br
-                                                class="pc-only"
-                                            />
-                                            갤럭시 S23<br class="mo-only" />
-                                            시리즈만 지원합니다.
-                                        </p>
-                                        <span class="num">3</span>
-                                    </li>
-                                    <li>
-                                        <span
-                                            >Windows 10, 11<br
-                                                class="pc-only"
-                                            />
-                                            PC</span
-                                        >
-                                        <p>
-                                            Windows 10, 11이 설치되어 있는<br
-                                                class="pc-only"
-                                            />
-                                            PC에서<br class="mo-only" />
-                                            지원합니다.<br class="pc-only" />
-                                            (Windows10 22H2 이상 권장)
-                                        </p>
-                                        <span class="num">4</span>
-                                    </li>
-                                </ul>
+                            <div class="ct_box emo02 right">
+                                <strong>베타 프로그램 설치 후, 어떻게<br class="mo-only"> 로그인하나요?</strong>
+                                <em class="mb32">채팅+ PC 버전을 PC에 설치한 상태에서 진행이 필요합니다.</em>
+                                <p>1. PC에 설치한 채팅플러스를 실행합니다. (QR 코드가 노출됩니다.)</p>
+                                <p>2. 스마트폰에서 채팅+ 앱을 실행합니다.</p>
+                                <p>3. 앱 우측 상단의 [더보기(점 3개) 버튼]을 클릭합니다.</p>
+                                <p>4. [채팅+ PC 버전] 메뉴를 선택합니다.</p>
+                                <p>5. [QR 코드 스캔] 버튼을 선택합니다.</p>
+                                <p>6. 스마트폰으로 PC화면에 노출된 QR 코드를 스캔합니다. (완료)</p>
                             </div>
-                        </div>
-                    </section>
-
-                    <section class="main_sec3">
-                        <div class="cnt_inn">
-                            <div class="sec03_tit">
-                                <strong
-                                    >채팅+ PC 베타 버전<br />
-                                    이용 전에 확인하세요!</strong
-                                >
+                            <div class="ct_box emo03">
+                                <strong>채팅+ PC 버전 베타 프로그램은<br class="mo-only"> 기밀인가요?</strong>
+                                <p>
+                                    서비스 이용자는 개인적이고 비상업적인 용도로만 사용해야 하며,<br class="pc-only">
+                                    <em>신청자는 비밀 보호 서약서에 기재된 사항을 준수해야 합니다.</em>
+                                </p>
                             </div>
-                            <div class="ct_wrap">
-                                <div class="ct_box emo01">
-                                    <strong
-                                        >사전 신청자는 언제 채팅+ PC버전
-                                        다운로드 파일을 받을 수 있나요?</strong
-                                    >
-                                    <p>
-                                        8월 10일을 기준으로 사전 신청하신
-                                        <em>메일 주소로 다운로드 파일을</em
-                                        ><em> 보내드릴 예정입니다.</em>
-                                        (단, 일정 변경이 있을 경우 별도로 공지
-                                        예정)
-                                    </p>
-                                </div>
-                                <div class="ct_box emo02 right">
-                                    <strong
-                                        >베타 프로그램 설치 후, 어떻게<br
-                                            class="mo-only"
-                                        />
-                                        로그인하나요?</strong
-                                    >
-                                    <em class="mb32"
-                                        >채팅+ PC 버전을 PC에 설치한 상태에서
-                                        진행이 필요합니다.</em
-                                    >
-                                    <p>
-                                        1. PC에 설치한 채팅플러스를 실행합니다.
-                                        (QR 코드가 노출됩니다.)
-                                    </p>
-                                    <p>
-                                        2. 스마트폰에서 채팅+ 앱을 실행합니다.
-                                    </p>
-                                    <p>
-                                        3. 앱 우측 상단의 [더보기(점 3개)
-                                        버튼]을 클릭합니다.
-                                    </p>
-                                    <p>4. [채팅+ PC 버전] 메뉴를 선택합니다.</p>
-                                    <p>5. [QR 코드 스캔] 버튼을 선택합니다.</p>
-                                    <p>
-                                        6. 스마트폰으로 PC화면에 노출된 QR
-                                        코드를 스캔합니다. (완료)
-                                    </p>
-                                </div>
-                                <div class="ct_box emo03">
-                                    <strong
-                                        >채팅+ PC 버전 베타 프로그램은<br
-                                            class="mo-only"
-                                        />
-                                        기밀인가요?</strong
-                                    >
-                                    <p>
-                                        서비스 이용자는 개인적이고 비상업적인
-                                        용도로만 사용해야 하며,<br
-                                            class="pc-only"
-                                        />
-                                        <em
-                                            >신청자는 비밀 보호 서약서에 기재된
-                                            사항을 준수해야 합니다.</em
-                                        >
-                                    </p>
-                                </div>
-                                <div class="ct_box emo04 right">
-                                    <strong
-                                        >PC에 채팅+ PC 버전 베타 프로그램<br
-                                            class="mo-only"
-                                        />
-                                        설치 혹은 사용 중 오류가 발생했습니다.
-                                        어떻게 해야하나요?</strong
-                                    >
-                                    <p>
-                                        베타 프로그램이더라도 재설치가<br
-                                            class="mo-only"
-                                        />
-                                        가능하기 때문에
-                                        <em
-                                            >설치 중인<br class="mo-only" />
-                                            파일을</em
-                                        >
-                                        <em
-                                            >삭제해주시고 재설치<br
-                                                class="mo-only"
-                                            />
-                                            부탁 드립니다.</em
-                                        >
-                                        또한 정식 출시<br class="mo-only" />
-                                        버전이 아니기 때문에 예기치<br
-                                            class="mo-only"
-                                        />
-                                        못한 오류 및 정지 등의 상황이<br
-                                            class="mo-only"
-                                        />
-                                        발생할 수 있습니다. 이와 같은<br
-                                            class="mo-only"
-                                        />
-                                        문제가 지속적으로 발생할 경우<br
-                                            class="mo-only"
-                                        />
-                                        [문제 신고하기] 버튼을 통해<br
-                                            class="mo-only"
-                                        />
-                                        문제를 공유해주세요.
-                                    </p>
-                                    <div class="btn">
-                                        <a href="#" target="_blank"
-                                            >문제 신고하기</a
-                                        >
-                                    </div>
+                            <div class="ct_box emo04 right">
+                                <strong>PC에 채팅+ PC 버전 베타 프로그램<br class="mo-only"> 설치 혹은 사용 중 오류가 발생했습니다. 어떻게 해야하나요?</strong>
+                                <p>
+                                    베타 프로그램이더라도 재설치가<br class="mo-only"> 가능하기 때문에 <em>설치 중인<br class="mo-only"> 파일을</em> <em>삭제해주시고 재설치<br class="mo-only"> 부탁 드립니다.</em>
+                                    또한 정식 출시<br class="mo-only"> 버전이 아니기 때문에 예기치<br class="mo-only"> 못한 오류 및 정지 등의 상황이<br class="mo-only"> 발생할 수 있습니다.
+                                    이와 같은<br class="mo-only"> 문제가 지속적으로 발생할 경우<br class="mo-only"> [문제 신고하기] 버튼을 통해<br class="mo-only"> 문제를 공유해주세요.
+                                </p>
+                                <div class="btn">
+                                    <a href="#" target="_blank">문제 신고하기</a>
                                 </div>
                             </div>
                         </div>
-                    </section>
-
-                    <section class="main_sec4">
-                        <div class="cnt_inn">
-                            <div class="sec04_tit">
-                                <strong>무엇을 도와드릴까요?</strong>
-                            </div>
-                            <div class="acc_wrap">
-                                <strong class="acc_tit js_acc_tit acc-add"
-                                    >Q. 채팅+ PC 버전 베타 프로그램에 대한
-                                    불편한<br class="mo-only" />
-                                    점이나 피드백은 어디로 보내면
-                                    되나요?</strong
-                                >
-                                <div class="acc_cont">
-                                    <p>
-                                        아래 [피드백 보내기] 버튼을 통해
-                                        수시로<br class="mo-only" />
-                                        공유해주시면 됩니다.
-                                    </p>
-                                    <div class="txt_btn">
-                                        <a href="#" target="_blank"
-                                            >피드백 보내기</a
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acc_wrap">
-                                <strong class="acc_tit js_acc_tit"
-                                    >Q. 채팅+ PC 버전 베타 프로그램 참여 중
-                                    PC를<br class="mo-only" />
-                                    초기화했습니다. 채팅+ PC 버전 베타<br
-                                        class="mo-only"
-                                    />
-                                    프로그램을 재설치 할 수 있나요?</strong
-                                >
-                                <div class="acc_cont">
-                                    <p>
-                                        UOS 베타 서비스에 참여 중이시라면 해당
-                                        링크 (나중에 추가)를 통해 재설치 하실 수
-                                        있습니다.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="acc_wrap">
-                                <strong class="acc_tit js_acc_tit"
-                                    >Q. 채팅+ PC 버전 베타 프로그램 가입 취소<br
-                                        class="mo-only"
-                                    />
-                                    [탈퇴]하려면 어떻게 해야하나요?</strong
-                                >
-                                <div class="acc_cont">
-                                    <p>
-                                        1. 스마트 폰에서 채팅+ 앱을 켭니다.<br />
-                                        2. 채팅+ 앱 우측 상단에 있는 [더보기 (점
-                                        3개) 버튼]을 클릭합니다.<br />
-                                        3. [채팅+ PC 버전] 메뉴를 클릭합니다.<br />
-                                        4. [Terms and Conditions]를
-                                        클릭합니다.<br />
-                                        5. 이용 약관 리스트 중 [필수 약관] 중 한
-                                        개를 클릭합니다.<br />
-                                        6. 탈퇴하기 버튼을 클릭합니다.<br />
-                                        (참고: 위 내용은 갤럭시 UOS베타의 탈퇴
-                                        방법이 아닙니다. UOS베타 탈퇴는 삼성
-                                        멤버스에서 확인가능합니다.)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="acc_wrap">
-                                <strong class="acc_tit js_acc_tit"
-                                    >Q. 채팅+ PC 버전으로 아이폰 사용자와도<br
-                                        class="mo-only"
-                                    />
-                                    대화할 수 있나요?</strong
-                                >
-                                <div class="acc_cont">
-                                    <p>
-                                        네, 가능합니다.<br />
-                                        다만, 아이폰 사용자는 채팅+ PC 버전을
-                                        직접 이용하실 수는 없습니다.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="acc_wrap">
-                                <strong class="acc_tit js_acc_tit"
-                                    >Q. 채팅+ PC 버전으로 타 통신사와도 대화할
-                                    수<br class="mo-only" />
-                                    있나요?</strong
-                                >
-                                <div class="acc_cont">
-                                    <p>
-                                        네, 가능합니다.<br />
-                                        다만, 타통신사 (KT, LG U+, 알뜰폰)
-                                        사용자는 채팅+ PC 버전을 직접 이용하실
-                                        수는 없습니다.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- 23/07/28 위치이동 -->
-                    <div class="fb_btn">
-                        <a href="#none" target="_blank">
-                            <img src="./img/ico_feedback.png" alt="" />
-                            <span
-                                >피드백<br />
-                                보내기</span
-                            >
-                        </a>
                     </div>
-                    <!-- 23/07/28 위치이동 -->
-                </main>
+                </section>
 
-                <footer id="footer">
+                <section class="main_sec4">
                     <div class="cnt_inn">
-                        <div class="ft_logo">
-                            <img src="./img/footer_logo.svg" alt="" />
+                        <div class="sec04_tit"> 
+                            <strong>무엇을 도와드릴까요?</strong>    
                         </div>
-                        <div class="ft_txt">
-                            <ul>
-                                <li>에스케이텔레콤㈜</li>
-                                <li>대표이사/사장 : 유영상</li>
-                                <li>사업자등록번호 : 104-81-37225</li>
-                                <li>서울특별시 중구 을지로 65</li>
-                            </ul>
-                            <p>
-                                COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS
-                                RESERVED.
-                            </p>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit acc-add">Q. 채팅+ PC 버전 베타 프로그램에 대한 불편한<br class="mo-only"> 점이나 피드백은 어디로 보내면 되나요?</strong>
+                            <div class="acc_cont">
+                              <p>아래 [피드백 보내기] 버튼을 통해 수시로<br class="mo-only"> 공유해주시면 됩니다.</p>
+                              <div class="txt_btn">
+                                <a href="#" target="_blank">피드백 보내기</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램 참여 중 PC를<br class="mo-only"> 초기화했습니다. 채팅+ PC 버전 베타<br class="mo-only"> 프로그램을 재설치 할 수 있나요?</strong>
+                            <div class="acc_cont">
+                              <p>UOS 베타 서비스에 참여 중이시라면 해당 링크 (나중에 추가)를 통해 재설치 하실 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전 베타 프로그램 가입 취소<br class="mo-only"> [탈퇴]하려면 어떻게 해야하나요?</strong>
+                            <div class="acc_cont">
+                              <p>
+                                1. 스마트 폰에서 채팅+ 앱을 켭니다.<br>
+                                2. 채팅+ 앱 우측 상단에 있는 [더보기 (점 3개) 버튼]을 클릭합니다.<br>
+                                3. [채팅+ PC 버전] 메뉴를 클릭합니다.<br>
+                                4. [Terms and Conditions]를 클릭합니다.<br>
+                                5. 이용 약관 리스트 중 [필수 약관] 중 한 개를 클릭합니다.<br>
+                                6. 탈퇴하기 버튼을 클릭합니다.<br>
+                                (참고: 위 내용은 갤럭시 UOS베타의 탈퇴 방법이 아닙니다. UOS베타 탈퇴는 삼성 멤버스에서 확인가능합니다.)
+                              </p>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전으로 아이폰 사용자와도<br class="mo-only"> 대화할 수 있나요?</strong>
+                            <div class="acc_cont">
+                              <p>네, 가능합니다.<br>
+                                다만, 아이폰 사용자는 채팅+ PC 버전을 직접 이용하실 수는 없습니다.</p>
+                            </div>
+                        </div>
+                        <div class="acc_wrap">
+                            <strong class="acc_tit js_acc_tit">Q. 채팅+ PC 버전으로 타 통신사와도 대화할 수<br class="mo-only"> 있나요?</strong>
+                            <div class="acc_cont">
+                              <p>네, 가능합니다.<br>
+                                다만, 타통신사 (KT, LG U+, 알뜰폰) 사용자는 채팅+ PC 버전을 직접 이용하실 수는 없습니다.</p>
+                            </div>
                         </div>
                     </div>
-                </footer>
-            </div>
-            <!-- container -->
-        </div>
-    </body>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // accdion
-        $(document).ready(function () {
-            $(".acc_cont").hide(); // Hide all accordion content initially
-            $(".acc_tit.acc-add").addClass("open").next().slideDown(300);
+                </section>
 
-            $(".acc_tit").click(function () {
-                if ($(this).hasClass("open")) {
-                    $(this).removeClass("open").next().slideUp(300);
-                } else {
-                    $(".acc_tit").removeClass("open").next().slideUp(300);
-                    $(this).addClass("open").next().slideDown(300);
-                }
-            });
-        });
-    </script>
+                <!-- 23/07/28 위치이동 -->
+                <div class="fb_btn">
+                    <a href="#none" target="_blank">
+                        <img src="./img/ico_feedback.png" alt="">
+                        <span>피드백<br> 보내기</span>
+                    </a>
+                </div>
+                <!-- 23/07/28 위치이동 -->
+            </main> 
+
+            <footer id="footer">
+                <div class="cnt_inn">
+                    <div class="ft_logo">
+                        <img src="./img/footer_logo.svg" alt="">
+                    </div>
+                    <div class="ft_txt">
+                        <ul>
+                            <li>에스케이텔레콤㈜</li>
+                            <li>대표이사/사장 : 유영상</li>
+                            <li>사업자등록번호 : 104-81-37225</li>
+                            <li>서울특별시 중구 을지로 65</li>
+                        </ul>
+                        <p>COPYRIGHT © SK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- container -->
+    </div>
+
+</body>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // accdion
+    $(document).ready(function () {
+      $(".acc_cont").hide(); // Hide all accordion content initially
+      $(".acc_tit.acc-add").addClass("open").next().slideDown(300);
+  
+      $(".acc_tit").click(function () {
+        if ($(this).hasClass("open")) {
+          $(this).removeClass("open").next().slideUp(300);
+        } else {
+          $(".acc_tit").removeClass("open").next().slideUp(300);
+          $(this).addClass("open").next().slideDown(300);
+        }
+      });
+    });
+</script>
 </html>

@@ -46,11 +46,11 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 .main_sec1 .cnt_inn {padding-top:93px;padding-bottom: 0;}
 .main_sec1 .logo_area img {max-width: 100%;}
 .main_sec1 .visual_wrap {margin: 0 auto; padding-bottom: 100px;}
-.main_sec1 .main_visual {display: flex; justify-content: space-evenly; align-items: center;}
+.main_sec1 .main_visual {display: flex; justify-content: space-between; align-items: center;}
 .main_sec1 .main_visual .main_tit_wrap .logo_area {margin-bottom: 60px;}
 .main_sec1 .main_visual .main_tit_wrap {text-align: left;}
 .main_sec1 .main_visual .main_tit_wrap .line {position: relative; width: 154px; margin: 0 auto; background-color: #5ff0bc; border-radius: 50px; text-align: center; z-index: 10;}
-.main_sec1 .main_visual .main_tit_wrap .line::after {content: ""; display: block; position: absolute; top: 50%; left: calc(50% - 18px); width: 365px; transform: translate(-50%, -50%); height: 1px; background-color: #5ff0bc; opacity: .3; z-index: -1;}
+.main_sec1 .main_visual .main_tit_wrap .line::after {content: ""; display: block; position: absolute; top: 50%; left: calc(50% - 0px); width: 385px; transform: translate(-50%, -50%); height: 1px; background-color: #5ff0bc; opacity: .3; z-index: -1;}
 .main_sec1 .main_visual .main_tit_wrap .line span {padding: 8px 0; font-size: 16px; line-height: 24px; color: #2871fa; font-weight: 700;font-family: "Pretendard-Bold";}
 .main_sec1 .main_visual .main_tit_wrap p {margin-top: 24px; font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; opacity: .8;}
 .main_sec1 .main_visual .main_tit_wrap .in {margin-top: 0; padding-left: 12px;}

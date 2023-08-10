@@ -118,7 +118,7 @@ html, body {padding: 0; margin: 0;width:100%;height:100%;box-sizing: border-box;
 /* .main_sec4 .acc_wrap .acc_cont:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; border-bottom: 1px solid #dedede;} */
 .main_sec4 .acc_wrap .acc_cont p {font-size: 18px; line-height: 24px;}
 .main_sec4 .acc_wrap .acc_cont .txt_btn a {display: inline-block; position: relative; padding-right: 20px; padding-bottom: 2px; margin-top: 20px; font-size: 16px; line-height: 24px; font-weight: 700; font-family: "Pretendard-Bold";}
-.main_sec4 .acc_wrap .acc_cont .txt_btn a:before {content: ""; display: block; position: absolute; top: 0; right: 0; width: 20px; height: 20px; background: url(../img/btn_arrow.png) no-repeat center center / auto auto;}
+.main_sec4 .acc_wrap .acc_cont .txt_btn a:before {content: ""; display: block; position: absolute; top: 2px; right: 0; width: 20px; height: 20px; background: url(../img/btn_arrow.png) no-repeat center center / auto auto;}
 .main_sec4 .acc_wrap .acc_cont .txt_btn a:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #000;}
 
 

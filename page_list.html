@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <title>Pages List</title>
+  <style>
+    html, body {padding: 0; margin: 0; width:100%; height:100%; box-sizing: border-box; background-color: #fff; font-family: "Pretendard-Regular", "Pretendard-Bold", "Pretendard-ExtraBold", 'Noto Sans KR',  sans-serif;}
+    /* guide */
+    .guide .header {margin-bottom: 30px;}
+    .guide .header .header-wrap {display: flex; justify-content: space-between; padding: 20px 24px; background-color: #3b7cf3;}
+    .guide .header .header-wrap ul {display: flex;}
+    .guide .header .header-wrap ul li a {display: block; padding-right: 20px; font-size: 24px; font-weight: 700; color: #fff;}
+    .guide .header h1 {font-size: 24px; font-weight: 700; color: #fff;}
+    .guide .header h2 {font-size: 16px; font-weight: 700;}
+    .guide .header.type2,
+    .guide .sub-header.type2 {display: table; width: 100%; box-sizing: border-box;}
+    .guide .header h3,
+    .guide .header .table-date,
+    .guide .sub-header.type2 h3,
+    .guide .sub-header.type2 .table-date {display: table-cell; vertical-align: middle;}
+    .guide .sub-header.type2 .table-date {text-align: right;}
+    .guide .table-date.date-main span {font-weight: bold;}
+    /* .guide .table-date.date-main > span {font-size: .8em;} */
+    .guide .content {min-width: 1024px; margin: 0 auto}
+    .guide footer {padding:0 24px; min-width: 1024px; max-width: 1920px; margin: 20px auto 40px; font-size: small; color: silver; box-sizing: border-box;}
+    .guide .pages-table,
+    .guide .pages-table th,
+    .guide .pages-table td {padding: 8px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; border-collapse: collapse; table-layout: fixed; font-size: 14px; line-height: 1.2;}
+    .guide .pages-table:last-child,
+    .guide .pages-table th:last-child,
+    .guide .pages-table td:last-child {border-right: 0;}
+    .guide .pages-table td.etc {font-size: .7em;}
+    .guide .pages-table th {font-weight: 700; background-color: #e7efff;}
+    .guide .row-done{opacity: 0.6;}
+    .guide .pages-list{padding: 0 24px}
+    .guide .pages-list-cp{margin: 10px auto;margin-bottom:40px;}
+    .guide .pages-table{margin: 10px auto;width: 100%;}
+    .guide .table-date{text-align: right;}
+    .guide .pages-list-content{margin:20px 0;}
+    .guide .title-pages-list{line-height: 1.2;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap guide">
+    <div class="container">
+      <div class="content">
+        <header class="header">
+          <div class="header-wrap">
+            <h1>채팅+ 오피셜 웹사이트 퍼블리싱 가이드</h1>
+            <div class="guide-tab">
+              <ul>
+                <li><a href="#tab01" class="active">퍼블 리스트</a></li>
+                <li><a href="#tab02">UI 가이드</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="tab-content">
+          <div id="tab01" class="pages-list">
+            <header class="header type2">
+              <h2>[채팅+ 오피셜 웹사이트] PC & Mobile 사용자 서비스 IA</h2>
+              <div class="table-date date-main">
+                <span class="table-text-wrap">총 페이지: 
+                  <span class="main-text-total"></span>
+                </span>
+                <span class="table-text-wrap">완료: 
+                  <span class="main-text-complete"></span>
+                </span>
+                <span class="table-text-wrap">진척률: 
+                  <span class="main-text-process"></span>
+                </span>
+              </div>
+            </header>
+  
+            <div class="pages-list-wrap">
+  
+              <!-- ************************************************ CBT (임시 소개페이지) ************************************************ -->
+              <div class="pages-list-cp">
+                <header class="sub-header type2">
+                  <h3>CBT (임시 소개페이지)</h3>
+                  <div class="table-date">
+                    <span class="table-text-wrap">페이지: 
+                      <span class="table-text-total"></span>
+                    </span>
+                    <span class="table-text-wrap">완료: 
+                      <span class="table-text-complete"></span>
+                    </span>
+                    <span class="table-text-wrap">진척률: 
+                      <span class="table-text-process"></span>
+                    </span>
+                  </div>
+                </header>
+                <div class="pages-table-wrap">
+                  <table class="pages-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">1Depth</th>
+                        <th scope="col">2Depth</th>
+                        <th scope="col">3Depth</th>
+                        <th scope="col">4Depth</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">완료일</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">비고</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row-done">
+                        <td>소개 페이지</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="./html/cbt/main.html" target="_blank">main.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                      <tr class="row-done">
+                        <td></td>
+                        <td>신청 페이지</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="./html/cbt/sub_form.html" target="_blank">sub_form.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                      <tr class="row-done">
+                        <td></td>
+                        <td></td>
+                        <td>CBT 신청 완료안내(사전 신청 기간)</td>
+                        <td></td>
+                        <td><a href="./html/cbt/complete1.html" target="_blank">complete1.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                      <tr class="row-done">
+                        <td></td>
+                        <td></td>
+                        <td>CBT 신청 완료안내(정식 테스트 기간)</td>
+                        <td></td>
+                        <td><a href="./html/cbt/complete2.html" target="_blank">complete2.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                      <tr class="row-done">
+                        <td></td>
+                        <td></td>
+                        <td>404 에러 페이지</td>
+                        <td></td>
+                        <td><a href="./html/cbt/error1.html" target="_blank">error1.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                      <tr class="row-done">
+                        <td></td>
+                        <td></td>
+                        <td>403 에러 페이지</td>
+                        <td></td>
+                        <td><a href="./html/cbt/error2.html" target="_blank">error2.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                      <tr class="row-done">
+                        <td></td>
+                        <td></td>
+                        <td>500 에러 페이지</td>
+                        <td></td>
+                        <td><a href="./html/cbt/error3.html" target="_blank">error3.html</a></td>
+                        <td>
+                          
+                        </td>
+                        <td>완료</td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- ************************************************ 이벤트/ 공지 사항 ************************************************ -->
+              <div class="pages-list-cp">
+                <header class="sub-header type2">
+                  <h3>이벤트/ 공지 사항</h3>
+                  <div class="table-date">
+                    <span class="table-text-wrap">페이지: 
+                      <span class="table-text-total"></span>
+                    </span>
+                    <span class="table-text-wrap">완료: 
+                      <span class="table-text-complete"></span>
+                    </span>
+                    <span class="table-text-wrap">진척률: 
+                      <span class="table-text-process"></span>
+                    </span>
+                  </div>
+                </header>
+                <div class="pages-table-wrap">
+                  <table class="pages-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">1Depth</th>
+                        <th scope="col">2Depth</th>
+                        <th scope="col">3Depth</th>
+                        <th scope="col">4Depth</th>
+                        <th scope="col">URL</th>
+                        <th scope="col">완료일</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">비고</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row-done">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="" target="_blank"></a></td>
+                        <td>
+                          
+                        </td>
+                        <td></td>
+                        <td class="etc">
+  
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div id="tab02">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="./assets/js/vendor/jquery-2.1.3.min.js"></script>
+  <script>
+    var cal_total;
+    var cal_complete;
+    var cal_process;
+    var legend_total;
+    var legend_complete;
+    var legend_process;
+    var ia_num;
+    var cal_total_main = $('body').find('.pages-table tbody > tr').length;
+    var cal_complete_main = $('body').find('.row-done').length;
+    var cal_process_main = Math.round((cal_complete_main/cal_total_main)*100);
+    var legend_total_main = $('.pages-list').find('.main-text-total');
+    var legend_complete_main = $('.pages-list').find('.main-text-complete');
+    var legend_process_main = $('.pages-list').find('.main-text-process');
+
+    legend_total_main.text(cal_total_main);
+    legend_complete_main.text(cal_complete_main);
+    if (cal_complete_main > 0){legend_process_main.text(cal_process_main+'%')}
+    else {legend_process_main.text('0%')}
+
+    $( ".pages-list-cp" ).each(function( index ) {
+      cal_total = $(this).find('.pages-table tbody > tr').length;
+      cal_complete = $(this).find('.row-done').length;
+      cal_process = Math.round((cal_complete/cal_total)*100);
+
+      legend_total = $('.pages-list-cp').find('.table-text-total');
+      legend_complete = $('.pages-list-cp').find('.table-text-complete');
+      legend_process = $('.pages-list-cp').find('.table-text-process');
+
+      legend_total.eq(index).text(cal_total);
+      legend_complete.eq(index).text(cal_complete);
+      if (cal_complete > 0){legend_process.eq(index).text(cal_process+'%')}
+      else {legend_process.eq(index).text('0%')}
+
+      ia_num = $('.pages-list-cp').find('.col-num');
+
+      for (var i=0;i < cal_total;i++){
+        $('.pages-list-cp').eq(index).find('.col-num').eq(i).text(i+1);
+      }
+    });
+
+    $(function(){
+      $('.tab-content > div').hide();
+      $('ul a').click(function () {
+        $('.tab-content > div').hide().filter(this.hash).fadeIn();
+        $('ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+      }).filter(':eq(0)').click();
+  	});
+  </script>
+</body>
+
+</html>
+
+

@@ -1,1 +1,0 @@
-# skt_chatting

@@ -125,3 +125,20 @@ function scrollEventManage(){
   lastScrollTop = Yoffset <= 0 ? 0 : Yoffset;
   // 위 아래 구분을 위한 스크립트====================
 }
+
+
+
+// accdion
+$(document).ready(function () {
+    $(".acc_cont").hide();
+    $(".acc_tit.acc-add").addClass("open").next().slideDown(300);
+
+    $(".acc_tit").click(function () {
+        if ($(this).hasClass("open")) {
+        $(this).removeClass("open").next().slideUp(300);
+        } else {
+        $(".acc_tit").removeClass("open").next().slideUp(300);
+        $(this).addClass("open").next().slideDown(300);
+        }
+    });
+});

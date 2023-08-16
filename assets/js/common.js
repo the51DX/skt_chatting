@@ -1,3 +1,29 @@
+
+// header
+window.addEventListener('load', function(){
+    fetch('./gnb.html')
+    .then(function(res){                
+        res.text().then(function(html){
+            const footer = document.querySelector('header');
+            footer.innerHTML = html;                                
+        })
+    })
+    .catch(error => console.log(error))                     
+});
+
+// footer
+window.addEventListener('load', function(){
+    fetch('./footer.html')
+    .then(function(res){                
+        res.text().then(function(html){
+            const footer = document.querySelector('footer');
+            footer.innerHTML = html;                                
+        })
+    })
+    .catch(error => console.log(error))                     
+});
+
+
 // tab
 function tabNavItem() {
     const tabLink = '.tab-list li button';

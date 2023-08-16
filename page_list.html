@@ -47,37 +47,41 @@
     .guide .pages-list{padding: 0 24px}
     .guide .pages-list-cp{margin: 10px auto;margin-bottom:40px;}
     .pages-list-ver {margin-bottom: 80px;}
-    .pages-list-ver .ver-tit {padding: 10px; font-size: 24px; font-weight: 700; color: #fff; background-color: #759de7;}
+    .pages-list-ver .ver-tit {padding: 10px; font-size: 24px; font-weight: 700; color: #fff; background-color: #9e9e9e;}
     .guide .pages-table{margin: 10px auto;width: 100%;}
     .guide .table-date{text-align: right;}
     .guide .pages-list-content{margin:20px 0;}
     .guide .title-pages-list{line-height: 1.2;}
 
-
     .guide .ui-guide {min-width: 1024px; margin: 50px auto 0; padding: 0 20px;}
-    .guide .ui-guide .guide-wrap {margin-bottom: 50px;}
-    .guide .ui-guide .guide-btn-wrap {display: flex;}
-    .guide .ui-guide .guide-btn {padding-right: 20px;}
     .guide .ui-guide h3 {position: relative; margin-bottom: 20px; padding-bottom: 10px; font-size: 24px; font-weight: 700;}
     .guide .ui-guide h3::after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #ccc;}
+    .guide .ui-guide .guide-wrap {margin-bottom: 50px;}
+    .guide .ui-guide .guide-btn-wrap {display: flex; align-items: center;}
+    .guide .ui-guide .guide-btn {padding-right: 20px;}
+    .guide .ui-guide .guide-flag-wrap {display: flex; align-items: center;}
+    .guide .ui-guide .guide-flag-wrap .guide-flag,
+    .guide .ui-guide .guide-flag-wrap .guide-badge {padding-right: 20px;}
   </style>
 </head>
 
 <body>
   <div class="wrap guide">
     <div class="container">
-      <div class="content">
-        <header class="header">
-          <div class="header-wrap">
-            <h1>채팅+ 오피셜 웹사이트 퍼블리싱 가이드</h1>
-            <div class="guide-tab">
-              <ul>
-                <li><a href="#tab01" class="active">퍼블 리스트</a></li>
-                <li><a href="#tab02">UI 가이드</a></li>
-              </ul>
-            </div>
+
+      <header class="header">
+        <div class="header-wrap">
+          <h1>채팅+ 오피셜 웹사이트 퍼블리싱 가이드</h1>
+          <div class="guide-tab">
+            <ul>
+              <li><a href="#tab01" class="active">퍼블 리스트</a></li>
+              <li><a href="#tab02">UI 가이드</a></li>
+            </ul>
           </div>
-        </header>
+        </div>
+      </header>
+
+      <div class="content">
 
         <div class="tab-content">
           <div id="tab01" class="pages-list">
@@ -135,7 +139,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="./html/cbt/main.html" target="_blank">main.html</a></td>
+                        <td><a href="./html_pc/cbt/main.html" target="_blank">main</a></td>
                         <td>
                           
                         </td>
@@ -149,7 +153,7 @@
                         <td>신청 페이지</td>
                         <td></td>
                         <td></td>
-                        <td><a href="./html/cbt/sub_form.html" target="_blank">sub_form.html</a></td>
+                        <td><a href="./html_pc/cbt/sub_form.html" target="_blank">sub_form</a></td>
                         <td>
                           
                         </td>
@@ -163,7 +167,7 @@
                         <td></td>
                         <td>CBT 신청 완료안내(사전 신청 기간)</td>
                         <td></td>
-                        <td><a href="./html/cbt/complete1.html" target="_blank">complete1.html</a></td>
+                        <td><a href="./html_pc/cbt/complete1.html" target="_blank">complete1</a></td>
                         <td>
                           
                         </td>
@@ -177,7 +181,7 @@
                         <td></td>
                         <td>CBT 신청 완료안내(정식 테스트 기간)</td>
                         <td></td>
-                        <td><a href="./html/cbt/complete2.html" target="_blank">complete2.html</a></td>
+                        <td><a href="./html_pc/cbt/complete2.html" target="_blank">complete2</a></td>
                         <td>
                           
                         </td>
@@ -191,7 +195,7 @@
                         <td></td>
                         <td>404 에러 페이지</td>
                         <td></td>
-                        <td><a href="./html/cbt/error1.html" target="_blank">error1.html</a></td>
+                        <td><a href="./html_pc/cbt/error1.html" target="_blank">error1</a></td>
                         <td>
                           
                         </td>
@@ -205,7 +209,7 @@
                         <td></td>
                         <td>403 에러 페이지</td>
                         <td></td>
-                        <td><a href="./html/cbt/error2.html" target="_blank">error2.html</a></td>
+                        <td><a href="./html_pc/cbt/error2.html" target="_blank">error2</a></td>
                         <td>
                           
                         </td>
@@ -219,7 +223,7 @@
                         <td></td>
                         <td>500 에러 페이지</td>
                         <td></td>
-                        <td><a href="./html/cbt/error3.html" target="_blank">error3.html</a></td>
+                        <td><a href="./html_pc/cbt/error3.html" target="_blank">error3</a></td>
                         <td>
                           
                         </td>
@@ -285,10 +289,10 @@
                   </div>
                 </div>
   
-                <!-- ************************************************ 이벤트 / 공지 사항 ************************************************ -->
+                <!-- ************************************************ 공지 사항 ************************************************ -->
                 <div class="pages-list-cp">
                   <header class="sub-header type2">
-                    <h3>이벤트/ 공지 사항</h3>
+                    <h3>공지사항</h3>
                     <div class="table-date">
                       <span class="table-text-wrap">페이지: 
                         <span class="table-text-total"></span>
@@ -321,7 +325,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td><a href="./html_pc/c-main-evt-list.html" target="_blank">c-main-evt-list.html</a></td>
+                          <td><a href="./html_pc/c-main-evt-list.html" target="_blank">c-main-evt-list</a></td>
                           <td></td>
                           <td>진행중</td>
                           <td class="etc">
@@ -333,7 +337,7 @@
                           <td>이벤트 상세</td>
                           <td></td>
                           <td></td>
-                          <td><a href="./html_pc/c-main-evt-view.html" target="_blank">c-main-evt-view.html</a></td>
+                          <td><a href="./html_pc/c-main-evt-view.html" target="_blank">c-main-evt-view</a></td>
                           <td></td>
                           <td></td>
                           <td class="etc">
@@ -345,7 +349,7 @@
                           <td>공지사항 상세</td>
                           <td></td>
                           <td></td>
-                          <td><a href="./html_pc/c-main-evt-view.html" target="_blank">c-main-evt-view.html</a></td>
+                          <td><a href="./html_pc/c-main-evt-view.html" target="_blank">c-main-evt-view</a></td>
                           <td></td>
                           <td></td>
                           <td class="etc">
@@ -393,7 +397,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td><a href="./html_pc/c-main-faq-litv.html" target="_blank">c-main-faq-litv.html</a></td>
+                          <td><a href="./html_pc/c-main-faq-litv.html" target="_blank">c-main-faq-litv</a></td>
                           <td></td>
                           <td></td>
                           <td class="etc">
@@ -656,6 +660,23 @@
 
         <div class="tab-content ui-guide">
           <div id="tab02">
+            <div class="guide-wrap">
+              <h3>flag & badge</h3>
+              <div class="guide-flag-wrap">
+                <div class="guide-flag">
+                  <div class="flag">
+                    <span>안내</span>
+                  </div>
+                </div>
+
+                <div class="guide-badge">
+                  <div class="badge">
+                    <span>N</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="guide-wrap">
               <h3>Button</h3>
               <div class="guide-btn-wrap">

@@ -12,34 +12,14 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-    <title>이벤트와 공지사항</title>
+    <title>공지사항</title>
 </head>
 <body>
   <div class="wrap">
+
     <!-- header -->
-    <header id="header" class="gnb_tool_bar">
-      <div class="header_inner">
-
-        <h1 class="logo">
-          <a href="#"><img src="../assets/img/logo.svg" alt="채팅 플러스 로고 이미지"></a>
-        </h1>
-
-        <nav class="gnb">
-          <div class="gnb_list">
-            <ul>
-              <li><a href="#">유용한 사용법</a></li>
-              <li><a href="#">이벤트 및 공지사항</a></li>
-              <li><a href="#">자주 묻는 질문</a></li>
-              <li><a href="#">다운로드</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="b_btn">
-          <a href="">다운로드 하러가기</a>
-        </div>
-      </div> 
-    </header>
-    <!--// header -->
+    <header id="header"></header>
+    <!-- // header -->
       
     <!-- container -->
     <div id="container">
@@ -48,145 +28,162 @@
           <div class="inner">
             <div class="notice_wrap">
               <div class="tit_area">
-                <h3 class="tit">이벤트와 공지사항</h3>
-                <span class="sub_tit">채팅+의 다양한 소식등을 확인하세요.</span>
+                <h3 class="tit">공지사항</h3>
+                <!-- <span class="sub_tit">채팅+의 다양한 소식등을 확인하세요.</span> -->
               </div>
-  
-              <div class="search_wrap">
-                <div class="search_box">
-                  <div class="unit_box">
-                    <input type="search" title="" placeholder="검색 키워드를 입력해 주세요.">
-                    <button class="search_btn"><span class="blind">검색</span></button>
+
+              <!-- 타이틀이 없을 경우 (통이미지) -->
+              <div class="event">
+                <div class="event_inn">
+                  <div class="img_area">
+                    <img src="https://via.placeholder.com/1330x288" alt="">
                   </div>
                 </div>
               </div>
 
-              <div class="box_list">
-                <ul>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
+              <!-- 타이틀이 있을 경우 -->
+              <div class="event bg">
+                <div class="event_inn">
+                  <div class="event_txt">
+                    <p>
+                      채팅+ PC버전 런칭 기념 특별한 오픈 혜택!<br>
+                      다운로드 하고 경품 받자!
+                    </p>
+                    <span>2023.08.01 ~ 2023.08.31</span>
+                  </div>
+                  <div class="img_area">
+                    <img src="https://via.placeholder.com/152x152" alt="">
+                  </div>
+                </div>
+              </div>
 
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
+              <div class="notice_list_wrap">
+                <div class="search_wrap">
+                  <span class="nums">총 <span class="count">20</span>건</span>
+                  <div class="search_box">
+                    <div class="unit_box">
+                      <input type="search" title="" placeholder="검색 키워드를 입력해 주세요.">
+                      <button class="search_btn"><span class="blind">검색</span></button>
+                    </div>
+                  </div>
+                </div>
 
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
+                <div class="notice_list">
+                  <div class="list_type_table">
+                    <table>
+                      <colgroup>
+                        <col style="width: 163px;">
+                        <col style="width: auto;">
+                        <col style="width: 150px;">
+                      </colgroup>
+                      <thead class="blind">
+                        <tr>
+                          <th>구분</th>
+                          <th>제목</th>
+                          <th>날짜</th>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="fixed">
+                          <td class="division">
+                            <div class="flag"> 
+                              <span>안내</span>
+                            </div>
+                          </td>
+                          <td class="title"><a href="#none">보이스피싱 주의 안내</a></td>
+                          <td class="date">2023.08.02</td>
+                        </tr>
+                        <tr>
+                          <td class="division">
+                            <div class="flag"> 
+                              <span>점검</span>
+                            </div>
+                          </td>
+                          <td class="title">
+                            <div class="new">
+                              <div class="badge">
+                                <span>N</span>
+                              </div>
+                              <a href="#none">
+                                채팅+ 서비스 점검 안내 (21:00 ~24:00)
+                              </a>
+                            </div>
+                          </td>
+                          <td class="date">2023.08.02</td>
+                        </tr>
+                        <tr>
+                          <td class="division">
+                            <div class="flag"> 
+                              <span>점검</span>
+                            </div>
+                          </td>
+                          <td class="title">
+                            <div class="new">
+                              <div class="badge">
+                                <span>N</span>
+                              </div>
+                              <a href="#none">
+                                채팅+ 서비스 점검 안내 (21:00 ~24:00)
+                              </a>
+                            </div>
+                          </td>
+                          <td class="date">2023.08.02</td>
+                        </tr>
+                        <tr>
+                          <td class="division">
+                            <div class="flag"> 
+                              <span>업데이트</span>
+                            </div>
+                          </td>
+                          <td class="title">
+                            <a href="#none">
+                              채팅+ 서비스 업데이트! 더 나은 메신저 이용을 위해 새로운 기능들을 선보여요! 타이틀 1줄 이상 길어지는 경우 말줄임 처리 채팅+ 서비스 업데이트! 더 나은 메신저 이용을 위해 새로운 기능들을 선보여요! 타이틀 1줄 이상 길어지는 경우 말줄임 처리
+                            </a>
+                          </td>
+                          <td class="date">2023.08.02</td>
+                        </tr>
+                        <tr>
+                          <td class="division">
+                            <div class="flag"> 
+                              <span>안내</span>
+                            </div>
+                          </td>
+                          <td class="title">
+                            <a href="#none">
+                              보이스피싱 주의 안내
+                            </a>
+                          </td>
+                          <td class="date">2023.08.02</td>
+                        </tr>
+                        <tr>
+                          <td class="division">
+                            <div class="flag"> 
+                              <span>업데이트</span>
+                            </div>
+                          </td>
+                          <td class="title">
+                            <a href="#none">
+                              채팅+ 서비스 업데이트! 더 나은 메신저 이용을 위해 새로운 기능들을 선보여요!
+                            </a>
+                          </td>
+                          <td class="date">2023.08.02</td>
+                        </tr>
 
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
-
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
-
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
-
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
-
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
-
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#none">
-                      <div class="img_area">
-                        <img src="https://via.placeholder.com/517x278" alt="">
-                      </div>
-
-                      <div class="txt_area">
-                        <span class="flag">진행중</span>
-                        <strong class="notice_tit">채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리 채팅+ PC버전 런칭 기념 특별한 혜택! 2줄 이상 말줄임 처리</strong>
-                        <span class="date">2023.07.05 ~ 2023.07.24</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+                      </tbody>
+                    </table>
+                  </div> 
+                </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-    </div>            
+    </div>  
+    <!-- // container -->
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <!-- // footer -->
   </div> 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

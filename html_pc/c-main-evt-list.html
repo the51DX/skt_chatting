@@ -10,6 +10,7 @@
     <meta property="og:image" content="">
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <title>공지사항</title>
@@ -29,20 +30,21 @@
             <div class="notice_wrap">
               <div class="tit_area">
                 <h3 class="tit">공지사항</h3>
-                <!-- <span class="sub_tit">채팅+의 다양한 소식등을 확인하세요.</span> -->
               </div>
 
               <!-- 타이틀이 없을 경우 (통이미지) -->
               <div class="event">
                 <div class="event_inn">
                   <div class="img_area">
-                    <img src="https://via.placeholder.com/1330x288" alt="">
+                    <a href="#">
+                      <img src="../assets/img/event_list_img_01.png" alt="">
+                    </a>
                   </div>
                 </div>
               </div>
 
               <!-- 이미지안 타이틀이 있을 경우 -->
-              <div class="event bg">
+              <!-- <div class="event bg">
                 <div class="event_inn">
                   <div class="event_txt">
                     <p>
@@ -52,17 +54,17 @@
                     <span>2023.08.01 ~ 2023.08.31</span>
                   </div>
                   <div class="img_area">
-                    <img src="https://via.placeholder.com/152x152" alt="">
+                    <img src="../assets/img/event_list_img_01.png" alt="">
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="notice_list_wrap">
                 <div class="search_wrap">
                   <span class="list_nums">총 <span class="count">20</span>건</span>
                   <div class="search_box">
                     <div class="unit_box">
-                      <input type="search" title="" placeholder="검색 키워드를 입력해 주세요.">
+                      <input type="search" title="" placeholder="키워드를 입력해 주세요">
                       <button class="search_btn"><span class="blind">검색</span></button>
                     </div>
                   </div>
@@ -72,7 +74,7 @@
                   <div class="list_type_table">
                     <table>
                       <colgroup>
-                        <col style="width: 163px;">
+                        <col style="width: 156px;">
                         <col style="width: auto;">
                         <col style="width: 150px;">
                       </colgroup>
@@ -82,11 +84,11 @@
                           <th>제목</th>
                           <th>날짜</th>
                         </tr> 
-                      </tbody>
+                      </thead>
                       <tbody>
                         <tr class="fixed">
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>안내</span>
                             </div>
                           </td>
@@ -95,13 +97,13 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>점검</span>
                             </div>
                           </td>
                           <td class="title">
                             <div class="new">
-                              <div class="badge">
+                              <div class="flag">
                                 <span>N</span>
                               </div>
                               <a href="#none">
@@ -113,13 +115,13 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>점검</span>
                             </div>
                           </td>
                           <td class="title">
                             <div class="new">
-                              <div class="badge">
+                              <div class="flag">
                                 <span>N</span>
                               </div>
                               <a href="#none">
@@ -131,7 +133,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>업데이트</span>
                             </div>
                           </td>
@@ -144,7 +146,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>안내</span>
                             </div>
                           </td>
@@ -157,7 +159,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>업데이트</span>
                             </div>
                           </td>
@@ -170,7 +172,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>안내</span>
                             </div>
                           </td>
@@ -183,7 +185,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>업데이트</span>
                             </div>
                           </td>
@@ -196,7 +198,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>업데이트</span>
                             </div>
                           </td>
@@ -209,7 +211,7 @@
                         </tr>
                         <tr>
                           <td class="division">
-                            <div class="flag"> 
+                            <div class="badge"> 
                               <span>안내</span>
                             </div>
                           </td>
@@ -224,7 +226,7 @@
                     </table>
 
                     <div class="btn_wrap">
-                      <div class="w_btn">
+                      <div class="more_btn">
                         <a href="">더보기</a>
                       </div>
                     </div>

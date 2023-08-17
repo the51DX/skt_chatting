@@ -28,49 +28,80 @@
         <section class="section">
           <div class="inner">
             <div class="faq_wrap">
-                <div class="tit_area">
-                  <h3 class="tit">자주 묻는 질문</h3>
-                </div>
+              <div class="tit_area">
+                <h3 class="tit">자주 묻는 질문</h3>
+              </div>
 
-                <div class="tab_wrap">
-                  <div class="tab_inn">
-                    <ul>
-                      <li><a href="#">메세지</a></li>
-                      <li><a href="#">보안</a></li>
-                      <li><a href="#">설치</a></li>
-                      <li><a href="#">오류</a></li>
-                      <li><a href="#">기타</a></li>
-                    </ul>
-                  </div>
+              <div class="tab_wrap">
+                <div class="tab_inn">
+                  <ul>
+                    <li><a href="#tab_01">서비스</a></li>
+                    <li><a href="#tab_02">이용</a></li>
+                    <li><a href="#tab_03">보안</a></li>
+                    <li><a href="#tab_04">오류</a></li>
+                    <li><a href="#tab_05">기타</a></li>
+                  </ul>
                 </div>
+              </div>
 
+              <style>
+                .faq_wrap .acc_wrap {max-width: 1330px; margin: 0 auto 60px;}
+                .faq_wrap .acc_wrap .acc_tit {position: relative; display: flex; align-items: center; padding: 42px 24px; border-top: 1px solid #ddd; cursor: pointer;}
+                .faq_wrap .acc_wrap .acc_tit .acc_qa {display: block; padding-right: 24px; font-size: 24px; line-height: 24px; color: #1a1a1a; font-weight: 700;}
+                .faq_wrap .acc_wrap .acc_tit .badge {padding-right: 32px; width: 100px; text-align: center;}
+                .faq_wrap .acc_wrap .acc_tit .acc_txt {font-size: 20px; line-height: 28px; color: #1a1a1a; font-weight: 500;}
+                .faq_wrap .acc_wrap:last-of-type .acc_tit { border-bottom: 1px solid #ddd;}
+                .faq_wrap .acc_wrap .acc_tit:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px;}
+                /* .acc_wrap .acc_tit:before:first-child {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background-color: #1a1a1a;} */
+                .faq_wrap .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #999; border-right: 2px solid #999; transform: rotate(135deg);}
+                .faq_wrap .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #1a1a1a; border-right: 2px solid #1a1a1a; transform: rotate(315deg);}
+                .faq_wrap .acc_wrap .acc_cont {padding: 40px 0 40px 48px; background-color: #fafafa; border-top: 1px solid #ddd;}
+                .faq_wrap .acc_wrap:first-of-type .acc_cont {border-top: 1px solid #ddd;}
+                /* .acc_wrap:last-of-type .acc_cont {border-top: none; border-bottom: 1px solid #1a1a1a;} */
+                .faq_wrap .acc_wrap .acc_cont p {font-size: 18px; line-height: 24px;}
+                .faq_wrap .btn_wrap {text-align: center;}
+              </style>
+
+              <div id="tab_01" class="sevice">
                 <div class="accordion">
                   <div class="acc_wrap">
-                    <strong class="acc_tit js_acc_tit acc-add">Q. 채팅+ PC버전 베타에 대한 불편한 점이나 피드백은 어디로 보내면 되나요?</strong>
-                    <div class="acc_cont">
-                      <p>아래 [피드백 보내기] 버튼을 통해 수시로 공유해 주시면 됩니다.</p>
-                      <div class="txt_btn">
-                          <a href="#" target="_blank">피드백 보내기</a>
-                      </div>
+                    <div class="acc_tit js_acc_tit acc-add">
+                      <span class="acc_qa">Q.</span> 
+                      <div class="badge">
+                        <span>서비스</span>
+                      </div>  
+                      <p class="acc_txt">그룹 채팅 이용 시 몇 명까지 초대 가능한가요?</p>
                     </div>
-                  </div>
-                  <div class="acc_wrap">
-                    <strong class="acc_tit js_acc_tit">Q. 채팅+ PC버전 베타 테스트 참여 중 PC를 초기화했습니다. 채팅+ PC버전 베타를 재설치할 수 있나요?</strong>
                     <div class="acc_cont">
-                      <p>UOS 채팅+ PC버전 베타에 참여 중이시라면 아래 [다운로드 하기] 버튼을 통해 재설치하실 수 있습니다.</p>
-                      <div class="txt_btn"> 
-                          <a href="#">다운로드 하기</a>
+                      <div class="">
+                        <span class="">A</span>
+                        <p class="">
+                          네, 가능합니다.<br>
+                          다만, 아이폰 사용자는 채팅+ PC버전을 직접 이용하실 수는 없습니다.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="btn_wrap">
+                  <div class="more_btn">
+                    <a href="">더보기</a>
+                  </div>
+                </div>
+
+                <div class="">
+
+                </div>
+              </div>
             </div>
           </div>
         </section>
+
       </div>
     </div>   
     <!-- // container -->      
-    
+      
     <!-- footer -->
     <footer id="footer"></footer>
     <!-- // footer -->

@@ -66,20 +66,20 @@ showOne() {
     const accordionHeading = document.querySelectorAll(this.heading);
     accordionHeading.forEach((item, key) => {
         item.addEventListener('click', () => {
-            if (item.classList.contains("is-active")) {
-                item.classList.remove("is-active");
+            if (item.classList.contains("active")) {
+                item.classList.remove("active");
             } else {
-                const accordionTitlesWithIsOpen = document.querySelectorAll(".accordion > .is-active");
+                const accordionTitlesWithIsOpen = document.querySelectorAll(".accordion > .active");
                 accordionTitlesWithIsOpen.forEach((accordionTitleWithIsOpen) => {
-                    accordionTitleWithIsOpen.classList.remove("is-active");
+                    accordionTitleWithIsOpen.classList.remove("active");
                 });
-                item.classList.add("is-active");
+                item.classList.add("active");
             }
         });
         });
     }
 }
-const accordion = new Accordion('.title');
+const accordion = new Accordion('.acc_tit');
 // for open every use showAll();
 accordion.showOne();
 
@@ -155,16 +155,16 @@ function scrollEventManage(){
 
 
 // accdion
-$(document).ready(function () {
-    $(".acc_cont").hide();
-    $(".acc_tit.acc-add").addClass("open").next().slideDown(300);
+// $(document).ready(function () {
+//     $(".acc_cont").hide();
+//     $(".acc_tit.acc-add").addClass("open").next().slideDown(300);
 
-    $(".acc_tit").click(function () {
-        if ($(this).hasClass("open")) {
-        $(this).removeClass("open").next().slideUp(300);
-        } else {
-        $(".acc_tit").removeClass("open").next().slideUp(300);
-        $(this).addClass("open").next().slideDown(300);
-        }
-    });
-});
+//     $(".acc_tit").click(function () {
+//         if ($(this).hasClass("open")) {
+//         $(this).removeClass("open").next().slideUp(300);
+//         } else {
+//         $(".acc_tit").removeClass("open").next().slideUp(300);
+//         $(this).addClass("open").next().slideDown(300);
+//         }
+//     });
+// });

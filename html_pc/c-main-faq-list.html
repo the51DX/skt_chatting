@@ -43,37 +43,59 @@
               </div>
 
               <style>
-                .faq_wrap .acc_wrap {max-width: 1330px; margin: 0 auto 60px;}
-                .faq_wrap .acc_wrap .acc_tit {position: relative; display: flex; align-items: center; padding: 42px 24px; border-top: 1px solid #ddd; cursor: pointer;}
-                .faq_wrap .acc_wrap .acc_tit .acc_qa {display: block; padding-right: 24px; font-size: 24px; line-height: 24px; color: #1a1a1a; font-weight: 700;}
-                .faq_wrap .acc_wrap .acc_tit .badge {padding-right: 32px; width: 100px; text-align: center;}
-                .faq_wrap .acc_wrap .acc_tit .acc_txt {font-size: 20px; line-height: 28px; color: #1a1a1a; font-weight: 500;}
-                .faq_wrap .acc_wrap:last-of-type .acc_tit { border-bottom: 1px solid #ddd;}
-                .faq_wrap .acc_wrap .acc_tit:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px;}
-                /* .acc_wrap .acc_tit:before:first-child {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background-color: #1a1a1a;} */
-                .faq_wrap .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #999; border-right: 2px solid #999; transform: rotate(135deg);}
-                .faq_wrap .acc_wrap .acc_tit.open:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #1a1a1a; border-right: 2px solid #1a1a1a; transform: rotate(315deg);}
-                .faq_wrap .acc_wrap .acc_cont {padding: 40px 0 40px 48px; background-color: #fafafa; border-top: 1px solid #ddd;}
-                .faq_wrap .acc_wrap:first-of-type .acc_cont {border-top: 1px solid #ddd;}
-                /* .acc_wrap:last-of-type .acc_cont {border-top: none; border-bottom: 1px solid #1a1a1a;} */
-                .faq_wrap .acc_wrap .acc_cont p {font-size: 18px; line-height: 24px;}
-                .faq_wrap .btn_wrap {text-align: center;}
+                .accordion {margin-bottom: 60px;}
+                .acc_wrap.active .acc_cont {height: 100%;}
+                .acc_wrap {max-width: 1330px; margin: 0 auto;}
+                .acc_wrap .acc_tit {position: relative; display: flex; align-items: center; padding: 42px 24px; border-top: 1px solid #ddd; cursor: pointer;}
+                .acc_wrap .acc_tit .que_q {display: block; padding-right: 24px; font-size: 24px; line-height: 24px; color: #1a1a1a; font-weight: 700;}
+                .acc_wrap .acc_tit .badge {padding-right: 32px; width: 100px; text-align: center;}
+                .acc_wrap .acc_tit .que_txt {display:inline-block; margin-right: 50px; font-size: 20px; line-height: 28px; color: #1a1a1a; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; letter-spacing:0; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;}
+                .acc_wrap:first-of-type .acc_tit {border-top: 1px solid #1a1a1a;}
+                .acc_wrap:last-of-type .acc_tit {border-bottom: 1px solid #ddd;}
+                .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #999; border-right: 2px solid #999; transform: rotate(135deg);}
+                .acc_wrap .acc_tit.on {padding: 40px 24px 20px; background-color: #fafafa;}
+                .acc_wrap .acc_tit.on:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #1a1a1a; border-right: 2px solid #1a1a1a; transform: rotate(315deg);}
+                .acc_wrap .acc_cont {display: none; padding: 0 24px 56px; background-color: #fafafa;}
+                .acc_wrap .acc_cont .an_wrap {display: flex;}
+                /* .acc_wrap:first-of-type .acc_cont {border-top: 1px solid #ddd;} */
+                .acc_wrap:last-of-type .acc_cont {border-top: none; border-bottom: 1px solid #ddd;}
+                .acc_wrap .acc_cont .an_a {width: 184px; font-size: 24px; line-height: 24px; color: #3b7cf3; font-weight: 700;}
+                .acc_wrap .acc_cont .an_txt {font-size: 18px; line-height: 28px; color: #333;}
+                .btn_wrap {text-align: center;}
               </style>
 
               <div id="tab_01" class="sevice">
                 <div class="accordion">
                   <div class="acc_wrap">
-                    <div class="acc_tit js_acc_tit acc-add">
-                      <span class="acc_qa">Q.</span> 
+                    <div class="acc_tit">
+                      <span class="que_q">Q.</span> 
                       <div class="badge">
                         <span>서비스</span>
                       </div>  
-                      <p class="acc_txt">그룹 채팅 이용 시 몇 명까지 초대 가능한가요?</p>
+                      <p class="que_txt">그룹 채팅 이용 시 몇 명까지 초대 가능한가요?</p>
                     </div>
                     <div class="acc_cont">
-                      <div class="">
-                        <span class="">A</span>
-                        <p class="">
+                      <div class="an_wrap">
+                        <span class="an_a">A</span>
+                        <p class="an_txt">
+                          네, 가능합니다.<br>
+                          다만, 아이폰 사용자는 채팅+ PC버전을 직접 이용하실 수는 없습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="acc_wrap">
+                    <div class="acc_tit">
+                      <span class="que_q">Q.</span> 
+                      <div class="badge">
+                        <span>서비스</span>
+                      </div>  
+                      <p class="que_txt">그룹 채팅 이용 시 몇 명까지 초대 가능한가요?</p>
+                    </div>
+                    <div class="acc_cont">
+                      <div class="an_wrap">
+                        <span class="an_a">A</span>
+                        <p class="an_txt">
                           네, 가능합니다.<br>
                           다만, 아이폰 사용자는 채팅+ PC버전을 직접 이용하실 수는 없습니다.
                         </p>
@@ -91,6 +113,10 @@
                 <div class="">
 
                 </div>
+              </div>
+
+              <div id="tab_02" class="use">
+
               </div>
             </div>
           </div>

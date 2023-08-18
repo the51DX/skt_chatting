@@ -30,16 +30,26 @@
                 <h3 class="tit">자주 묻는 질문</h3>
               </div>
 
+              <style>
+                .tab_wrap {margin-bottom: 60px;}
+                .tab_wrap ul {display: flex; justify-content: center;}
+                .tab_wrap li {padding-right: 8px; overflow: hidden;}
+                .tab_wrap li:last-child {padding-right: 0;}
+                .tab_wrap li a {display: block; padding: 9px 24px; font-size: 18px; line-height: 30px; font-weight: 600; color: #999; background-color: #f5f5f5; border-radius: 81px;}
+                .tab_wrap li a:hover,
+                .tab_wrap ul li.on .tab_btn {color: #fff; background-color: #1a1a1a;}
+                .tab_cont {display: none;}
+                .tab_cont.on {display: block;}
+              </style>
+
               <div class="tab_wrap">
-                <div class="tab_inn">
-                  <ul>
-                    <li><a href="#tab_01">서비스</a></li>
-                    <li><a href="#tab_02">이용</a></li>
-                    <li><a href="#tab_03">보안</a></li>
-                    <li><a href="#tab_04">오류</a></li>
-                    <li><a href="#tab_05">기타</a></li>
-                  </ul>
-                </div>
+                <ul>
+                  <li class="on"><a href="#tab_01" class="tab_btn">서비스</a></li>
+                  <li><a href="#tab_02" class="tab_btn">이용</a></li>
+                  <li><a href="#tab_03" class="tab_btn">보안</a></li>
+                  <li><a href="#tab_04" class="tab_btn">오류</a></li>
+                  <li><a href="#tab_05" class="tab_btn">기타</a></li>
+                </ul>
               </div>
 
               <style>
@@ -61,10 +71,9 @@
                 .acc_wrap:last-of-type .acc_cont {border-top: none; border-bottom: 1px solid #ddd;}
                 .acc_wrap .acc_cont .an_a {width: 184px; font-size: 24px; line-height: 24px; color: #3b7cf3; font-weight: 700;}
                 .acc_wrap .acc_cont .an_txt {font-size: 18px; line-height: 28px; color: #333;}
-                .btn_wrap {text-align: center;}
               </style>
 
-              <div id="tab_01" class="sevice">
+              <div id="tab_01" class="tab_cont on">
                 <div class="accordion">
                   <div class="acc_wrap">
                     <div class="acc_tit">
@@ -115,7 +124,19 @@
                 </div>
               </div>
 
-              <div id="tab_02" class="use">
+              <div id="tab_02" class="tab_cont">
+
+              </div>
+
+              <div id="tab_03" class="tab_cont">
+
+              </div>
+
+              <div id="tab_04" class="tab_cont">
+
+              </div>
+
+              <div id="tab_05" class="tab_cont">
 
               </div>
             </div>

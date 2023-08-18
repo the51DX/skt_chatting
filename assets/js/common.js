@@ -144,24 +144,36 @@ for(var i = 0; i < tabList.length; i++){
 };
 
 
-// faq
-var accordion = {
-    click: function(target) {
-      var $target = $(target);
-      $target.on('click', function() {
+// faq-accordion
+// var accordion = {
+//     click: function(target) {
+//       var $target = $(target);
+//       $target.on('click', function() {
   
-        if ($(this).hasClass('on')) {
-          slideUp($target);
-        } else {
-          slideUp($target);
-          $(this).addClass('on').next().slideDown();
-        }
+//         if ($(this).hasClass('on')) {
+//           slideUp($target);
+//         } else {
+//           slideUp($target);
+//           $(this).addClass('on').next().slideDown();
+//         }
   
-        function slideUp($target) {
-          $target.removeClass('on').next().slideUp();
-        }
+//         function slideUp($target) {
+//           $target.removeClass('on').next().slideUp();
+//         }
   
-      });
+//       });
+//     }
+// };
+// accordion.click('.acc_wrap > .acc_tit');
+
+const accordionItems = document.querySelectorAll(".acc_wrap");
+
+accordionItems.forEach(item =>
+  item.addEventListener("click", () => {
+    const isItemOpen = item.classList.contains("active");
+    accordionItems.forEach(item => item.classList.remove("active"));
+    if (!isItemOpen) {
+      item.classList.toggle("active");
     }
-};
-accordion.click('.acc_wrap > .acc_tit');
+  })
+);

@@ -44,8 +44,9 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 /* search */
 .search_wrap {display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;}
 .search_wrap .search_box {display: flex; justify-content: center; align-items: center;}
-.search_wrap .search_box .unit_box {position: relative; border: 1px solid #ccc; border-radius: 8px;}
+.search_wrap .search_box .unit_box {position: relative; border: 1px solid #ccc; border-radius: 10px;}
 .search_wrap .search_box .unit_box [type="search"] {padding: 3px 0 3px 19px; border-radius: 0; border: 0; background-color: transparent; width: 382px; font-size: 14px; line-height: 36px;}
+.search_wrap .search_box .unit_box input:focus {outline: 1px solid #3b7cf3; border-radius: 10px; color: #1a1a1a;}
 .search_wrap .search_box .unit_box [type="search"]::placeholder {font-size: 16px; font-weight: 500; color: #ccc; letter-spacing: -1px;}
 .search_wrap .search_box .unit_box .search_btn {position: absolute; right: 18.3px; top: 10px; width: 24px; height: 24px; background-image: url(../img/common/ico_search_btn.png); background-color: transparent; background-repeat: no-repeat; background-position: center; border: 0;}
 .search_wrap .search_box .unit_box [type="search"]::-ms-clear,
@@ -93,114 +94,3 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 #footer .footer_info .footer_left p,
 #footer .footer_info  copy {font-size: 16px; line-height: 24px; font-weight: 500; color: #333;}
 #footer .footer_info .footer_left span {padding: 0 16px; color: #000; opacity: .3;}
-
-
-
-
-/* ******************************************** notice ******************************************** */
-.notice_wrap .event.bg {margin-bottom: 120px; /* padding: 69px 92px; */ background-color: #2080ee; border-radius: 20px;}
-.notice_wrap .event.bg img {max-width: 100%; width: 100%; vertical-align: middle;}
-.notice_wrap .event.bg .event_inn {display: flex; justify-content: space-between; align-items: center;}
-.notice_wrap .event {margin-bottom: 120px;}
-.notice_wrap .event img {width: 100%; max-width: 100%; border-radius: 20px; vertical-align: middle;}
-.notice_wrap .event .event_txt p {margin-bottom: 32px; font-size: 36px; line-height: 48px; font-weight: 700; color: #fff;}
-.notice_wrap .event .event_txt span {font-size: 20px; line-height: 24px; font-weight: 500; color: #fff;}
-
-.notice_wrap .search_wrap .list_nums {display: inline-block; font-size: 24px; line-height: 29px; font-weight: 700; color: #1a1a1a;}
-.notice_wrap .search_wrap .list_nums .count {display: inline-block; font-size: 24px; line-height: 29px; font-weight: 700; color: #3b7cf3;}
-
-.notice_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px;}
-.notice_wrap .list_type_table table .fixed {background-color: rgba(59, 124, 243, 0.05);}
-.notice_wrap .list_type_table table .badge {width: 100px; text-align: center;}
-.notice_wrap .list_type_table table td {padding: 40px 32px 40px 24px; vertical-align: middle; border-top: 1px solid #ddd;}
-.notice_wrap .list_type_table table tr:last-child td {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-.notice_wrap .list_type_table table .title {padding-left: 0;}
-.notice_wrap .list_type_table table .title a {display: inline-block; max-width: 100%; font-size: 20px; color: #1a1a1a; line-height: 28px; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;}
-.notice_wrap .list_type_table table .title a:hover {text-decoration: underline;}
-.notice_wrap .list_type_table table .title .new a {font-weight: 700;}
-.notice_wrap .list_type_table table .new {display: flex; align-items: center;}
-.notice_wrap .list_type_table table .new .flag {margin-right: 12px;}
-.notice_wrap .list_type_table table .date {font-size: 18px; line-height: 28px; color: #a0a0a0; font-weight: 500; text-align: right;}
-.notice_wrap .btn_wrap {text-align: center;}
-
-.notice_wrap .notice_list.n_none table td {padding: 201px 0; text-align: center;}
-.notice_wrap .notice_list.n_none table td p {margin-top: 16px;}
-.notice_wrap .notice_list.n_none table .fixed td {padding: 40px 32px 40px 24px; text-align: left;}
-
-
-/* notice-view */
-.noti_view_wrap .detail_tit_wrap {margin-bottom: 80px; border-bottom: 1px solid #ddd;}
-.noti_view_wrap .detail_tit_wrap .detail_tit {display: block; margin-top: 20px; font-size: 48px; line-height: 64px; font-weight: 700; color: #1a1a1a;}
-.noti_view_wrap .detail_tit_wrap .detail_date {display: block; margin: 32px 0 60px; font-size: 20px; line-height: 28px; font-weight: 500; color: #999;}
-.noti_view_wrap .detail_cont_wrap .detail_cont_txt {margin-bottom: 160px; font-size: 18px; line-height: 28px; font-weight: 500; color: #333;}
-
-.noti_view_wrap .detail_sns {margin-bottom: 40px;}
-.noti_view_wrap .detail_sns ul {display: flex; justify-content: flex-end;}
-.noti_view_wrap .detail_sns ul li {padding-left: 10px;}
-
-.noti_view_wrap .preview_list_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px;}
-.noti_view_wrap .preview_list_wrap .list_type_table table td {padding: 40px 0; vertical-align: middle; border-top: 1px solid #ddd;}
-.noti_view_wrap .preview_list_wrap .list_type_table table tr:last-child td {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-.noti_view_wrap .preview_list_wrap .list_type_table table .division {font-size: 20px; line-height: 28px; font-weight: 500; color: #999; vertical-align: inherit;}
-.noti_view_wrap .preview_list_wrap .list_type_table table .title {padding-left: 0;}
-.noti_view_wrap .preview_list_wrap .list_type_table table .title a {display: inline-block; max-width: 100%; font-size: 20px; color: #1a1a1a; line-height: 28px; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden}
-.noti_view_wrap .preview_list_wrap .list_type_table table .title a:hover {text-decoration: underline;}
-.event_view_wrap .preview_list_wrap .list_type_table table .title.n_txt a {display: inline-block; max-width: 100%; font-size: 20px; color: #999; line-height: 28px; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden}
-.noti_view_wrap .preview_list_wrap .list_type_table table .date {font-size: 16px; line-height: 24px; color: #a0a0a0; font-weight: 500; text-align: right;}
-.noti_view_wrap .btn_wrap {text-align: center;}
-
-
-
-/* event-view */
-.event_view_wrap .detail_tit_wrap {margin-bottom: 80px; border-bottom: 1px solid #ddd;}
-.event_view_wrap .detail_tit_wrap .detail_tit {display: block; margin-top: 20px; font-size: 48px; line-height: 64px; font-weight: 700; color: #1a1a1a;}
-.event_view_wrap .detail_tit_wrap .detail_date {display: block; margin: 32px 0 60px; font-size: 20px; line-height: 28px; font-weight: 500; color: #999;}
-
-.event_view_wrap .detail_cont_wrap .detail_cont_img {margin-bottom: 60px; text-align: center;}
-.event_view_wrap .detail_cont_wrap .detail_cont_img img {max-width: 100%;}
-.event_view_wrap .detail_cont_wrap .detail_cont_txt {margin-bottom: 160px; font-size: 18px; line-height: 28px; font-weight: 500; color: #333;}
-
-.event_view_wrap .detail_sns {margin-bottom: 40px;}
-.event_view_wrap .detail_sns ul {display: flex; justify-content: flex-end;}
-.event_view_wrap .detail_sns ul li {padding-left: 10px;}
-
-.event_view_wrap .preview_list_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px;}
-.event_view_wrap .preview_list_wrap .list_type_table table td {padding: 40px 0; vertical-align: middle; border-top: 1px solid #ddd;}
-.event_view_wrap .preview_list_wrap .list_type_table table tr:last-child td {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
-.event_view_wrap .preview_list_wrap .list_type_table table .division {font-size: 20px; line-height: 28px; font-weight: 500; color: #999; vertical-align: inherit;}
-.event_view_wrap .preview_list_wrap .list_type_table table .title {padding-left: 0;}
-.event_view_wrap .preview_list_wrap .list_type_table table .title a {display: inline-block; max-width: 100%; font-size: 20px; color: #1a1a1a; line-height: 28px; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden}
-.event_view_wrap .preview_list_wrap .list_type_table table .title a:hover {text-decoration: underline;}
-.event_view_wrap .preview_list_wrap .list_type_table table .title.n_txt a {display: inline-block; max-width: 100%; font-size: 20px; color: #999; line-height: 28px; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden}
-.event_view_wrap .preview_list_wrap .list_type_table table .date {font-size: 16px; line-height: 24px; color: #a0a0a0; font-weight: 500; text-align: right;}
-.event_view_wrap .btn_wrap {text-align: center;}
-
-
-/* ******************************************** FAQ ******************************************** */
-.faq_wrap {}
-
-
-
-
-
-/* ******************************************** tablet-Responsive ******************************************** */
-@media (max-width: 1024px) {
-    /* common */
-    .mo-only {display: block;}
-    .pc-only {display: none;}
-
-    /* ******************************************** header ******************************************** */
-    #header .gnb .gnb_list ul {display: flex; font-size: 16px; line-height: 19px;}
-    #header .gnb .gnb_list ul li {padding-right: 30px;}
-
-
-    /* ******************************************** footer ******************************************** */
-    #footer .footer_inn {padding: 100px 20px 30px;}
-    #footer .footer_cont {padding-bottom: 100px; text-align: center;}
-    #footer .footer_cont p {margin-bottom: 60px; font-size: 32px; line-height: 40px;}
-    #footer .footer_info .footer_left {display: flex; align-items: flex-end; padding-right: 20px;}
-    #footer .footer_info .footer_left .footer_logo {padding-right: 20px;}
-    #footer .footer_info .footer_left p,
-    #footer .footer_info  copy {font-size: 14px; line-height: 21px;}
-    #footer .footer_info .footer_left span {padding: 0 8px;}
-}

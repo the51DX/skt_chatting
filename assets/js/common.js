@@ -54,43 +54,61 @@ function bindingAccordionEvent(wrap){
   let areaArr = document.querySelectorAll(wrap);
   
   areaArr.forEach(function(area){
-    // console.log(area.dataset.group)
-    let hasGroup = area.dataset.group !== undefined ? true : false;
+    /* let hasGroup = area.dataset.group !== undefined ? true : false; */
     let btn = area.querySelector('.acc_tit');
     
     btn.addEventListener('click', function(){
-      // console.log(hasGroup)
-      if(hasGroup === true){
+      let target = this;
+      let targetCon = this.closest('.acc_wrap').querySelector('.acc_cont');
+      let titArr = document.querySelectorAll('.acc_tit');
+      let contArr = document.querySelectorAll('.acc_cont');
+
+      if(target.classList.contains('active')){
+        target.classList.remove('active');
+        targetCon.classList.remove('active');
+      } else{
+        for(i=0; i < titArr.length; i++){
+          titArr[i].classList.remove('active');
+          contArr[i].classList.remove('active');
+        }
+        target.classList.add('active');
+        targetCon.classList.add('active');
+        
+      }
+
+      /* if(hasGroup === true){
         let name = area.dataset['group'];
         let groupArr = document.querySelectorAll(wrap + '[data-group="'+ name +'"]');
-        let thisContent = area.querySelector('.acc_tit');
+
 
         groupArr.forEach(function(group){
-          let content = group.querySelector('.acc_tit');
-          content.classList.remove('active');
+          let titContent = group.querySelector('.acc_tit');
+          let conContent = group.querySelector('.acc_cont');
+
+          titContent.classList.remove('active');
+          conContent.classList.remove('active');
         });
-        thisContent.classList.add('active');
-      }else{
-        let content = area.querySelector('.acc_tit');
-        content.classList.toggle('active');
-      }
-    })
-    btn.addEventListener('click', function(){
-      if(hasGroup === true){
-        let name = area.dataset['group'];
-        let groupArr = document.querySelectorAll(wrap + '[data-group="'+ name +'"]');
-        let thisContent = area.querySelector('.acc_cont');
+
+        if(target.classList.contains('active')){
+          target.classList.remove('active');
+        }else{
+          target.classList.add('active');
+        }
+
+        if(targetCon.classList.contains('active')){
+          targetCon.classList.remove('active');
+        }else{
+          targetCon.classList.add('active');
+        }
         
-        groupArr.forEach(function(group){
-          let content = group.querySelector('.acc_cont');
-          content.classList.remove('active');
-        });
-        thisContent.classList.add('active');
       }else{
-        let content = area.querySelector('.acc_cont');
-        content.classList.toggle('active');
-      }
-    });
+        let titContent = area.querySelector('.acc_tit');
+        let conContent = area.querySelector('.acc_cont');
+
+        titContent.classList.toggle('active');
+        conContent.classList.toggle('active');
+      } */
+    })
   });
 }
 bindingAccordionEvent('.acc_wrap');

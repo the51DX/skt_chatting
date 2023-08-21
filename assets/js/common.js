@@ -54,12 +54,12 @@ function bindingAccordionEvent(wrap){
   let areaArr = document.querySelectorAll(wrap);
   
   areaArr.forEach(function(area){
-    console.log(area.dataset.group)
+    // console.log(area.dataset.group)
     let hasGroup = area.dataset.group !== undefined ? true : false;
     let btn = area.querySelector('.acc_tit');
     
     btn.addEventListener('click', function(){
-      console.log(hasGroup)
+      // console.log(hasGroup)
       if(hasGroup === true){
         let name = area.dataset['group'];
         let groupArr = document.querySelectorAll(wrap + '[data-group="'+ name +'"]');

@@ -1,3 +1,4 @@
+
 /* ******************************************** notice ******************************************** */
 .notice_wrap .event.bg {margin-bottom: 120px; /* padding: 69px 92px; */ background-color: #2080ee; border-radius: 20px;}
 .notice_wrap .event.bg img {max-width: 100%; width: 100%; vertical-align: middle;}
@@ -76,6 +77,25 @@
 
 
 /* ******************************************** FAQ ******************************************** */
+.faq_wrap .accordion {margin-bottom: 60px; border-bottom: 1px solid #ddd;}
+.faq_wrap .acc_wrap.active .acc_cont {height: 100%;}
+.faq_wrap .acc_wrap {max-width: 1330px; margin: 0 auto;}
+.faq_wrap .acc_wrap .acc_tit {position: relative; display: flex; align-items: center; padding: 42px 24px; border-top: 1px solid #ddd; cursor: pointer;}
+.faq_wrap .acc_wrap .acc_tit:after {content: ""; position: absolute; top: 42%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #999; border-right: 2px solid #999; transform: rotate(135deg);}
+.faq_wrap .acc_wrap .acc_tit.active {align-items: flex-start; padding: 40px 24px 20px; background-color: #fafafa;}
+.faq_wrap .acc_wrap .acc_tit.active:after {content: ""; position: absolute; top: 57%; right: 24px; width: 12px; height: 12px; border-top: 2px solid #1a1a1a; border-right: 2px solid #1a1a1a; transform: rotate(315deg);}
+.faq_wrap .acc_wrap .acc_tit .que_q {display: block; min-width: 28px; padding-right: 24px; font-size: 24px; line-height: 24px; color: #1a1a1a; font-weight: 700;}
+.faq_wrap .acc_wrap .acc_tit .badge {min-width: 100px; padding-right: 32px; text-align: center;}
+.faq_wrap .acc_wrap .acc_tit .que_txt {display: inline-block; margin-right: 50px; width: 900px; font-size: 20px; line-height: 28px; color: #1a1a1a; font-weight: 500; white-space: nowrap; word-break: keep-all; -webkit-line-clamp: 1; letter-spacing: 0; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;}
+.faq_wrap .acc_wrap .acc_tit.active .que_txt {font-weight: 700; white-space: normal; overflow: inherit;}
+.faq_wrap .acc_wrap:first-of-type .acc_tit {border-top: 1px solid #1a1a1a;}
+.faq_wrap .acc_wrap .acc_cont {display: none; padding: 0 24px 56px; background-color: #fafafa; transition: all 0.3s ease-in-out;}
+.faq_wrap .acc_wrap .acc_cont.active {display: block; border-top: 0;}
+.faq_wrap .acc_wrap .acc_cont .an_wrap {display: flex;}
+.faq_wrap .acc_wrap:last-of-type .acc_cont {border-top: none; border-bottom: 1px solid #ddd;}
+.faq_wrap .acc_wrap .acc_cont .an_a {min-width: 184px; font-size: 24px; line-height: 24px; color: #3b7cf3; font-weight: 700;}
+.faq_wrap .acc_wrap .acc_cont .an_txt {width: 900px; margin-right: 50px; font-size: 18px; line-height: 28px; color: #333;}
+
 .faq_wrap .notice_list.n_none table td {padding: 201px 0; text-align: center;}
 .faq_wrap .notice_list.n_none table td p {margin-top: 16px;}
 .faq_wrap .notice_list.n_none table .fixed td {padding: 40px 32px 40px 24px; text-align: left;}

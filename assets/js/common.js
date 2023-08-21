@@ -54,14 +54,19 @@ function bindingAccordionEvent(wrap){
   let areaArr = document.querySelectorAll(wrap);
   
   areaArr.forEach(function(area){
-    let hasGroup = area.dataset['group'] !== undefined ? true : false;
+    console.log(area.dataset.group)
+    let hasGroup = area.dataset.group !== undefined ? true : false;
     let btn = area.querySelector('.acc_tit');
     
     btn.addEventListener('click', function(){
+      console.log(hasGroup)
       if(hasGroup === true){
-  
+        let name = area.dataset['group'];
+        let groupArr = document.querySelectorAll(wrap + '[data-group="'+ name +'"]');
+        let thisContent = area.querySelector('.acc_tit');
+
         groupArr.forEach(function(group){
-           let content = group.querySelector('.acc_tit');
+          let content = group.querySelector('.acc_tit');
           content.classList.remove('active');
         });
         thisContent.classList.add('active');
@@ -77,7 +82,7 @@ function bindingAccordionEvent(wrap){
         let thisContent = area.querySelector('.acc_cont');
         
         groupArr.forEach(function(group){
-           let content = group.querySelector('.acc_cont');
+          let content = group.querySelector('.acc_cont');
           content.classList.remove('active');
         });
         thisContent.classList.add('active');

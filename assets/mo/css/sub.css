@@ -1,13 +1,13 @@
 
 /* ******************************************** notice ******************************************** */
-.notice_wrap .event {margin-bottom: 120px;}
+.notice_wrap .event {margin-bottom: 40px;}
 .notice_wrap .event img {width: 100%; max-width: 100%; vertical-align: middle;}
 .notice_wrap .event .event_txt p {margin-bottom: 32px; font-size: 36px; line-height: 48px; font-weight: 700; color: #fff;}
 .notice_wrap .event .event_txt span {font-size: 20px; line-height: 24px; font-weight: 500; color: #fff;}
 
-.notice_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px;}
+.notice_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px; border-top: 1px solid #1a1a1a;}
 .notice_wrap .list_type_table table .fixed {background-color: rgba(59, 124, 243, 0.05);}
-.notice_wrap .list_type_table table .badge {width: 100px; text-align: left;}
+.notice_wrap .list_type_table table .badge {width: 80px; text-align: left;}
 .notice_wrap .list_type_table table td {padding: 40px 32px 40px 24px; vertical-align: middle; border-top: 1px solid #ddd;}
 .notice_wrap .list_type_table table tr:last-child td {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
 .notice_wrap .list_type_table table .title {padding-left: 0;}
@@ -114,22 +114,3 @@
 .faq_wrap .txt_box p {padding-right: 20px; font-size: 18px; line-height: 28px; color: #333; font-weight: 500;}
 .faq_wrap .txt_box a {display: block; padding: 10px 24px; font-size: 18px; line-height: 28px; font-weight: 700; color: #3b7cf3; background-color: #fff; border: 1px solid #ddd; border-radius: 81px;}
 .faq_wrap .txt_box a img {padding-right: 8px; vertical-align: middle;}
-
-
-
-/* ******************************************** tablet-Responsive ******************************************** */
-@media (max-width: 1024px) {
-    /* common */
-    .mo-only {display: block;}
-    .pc-only {display: none;}
-
-    /* ******************************************** footer ******************************************** */
-    #footer .footer_inn {padding: 100px 20px 30px;}
-    #footer .footer_cont {padding-bottom: 100px; text-align: center;}
-    #footer .footer_cont p {margin-bottom: 60px; font-size: 32px; line-height: 40px;}
-    #footer .footer_info .footer_left {display: flex; align-items: flex-end; padding-right: 20px;}
-    #footer .footer_info .footer_left .footer_logo {padding-right: 20px;}
-    #footer .footer_info .footer_left p,
-    #footer .footer_info  copy {font-size: 14px; line-height: 21px;}
-    #footer .footer_info .footer_left span {padding: 0 8px;}
-}

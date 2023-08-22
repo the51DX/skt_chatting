@@ -1,0 +1,96 @@
+
+/* common */
+html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border-box; font-family: "Pretendard-Regular", "Pretendard-Medium", "Pretendard-ExtraLight", "Pretendard-Bold", 'Noto Sans KR', sans-serif;}
+.blind {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
+.content {padding: 0 20px;}
+.inner {max-width: 1330px; margin: 200px auto;}
+.mo-only {display: none;}
+.pc-only {display: block;}
+.search_word {background-color: rgba(0, 255, 224, 0.4);}
+
+/* title */
+.tit_area {margin-bottom: 80px;}
+.tit_area .tit {font-size: 48px; line-height: 58px; font-weight: 700; color: #223140; text-align: center;}
+
+/* font-color */
+.blue {color: #3b7cf3;}
+
+/* star-list */
+.star_list {margin-top: 20px;}
+.star_list li {position: relative; padding-left: 16px; line-height: 24px; font-weight: 400; color: #000; opacity: .8;}
+.star_list li::after {content: "*"; position: absolute; display: block; top: 0; left: 0;}
+
+.hy_list {margin-top: 20px;}
+.hy_list li {position: relative; padding-left: 16px; line-height: 24px; font-weight: 400; color: #000; opacity: .8;}
+.hy_list li::after {content: "-"; position: absolute; display: block; top: 0; left: 0;}
+
+.square_list {margin-top: 20px;}
+.square_list li {position: relative; padding-left: 16px; line-height: 24px; font-weight: 400; color: #000; opacity: .8;}
+.square_list li:after {content: "■"; position: absolute; display: block; top: 0; left: 0;}
+
+
+/* flag & badge */
+/* .flag {padding: 6px 0; width: 99px; background-color: rgba(59, 124, 243, 0.2); border-radius: 10px;}
+.flag span {display: block; font-size: 18px; line-height: 30px; color: #3b7cf3; text-align: center;} */
+.flag {width: 24px; height: 24px; background-color: #fe2d53; border-radius: 50%;}
+.flag span {display: block; font-size: 14px; line-height: 24px; color: #fff; text-align: center;}
+.badge {font-size: 18px; line-height: 28px; font-weight: 700; color: #3b7cf3;}
+
+/* btn */
+.b_btn a {display: inline-block; padding: 20px 40px; font-size: 18px; line-height: 30px; font-weight: 700; color: #fff; background-color: #3b7cf3; border-radius: 100px;}
+.b_btn a img {max-width: 100%; padding-right: 10px; vertical-align: middle;}
+.w_btn a {display: inline-block; width: 193px; padding: 15px 0; font-size: 18px; line-height: 30px; font-weight: 700; color: #1a1a1a; text-align: center; border: 1px solid #ccc; border-radius: 81px;}
+.w_btn a:hover {background-color: #f2f2f2;}
+.more_btn a {display: inline-block; padding: 15px 76.5px; font-size: 18px; line-height: 30px; font-weight: 700; color: #1a1a1a; border: 1px solid #ccc; border-radius: 81px;}
+
+/* search */
+.search_wrap .list_nums {display: inline-block; font-size: 24px; line-height: 29px; font-weight: 700; color: #1a1a1a;}
+.search_wrap .list_nums .count {display: inline-block; font-size: 24px; line-height: 29px; font-weight: 700; color: #3b7cf3;}
+
+.search_wrap {display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;}
+.search_wrap .search_box {display: flex; justify-content: center; align-items: center;}
+.search_wrap .search_box .unit_box {position: relative; border: 1px solid #ccc; border-radius: 10px;}
+.search_wrap .search_box .unit_box [type="search"] {padding: 3px 0 3px 19px; border-radius: 0; border: 0; background-color: transparent; width: 382px; font-size: 14px; line-height: 36px;}
+.search_wrap .search_box .unit_box input:focus {outline: 1px solid #3b7cf3; border-radius: 10px; color: #1a1a1a;}
+.search_wrap .search_box .unit_box [type="search"]::placeholder {font-size: 16px; font-weight: 500; color: #ccc; letter-spacing: -1px;}
+.search_wrap .search_box .unit_box .search_btn {position: absolute; right: 18.3px; top: 10px; width: 24px; height: 24px; background-image: url(../img/common/ico_search_btn.png); background-color: transparent; background-repeat: no-repeat; background-position: center; border: 0; cursor: pointer;}
+.search_wrap .search_box .unit_box [type="search"]::-ms-clear,
+.search_wrap .search_box .unit_box [type="search"]::-ms-reveal {display: none;} 
+.search_wrap .search_box .unit_box [type="search"]::-webkit-search-decoration,
+.search_wrap .search_box .unit_box [type="search"]::-webkit-search-cancel-button,
+.search_wrap .search_box .unit_box [type="search"]::-webkit-search-results-button,
+.search_wrap .search_box .unit_box [type="search"]::-webkit-search-results-decoration {display: none;}
+
+
+
+/* ******************************************** header ******************************************** */
+#header {position: fixed; top: 0; left: 0; width: 100%; margin: 0 auto; background-color: #fff; z-index: 1000;}
+#header .logo {padding-right: 20px;}
+#header .logo img {max-width: 100%; vertical-align: middle;}
+#header .header_inner {position: relative; display: flex; justify-content: space-between; align-items: center; max-width: 1600px; margin: 0 auto; padding: 41px 20px;}
+#header .gnb .gnb_list ul {display: flex; font-size: 20px; line-height: 24px; font-weight: 700;}
+#header .gnb .gnb_list ul li {padding-right: 56px;}
+#header .gnb .gnb_list ul li:last-child {padding-right: 0;}
+#header .gnb .gnb_list ul li a {position: relative; color: #000;}
+#header .gnb .gnb_list ul li a.active,
+#header .gnb .gnb_list ul li a:hover {color: #3b7cf3;}
+
+
+/* ******************************************** footer ******************************************** */
+#footer {margin: 0 auto; width: 100%; background-color: #f4f5fa;}
+#footer .footer_inn {padding: 200px 20px 60px; margin: 0 auto; max-width: 1600px;}
+#footer .footer_cont {padding-bottom: 200px; text-align: center;}
+#footer .footer_cont p {margin-bottom: 60px; font-size: 64px; line-height: 80px; font-weight: 700;}
+#footer .footer_info {display: flex; align-items: flex-end; justify-content: space-between;}
+#footer .footer_info .footer_left {display: flex; align-items: flex-end; padding-right: 20px;}
+#footer .footer_info .footer_left .footer_logo {padding-right: 40px; max-width: 100%;}
+#footer .footer_info .footer_left img {max-width: 100%;}
+#footer .footer_info .footer_left p,
+#footer .footer_info  copy {font-size: 16px; line-height: 24px; font-weight: 500; color: #333;}
+#footer .footer_info .footer_left span {padding: 0 16px; color: #000; opacity: .3;}
+
+
+/* ******************************************** tablet-Responsive ******************************************** */
+@media (max-width: 1024px) {
+    .search_wrap .search_box .unit_box [type="search"] {}
+}

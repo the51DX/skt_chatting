@@ -78,3 +78,13 @@ function bindingAccordionEvent(wrap){
   });
 }
 bindingAccordionEvent('.acc_wrap');
+
+// table width
+let widthNone = document.querySelectorAll('.none');
+let widthTwice = document.querySelectorAll('.n_txt');
+
+for(i=0; i < widthNone.length; i++){
+  widthNone[i].setAttribute('colspan', '0');
+  widthNone[i].style.display = "none";
+  widthTwice[i].setAttribute('colspan', '2');
+}

@@ -5,10 +5,25 @@ window.addEventListener('load', function(){
     .then(function(res){                
         res.text().then(function(html){
             const footer = document.querySelector('header');
-            footer.innerHTML = html;                                
+            footer.innerHTML = html;
+
+            // mo header hamburger
+            const hamburgerBtn = document.querySelector('.btn_gnb');
+            const closeBtn = document.querySelector('.btn_close');
+            const moMenu = document.querySelector('.dim_layer');
+
+            hamburgerBtn.addEventListener('click', () => {
+              moMenu.style.display = "block";
+              hamburgerBtn.style.display = "none";
+            })
+            closeBtn.addEventListener('click', () => {
+              moMenu.style.display = "none";
+              hamburgerBtn.style.display = "block";
+            })            
+
         })
     })
-    .catch(error => console.log(error))                     
+    .catch(error => console.log(error))                 
 });
 
 // footer

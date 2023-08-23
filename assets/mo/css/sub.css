@@ -5,7 +5,7 @@
 .notice_wrap .event .event_txt p {margin-bottom: 32px; font-size: 36px; line-height: 48px; font-weight: 700; color: #fff;}
 .notice_wrap .event .event_txt span {font-size: 20px; line-height: 24px; font-weight: 500; color: #fff;}
 
-.notice_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px; border-top: 1px solid #1a1a1a;}
+.notice_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 32px; border-top: 1px solid #1a1a1a;}
 .notice_wrap .list_type_table table .fixed {background-color: rgba(59, 124, 243, 0.05);}
 .notice_wrap .list_type_table table .badge {width: 80px; text-align: left;}
 .notice_wrap .list_type_table table td {padding: 40px 32px 40px 24px; vertical-align: middle; border-top: 1px solid #ddd;}
@@ -26,13 +26,13 @@
 
 
 /* notice-view */
-.noti_view_wrap .detail_tit_wrap {margin-bottom: 80px; border-bottom: 1px solid #ddd;}
-.noti_view_wrap .detail_tit_wrap .detail_tit {display: block; margin-top: 20px; font-size: 48px; line-height: 64px; font-weight: 700; color: #1a1a1a;}
-.noti_view_wrap .detail_tit_wrap .detail_date {display: block; margin: 32px 0 60px; font-size: 20px; line-height: 28px; font-weight: 500; color: #999;}
-.noti_view_wrap .detail_cont_wrap .detail_cont_txt {margin-bottom: 160px; font-size: 18px; line-height: 28px; font-weight: 500; color: #333;}
+.noti_view_wrap .detail_tit_wrap {padding: 0 20px; margin-bottom: 32px; border-bottom: 1px solid #ddd;}
+.noti_view_wrap .detail_tit_wrap .detail_tit {display: block; margin-top: 14px; font-size: 24px; line-height: 36px; font-weight: 700; color: #1a1a1a;}
+.noti_view_wrap .detail_tit_wrap .detail_date {display: block; margin: 16px 0 32px; font-size: 14px; line-height: 22px; font-weight: 500; color: #999;}
+.noti_view_wrap .detail_cont_wrap .detail_cont_txt {padding: 0 20px; margin-bottom: 100px; font-size: 16px; line-height: 24px; font-weight: 500; color: #333;}
 
 .noti_view_wrap .detail_sns {margin-bottom: 40px;}
-.noti_view_wrap .detail_sns ul {display: flex; justify-content: flex-end;}
+.noti_view_wrap .detail_sns ul {display: flex; justify-content: center;}
 .noti_view_wrap .detail_sns ul li {padding-left: 10px;}
 
 .noti_view_wrap .preview_list_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px;}
@@ -49,16 +49,16 @@
 
 
 /* event-view */
-.event_view_wrap .detail_tit_wrap {margin-bottom: 80px; border-bottom: 1px solid #ddd;}
-.event_view_wrap .detail_tit_wrap .detail_tit {display: block; margin-top: 20px; font-size: 48px; line-height: 64px; font-weight: 700; color: #1a1a1a;}
-.event_view_wrap .detail_tit_wrap .detail_date {display: block; margin: 32px 0 60px; font-size: 20px; line-height: 28px; font-weight: 500; color: #999;}
+.event_view_wrap .detail_tit_wrap {padding: 0 20px; margin-bottom: 32px; border-bottom: 1px solid #ddd;}
+.event_view_wrap .detail_tit_wrap .detail_tit {display: block; margin-top: 14px; font-size: 24px; line-height: 36px; font-weight: 700; color: #1a1a1a;}
+.event_view_wrap .detail_tit_wrap .detail_date {display: block; margin: 16px 0 32px; font-size: 14px; line-height: 22px; font-weight: 500; color: #999;}
 
-.event_view_wrap .detail_cont_wrap .detail_cont_img {margin-bottom: 60px; text-align: center;}
+.event_view_wrap .detail_cont_wrap .detail_cont_img {margin-bottom: 32px; text-align: center;}
 .event_view_wrap .detail_cont_wrap .detail_cont_img img {max-width: 100%;}
-.event_view_wrap .detail_cont_wrap .detail_cont_txt {margin-bottom: 160px; font-size: 18px; line-height: 28px; font-weight: 500; color: #333;}
+.event_view_wrap .detail_cont_wrap .detail_cont_txt {padding: 0 20px; margin-bottom: 100px; font-size: 16px; line-height: 24px; font-weight: 500; color: #333;}
 
 .event_view_wrap .detail_sns {margin-bottom: 40px;}
-.event_view_wrap .detail_sns ul {display: flex; justify-content: flex-end;}
+.event_view_wrap .detail_sns ul {display: flex; justify-content: center;}
 .event_view_wrap .detail_sns ul li {padding-left: 10px;}
 
 .event_view_wrap .preview_list_wrap .list_type_table table {table-layout: fixed; width: 100%; vertical-align: middle; margin-bottom: 60px;}

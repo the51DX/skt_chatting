@@ -31,8 +31,8 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 
 
 /* flag & badge */
-.flag {width: 24px; height: 24px; background-color: #fe2d53; border-radius: 50%;}
-.flag span {display: block; font-size: 14px; line-height: 24px; color: #fff; text-align: center;}
+.flag {display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; background-color: #fe2d53; border-radius: 50%;}
+.flag span {display: block; align-items: center; justify-content: center; font-size: 5px; line-height: 7px; color: #fff;}
 .badge {font-size: 14px; line-height: 22px; font-weight: 700; color: #3b7cf3;}
 
 /* btn */
@@ -86,7 +86,7 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 
 /* ******************************************** footer ******************************************** */
 #footer {margin: 0 auto; width: 100%; background-color: #f4f5fa;}
-#footer .footer_inn {padding: 60px 55px; margin: 0 auto; max-width: 100%;}
+#footer .footer_inn {padding: 60px 20px; margin: 0 auto; max-width: 100%;}
 #footer .footer_cont {padding-bottom: 80px; text-align: center;}
 #footer .footer_cont p {margin-bottom: 20px; font-size: 32px; line-height: 42px; font-weight: 700;}
 #footer .footer_info {display: flex; flex-direction: column; text-align: center;}
@@ -96,15 +96,11 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 #footer .footer_info .footer_left p {font-size: 14px; line-height: 22px; font-weight: 500; color: #333;}
 #footer .footer_info  copy {font-size: 14px; line-height: 22px; font-weight: 500; color: #999;}
 #footer .footer_info .footer_left span {padding: 0 11px; color: #000; opacity: .3;}
-
+ 
 
 
 /* ******************************************** Responsive-320 ******************************************** */
 @media (max-width: 320px) {
-    /* common */
-    .mo-only {display: block;}
-    .pc-only {display: none;}
-
     /* search */
     .search_wrap .search_box .unit_box [type="search"] {width: 290px;}
 

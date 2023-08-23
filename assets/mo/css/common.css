@@ -72,7 +72,7 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 #header .btn_gnb {width: 24px; height: 24px; background: url(../img/common/ico_menu.png) no-repeat 100% 100% /100% auto;}
 
 /* pop-layer */
-.dim_layer {margin-top: 80px;}
+.dim_layer {margin-top: 80px; display: none;}
 .dim_layer .pop_cont {padding: 0 20px;}
 .dim_layer .gnb {margin-bottom: 170px;}
 .dim_layer .gnb .gnb_list ul li {margin-bottom: 28px;}

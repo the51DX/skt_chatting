@@ -10,7 +10,7 @@
     <meta property="og:image" content="">
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
-    <link rel="stylesheet" href="../assets/pc/css/style.css">
+    <link rel="stylesheet" href="../assets/mo/css/style.css">
     <title>gnb</title>
 </head>
 <body>
@@ -19,31 +19,54 @@
     <header id="header">
       <div class="header_inner">
 
-        <h1 class="logo">
-          <a href="#"><img src="../assets/pc/img/logo.svg" alt="채팅 플러스 로고 이미지"></a>
-        </h1>
+        <!-- <h1 class="logo">
+          <a href="#"><img src="../assets/mo/img/logo.svg" alt="채팅 플러스 로고 이미지"></a>
+        </h1> -->
 
-        <nav class="gnb">
-          <div class="gnb_list">
-            <ul>
-              <li><a href="#">유용한 사용법</a></li>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">자주 묻는 질문</a></li>
-              <li><a href="#">PC버전 다운로드</a></li>
-            </ul>
-          </div>
-        </nav>
-        <!-- <div class="b_btn">
-          <a href="">다운로드 하러가기</a>
-        </div> -->
+        <div class="btn_back_wrap">
+          <button type="button" class="btn_back" aria-label="뒤로가기"></button>
+        </div>
+
+        <div class="all_menu">
+          <button type="button" class="btn_gnb" aria-label="메뉴"></button>
+        </div>
       </div> 
     </header>
     <!--// header -->
 
+    <div class="dim_layer">
+      <div id="allMenu" class="pop_layer">
+        <div class="pop_container">
+          <div class="pop_cont">
+            <nav class="gnb">
+              <div class="gnb_list">
+                <ul>
+                  <li><a href="#"><img src="../assets/mo/img/ico_document.png" alt="">유용한 사용법</a></li>
+                  <li><a href="#"><img src="../assets/mo/img/ico_noti.png" alt="">공지사항</a></li>
+                  <li><a href="#"><img src="../assets/mo/img/ico_question.png" alt="">자주 묻는 질문</a></li>
+                  <li><a href="#"><img src="../assets/mo/img/ico_down.png" alt="">PC버전 다운로드</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="gnb_sns">
+              <ul>
+                <li><a href="#"><img src="../assets/mo/img/common/ico_share.png" alt="공유하기"></a></li>
+                <li><a href="#"><img src="../assets/mo/img/common/ico_kakao.png" alt="카카오"></a></li>
+                <li><a href="#"><img src="../assets/mo/img/common/ico_facebook.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="../assets/mo/img/common/ico_twitter.png" alt="트위터"></a></li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn_close" aria-label="닫기"></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div> 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="../assets/pc/js/vendor/jquery-3.6.0.min.js"></script>
-  <script src="../assets/pc/js/common.js"></script>
+  <script src="../assets/mo/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="../assets/mo/js/common.js"></script>
 </body>
 </html>

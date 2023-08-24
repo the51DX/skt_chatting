@@ -92,8 +92,9 @@
 .faq_wrap .notice_list.n_none table td p {margin-top: 16px;}
 .faq_wrap .notice_list.n_none table .fixed td {padding: 40px 32px 40px 24px; text-align: left;}
 
-.faq_wrap .tab_wrap {margin-bottom: 30px; width: 100%;}
-.faq_wrap .tab_wrap ul {display: flex; justify-content: start; margin: 0 20px; padding-bottom: 10px; overflow: scroll;}
+.faq_wrap .tab_wrap {margin-bottom: 40px; width: 100%; overflow: hidden;}
+.faq_wrap .tab_wrap ul {display: flex; justify-content: start; padding: 0 20px; overflow-x: scroll; -ms-overflow-style: none; scrollbar-width: none;}
+.faq_wrap .tab_wrap ul::-webkit-scrollbar {display: none;}
 .faq_wrap .tab_wrap li {padding-right: 8px;}
 .faq_wrap .tab_wrap li:last-child {padding-right: 0;}
 .faq_wrap .tab_wrap li a {display: block; width: max-content; padding: 9px 24px; font-size: 16px; line-height: 24px; font-weight: 700; color: #999; background-color: #f5f5f5; border-radius: 81px;}

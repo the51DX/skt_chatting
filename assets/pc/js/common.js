@@ -1,14 +1,31 @@
 
 // header
 window.addEventListener('load', function(){
-    fetch('./gnb.html')
-    .then(function(res){                
-        res.text().then(function(html){
-            const footer = document.querySelector('header');
-            footer.innerHTML = html;                                
-        })
+  fetch('./gnb.html')
+  .then(function(res){                
+    res.text().then(function(html){
+      const header = document.querySelector('header');
+      header.innerHTML = html;
+
+      // mo header hamburger
+      const hamburgerBtn = document.querySelector('.btn_gnb');
+      const closeBtn = document.querySelector('.btn_close');
+      const moMenu = document.querySelector('.dim_layer');
+      const backBtn = document.querySelector('.btn_back_wrap');
+
+      hamburgerBtn.addEventListener('click', () => {
+        moMenu.style.display = "block";
+        hamburgerBtn.style.display = "none";
+        backBtn.style.display = "none";
+      })
+      closeBtn.addEventListener('click', () => {
+        moMenu.style.display = "none";
+        hamburgerBtn.style.display = "block";
+        backBtn.style.display = "block";
+      })            
     })
-    .catch(error => console.log(error))                     
+  })
+  .catch(error => console.log(error))    
 });
 
 // footer

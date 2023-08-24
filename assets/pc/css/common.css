@@ -90,7 +90,55 @@ html, body {padding: 0; margin: 0; width: 100%; height: 100%; box-sizing: border
 #footer .footer_info .footer_left span {padding: 0 16px; color: #000; opacity: .3;}
 
 
-/* ******************************************** tablet-Responsive ******************************************** */
+/* ******************************************** 1024-Responsive ******************************************** */
 @media (max-width: 1024px) {
-    .search_wrap .search_box .unit_box [type="search"] {}
+    /* common */
+    .mo-only {display: block;}
+    .pc-only {display: none;}
+
+
+    /* search */
+    .search_wrap {align-items: inherit;}
+    .search_wrap .list_nums {display: inline-block; font-size: 16px; line-height: 14px; font-weight: 700; color: #1a1a1a;}
+    .search_wrap {display: flex; flex-direction: column-reverse; margin-bottom: 20px; padding: 0;}
+    .search_wrap .search_box {margin-bottom: 20px;}
+    .search_wrap .search_box .unit_box {position: relative; border: 1px solid #ccc; border-radius: 10px;}
+    .search_wrap .search_box .unit_box [type="search"] {padding: 3px 0 3px 19px; border-radius: 0; border: 0; background-color: transparent; width: 382px; font-size: 14px; line-height: 36px;}
+
+
+    /* ******************************************** header ******************************************** */
+    #header {position: fixed; top: 0; left: 0; width: 100%; margin: 0 auto; background-color: #fff; z-index: 1000;}
+    #header .logo {padding-right: 20px;}
+    #header .logo img {max-width: 100%; vertical-align: middle;}
+    #header .header_inner {position: relative; display: flex; justify-content: space-between; align-items: center; max-width: 100%; margin: 0 auto; padding: 18px 20px;}
+    #header .gnb .gnb_list ul li a {position: relative; color: #000;}
+    #header .btn_back {width: 24px; height: 24px; background: url(../img/common/ico_back.png) no-repeat 100% 100% /100% auto;}
+    #header .btn_gnb {width: 24px; height: 24px; background: url(../img/common/ico_menu.png) no-repeat 100% 100% /100% auto;}
+
+    /* pop-layer */
+    .dim_layer {position: relative; margin-top: 60px; display: none; -ms-overflow-style: none; scrollbar-width: none;}
+    .dim_layer .pop_layer {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; z-index: 1000;}
+    .dim_layer .pop_cont {padding: 0 20px; margin-top: 60px;}
+    .dim_layer .gnb {margin-bottom: 170px;}
+    .dim_layer .gnb .gnb_list ul {display: block !important;}
+    .dim_layer .gnb .gnb_list ul li {margin-bottom: 28px;}
+    .dim_layer .gnb .gnb_list ul li a {display: block; font-size: 24px; line-height: 36px; font-weight: 700; color: #1a1a1a;}
+    .dim_layer .gnb .gnb_list ul li a img {padding-right: 12px; vertical-align: middle;}
+    .dim_layer .gnb_sns ul {display: flex;}
+    .dim_layer .gnb_sns ul li {padding-right: 10px;}
+    .dim_layer .gnb_sns ul li:last-child {padding-right: 0;}
+    .dim_layer .btn_close {position: fixed; top: 18px; right: 20px; width: 24px; height: 24px; background: url(../img/common/ico_close.png) no-repeat 100% 100% / 100% auto; z-index: 1000;}
+
+
+    /* ******************************************** footer ******************************************** */
+    #footer {margin: 0 auto; width: 100%; background-color: #f4f5fa;}
+    #footer .footer_inn {padding: 60px 20px; margin: 0 auto; max-width: 100%;}
+    #footer .footer_cont {padding-bottom: 80px; text-align: center;}
+    #footer .footer_cont p {margin-bottom: 20px; font-size: 32px; line-height: 42px; font-weight: 700;}
+    #footer .footer_info {flex-direction: column; align-items: center; text-align: center;}
+    #footer .footer_info .footer_left {flex-direction: column; align-items: center !important; margin-bottom: 32px; padding-right: 0 !important;}
+    #footer .footer_info .footer_left .footer_logo {padding-right: 0 !important; max-width: 100%; margin-bottom: 20px;}
+    #footer .footer_info .footer_left p {font-size: 14px; line-height: 22px; font-weight: 500; color: #333;}
+    #footer .footer_info  copy {font-size: 14px; line-height: 22px; font-weight: 500; color: #999;}
+    #footer .footer_info .footer_left span {padding: 0 11px; color: #000; opacity: .3;}
 }

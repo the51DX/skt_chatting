@@ -65,6 +65,9 @@ for(var i = 0; i < tabList.length; i++){
   });
 };
 
+// // tab-swiper
+
+
 
 // faq-accordion
 function bindingAccordionEvent(wrap){
